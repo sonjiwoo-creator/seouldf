@@ -1,0 +1,8 @@
+*.ipynb   eol=lf
+*.py       eol=lf
+*.md       eol=lf
+*.txt      eol=lf
+*.csv      eol=lf
+*.json     eol=lf
+*.yml      eol=lf
+*.sh       eol=lf
