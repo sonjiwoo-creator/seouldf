@@ -1,6 +1,9 @@
 # Python
 .venv/
 __pycache__/
+# Python
+.venv/
+__pycache__/
 *.pyc
 .ipynb_checkpoints/
 
@@ -18,6 +21,7 @@ data/processed/
 
 # 출력물
 outputs/
+*.pbix
 *.png
 *.jpg
 
