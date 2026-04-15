@@ -1,4 +1,30 @@
+# Python
+.venv/
 __pycache__/
-*.pycdata/
-*.pbix
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# 데이터 - 압축 해제본은 제외 (zip만 Git에 올림)
+data/extracted/
+data/processed/
+*.csv
+*.parquet
+
+# 단, data/raw/ 안의 zip은 예외로 포함
+!data/raw/*.zip
+
+# 출력물
 outputs/
+*.pbix
+*.png
+*.jpg
+
+# OS
+.DS_Store
+Thumbs.db
