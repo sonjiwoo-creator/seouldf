@@ -26,14 +26,14 @@ pip install pandas numpy matplotlib seaborn jupyter
 노트북 첫 셀에 자동 압축 해제 코드가 있으면 그냥 실행하면 됩니다.
 
 ## 📁 폴더 구조
-\```
+```
 seouldf/
 ├─ data/
 │  ├─ raw/          ← zip 파일 (Git에 포함)
 │  └─ extracted/    ← 압축 해제본 (Git 제외, 각자 로컬)
 ├─ notebooks/       ← EDA 노트북들
 └─ README.md
-\```
+```
 
 ## 📦 데이터 파일 안내
 
