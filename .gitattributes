@@ -6,3 +6,6 @@
 *.json     eol=lf
 *.yml      eol=lf
 *.sh       eol=lf
+*.ipynb filter=strip-notebook-output  
+*.zpln filter=nbstripout
+*.ipynb diff=ipynb
