@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec7910df6ab4a41065256f29d10b5fee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec7910df6ab4a41065256f29d10b5fee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec7910df6ab4a41065256f29d10b5fee = L.map(
+                "map_ec7910df6ab4a41065256f29d10b5fee",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5a25c0c76ac44538e09b3a8007213fa3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5a25c0c76ac44538e09b3a8007213fa3.addTo(map_ec7910df6ab4a41065256f29d10b5fee);
+        
+    
+            var circle_marker_7d77c391b10ca6cd2fcb43d7a3e9ec74 = L.circleMarker(
+                [37.567321142166996, 127.01127385554352],
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_ec7910df6ab4a41065256f29d10b5fee);
+        
+    
+        var popup_a87b29735f5cf3b80883a7dd0118c081 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ee26679719e219b68c4ad18a55adbcc = $(`<div id="html_2ee26679719e219b68c4ad18a55adbcc" style="width: 100.0%; height: 100.0%;">         <b>동대문패션타운 관광특구</b><br>         자치구: 중구<br>         상권유형: 관광특구<br>         분류: 스타_상권<br>         성장유형: 진짜성장<br>         RFM합계: 14<br>         매출증감률: 13.4%<br>         객단가: 33,803원         </div>`)[0];
+                popup_a87b29735f5cf3b80883a7dd0118c081.setContent(html_2ee26679719e219b68c4ad18a55adbcc);
+            
+        
+
+        circle_marker_7d77c391b10ca6cd2fcb43d7a3e9ec74.bindPopup(popup_a87b29735f5cf3b80883a7dd0118c081)
+        ;
+
+        
+    
+    
+            var circle_marker_246a630b80670679dfd79e2b75cd71c3 = L.circleMarker(
+                [37.564058680496096, 126.98185622262775],
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_ec7910df6ab4a41065256f29d10b5fee);
+        
+    
+        var popup_aaabe8c7ea7bf4d22ec48e4a44a3cadf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbe692a2e05789b934267d90c1a18a1b = $(`<div id="html_fbe692a2e05789b934267d90c1a18a1b" style="width: 100.0%; height: 100.0%;">         <b>명동 남대문 북창동 다동 무교동 관광특구</b><br>         자치구: 중구<br>         상권유형: 관광특구<br>         분류: 스타_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 13<br>         매출증감률: 4.1%<br>         객단가: 32,439원         </div>`)[0];
+                popup_aaabe8c7ea7bf4d22ec48e4a44a3cadf.setContent(html_fbe692a2e05789b934267d90c1a18a1b);
+            
+        
+
+        circle_marker_246a630b80670679dfd79e2b75cd71c3.bindPopup(popup_aaabe8c7ea7bf4d22ec48e4a44a3cadf)
+        ;
+
+        
+    
+    
+            var circle_marker_694f9f28e3eeef33a3b867c67da11954 = L.circleMarker(
+                [37.51643105790915, 127.11524094253139],
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_ec7910df6ab4a41065256f29d10b5fee);
+        
+    
+        var popup_a27363463657f33ff6c0e38f1b24ec8a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbebe7feb4b671c68e04b9767b3856c2 = $(`<div id="html_cbebe7feb4b671c68e04b9767b3856c2" style="width: 100.0%; height: 100.0%;">         <b>잠실 관광특구</b><br>         자치구: 송파구<br>         상권유형: 관광특구<br>         분류: 스타_상권<br>         성장유형: 진짜성장<br>         RFM합계: 12<br>         매출증감률: 1.9%<br>         객단가: 26,898원         </div>`)[0];
+                popup_a27363463657f33ff6c0e38f1b24ec8a.setContent(html_cbebe7feb4b671c68e04b9767b3856c2);
+            
+        
+
+        circle_marker_694f9f28e3eeef33a3b867c67da11954.bindPopup(popup_a27363463657f33ff6c0e38f1b24ec8a)
+        ;
+
+        
+    
+    
+            var circle_marker_472afbf6a3e326f96713b1248f87e249 = L.circleMarker(
+                [37.57000662482674, 126.99769081415003],
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_ec7910df6ab4a41065256f29d10b5fee);
+        
+    
+        var popup_55d7b41c9e83dc00ed33b248d17c95fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54ac58af10d58d04fee1f3008f71d7a9 = $(`<div id="html_54ac58af10d58d04fee1f3008f71d7a9" style="width: 100.0%; height: 100.0%;">         <b>종로?청계 관광특구</b><br>         자치구: 종로구<br>         상권유형: 관광특구<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 12<br>         매출증감률: -2.3%<br>         객단가: 35,067원         </div>`)[0];
+                popup_55d7b41c9e83dc00ed33b248d17c95fa.setContent(html_54ac58af10d58d04fee1f3008f71d7a9);
+            
+        
+
+        circle_marker_472afbf6a3e326f96713b1248f87e249.bindPopup(popup_55d7b41c9e83dc00ed33b248d17c95fa)
+        ;
+
+        
+    
+    
+            var circle_marker_ac17cc7daf416f10a3f1f0e70e824dc5 = L.circleMarker(
+                [37.5342999541775, 126.99432030199267],
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_ec7910df6ab4a41065256f29d10b5fee);
+        
+    
+        var popup_2be3e1d4a4774822f0704ad985184c9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db4428e2f3f950f8c5cc7a667ef4e890 = $(`<div id="html_db4428e2f3f950f8c5cc7a667ef4e890" style="width: 100.0%; height: 100.0%;">         <b>이태원 관광특구</b><br>         자치구: 용산구<br>         상권유형: 관광특구<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 11<br>         매출증감률: -3.1%<br>         객단가: 28,572원         </div>`)[0];
+                popup_2be3e1d4a4774822f0704ad985184c9f.setContent(html_db4428e2f3f950f8c5cc7a667ef4e890);
+            
+        
+
+        circle_marker_ac17cc7daf416f10a3f1f0e70e824dc5.bindPopup(popup_2be3e1d4a4774822f0704ad985184c9f)
+        ;
+
+        
+    
+    
+            var circle_marker_f17d4915b2b65fc1ac847e2eee995b63 = L.circleMarker(
+                [37.51108416413466, 127.05974276727348],
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_ec7910df6ab4a41065256f29d10b5fee);
+        
+    
+        var popup_9c1035f71cb04c032316a547d1408b89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78a0ef701e4e59cb6820c1969045ff5b = $(`<div id="html_78a0ef701e4e59cb6820c1969045ff5b" style="width: 100.0%; height: 100.0%;">         <b>강남 마이스 관광특구</b><br>         자치구: 강남구<br>         상권유형: 관광특구<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -25.2%<br>         객단가: 29,718원         </div>`)[0];
+                popup_9c1035f71cb04c032316a547d1408b89.setContent(html_78a0ef701e4e59cb6820c1969045ff5b);
+            
+        
+
+        circle_marker_f17d4915b2b65fc1ac847e2eee995b63.bindPopup(popup_9c1035f71cb04c032316a547d1408b89)
+        ;
+
+        
+    
+</script>
+</html>

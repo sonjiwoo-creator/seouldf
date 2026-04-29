@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_388533300530afd2fb3c5271eea582b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_388533300530afd2fb3c5271eea582b1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_388533300530afd2fb3c5271eea582b1 = L.map(
+                "map_388533300530afd2fb3c5271eea582b1",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_02d451c1b09ff622bc64f84f6138d278 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_02d451c1b09ff622bc64f84f6138d278.addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+            var circle_marker_554a772a700febb83c9a4856d9757d97 = L.circleMarker(
+                [37.62434716517718, 127.08997649461074],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_4dcf471bcb7df18610119a893567d6df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a51abc2b45d42b15d94ab8a35eccbec7 = $(`<div id="html_a51abc2b45d42b15d94ab8a35eccbec7" style="width: 100.0%; height: 100.0%;">         <b>화랑대철도공원</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 8<br>         매출증감률: 48.7%<br>         객단가: 13,472원         </div>`)[0];
+                popup_4dcf471bcb7df18610119a893567d6df.setContent(html_a51abc2b45d42b15d94ab8a35eccbec7);
+            
+        
+
+        circle_marker_554a772a700febb83c9a4856d9757d97.bindPopup(popup_4dcf471bcb7df18610119a893567d6df)
+        ;
+
+        
+    
+    
+            var circle_marker_718f8a4b3f7a7326121dc22b49d53d21 = L.circleMarker(
+                [37.672112743973784, 127.08392455657341],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_6b6eee73306a17ffd83ae771dec47569 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63493c8da0e2a8acf2acd5a780a61549 = $(`<div id="html_63493c8da0e2a8acf2acd5a780a61549" style="width: 100.0%; height: 100.0%;">         <b>상계3동4동주민센터</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 19.5%<br>         객단가: 68,465원         </div>`)[0];
+                popup_6b6eee73306a17ffd83ae771dec47569.setContent(html_63493c8da0e2a8acf2acd5a780a61549);
+            
+        
+
+        circle_marker_718f8a4b3f7a7326121dc22b49d53d21.bindPopup(popup_6b6eee73306a17ffd83ae771dec47569)
+        ;
+
+        
+    
+    
+            var circle_marker_402d75eae2565338ee0d0c55a5a541a3 = L.circleMarker(
+                [37.661320204941866, 127.06806833085822],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_7e024c9b29154f4bce85431cdfffeab9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea728f98350cea9c0ad16cfd415c7230 = $(`<div id="html_ea728f98350cea9c0ad16cfd415c7230" style="width: 100.0%; height: 100.0%;">         <b>계상초등학교</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 10<br>         매출증감률: 14.7%<br>         객단가: 21,455원         </div>`)[0];
+                popup_7e024c9b29154f4bce85431cdfffeab9.setContent(html_ea728f98350cea9c0ad16cfd415c7230);
+            
+        
+
+        circle_marker_402d75eae2565338ee0d0c55a5a541a3.bindPopup(popup_7e024c9b29154f4bce85431cdfffeab9)
+        ;
+
+        
+    
+    
+            var circle_marker_dda8fcddd0b3d0b8ccd9104e56d6c9bb = L.circleMarker(
+                [37.6469091307803, 127.05947746098052],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_873477ea6fc8346e10fa89a89042dab3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebff584410a6ed39d2d43cc9b8d7c3db = $(`<div id="html_ebff584410a6ed39d2d43cc9b8d7c3db" style="width: 100.0%; height: 100.0%;">         <b>상계주공1단지(가)상가</b><br>         자치구: 노원구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 8<br>         매출증감률: 10.3%<br>         객단가: 15,523원         </div>`)[0];
+                popup_873477ea6fc8346e10fa89a89042dab3.setContent(html_ebff584410a6ed39d2d43cc9b8d7c3db);
+            
+        
+
+        circle_marker_dda8fcddd0b3d0b8ccd9104e56d6c9bb.bindPopup(popup_873477ea6fc8346e10fa89a89042dab3)
+        ;
+
+        
+    
+    
+            var circle_marker_9429c0515bf5a1d29ce036c604b80199 = L.circleMarker(
+                [37.62447424820976, 127.07580558296289],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_90695024adba006e6e1d0b6bf1306183 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ef0191c6dedfdfb03d96ee8ded13afa = $(`<div id="html_1ef0191c6dedfdfb03d96ee8ded13afa" style="width: 100.0%; height: 100.0%;">         <b>공릉역 2번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 7<br>         매출증감률: 7.9%<br>         객단가: 12,788원         </div>`)[0];
+                popup_90695024adba006e6e1d0b6bf1306183.setContent(html_1ef0191c6dedfdfb03d96ee8ded13afa);
+            
+        
+
+        circle_marker_9429c0515bf5a1d29ce036c604b80199.bindPopup(popup_90695024adba006e6e1d0b6bf1306183)
+        ;
+
+        
+    
+    
+            var circle_marker_017780fde4c5f9ce107b0f1f055c3e3f = L.circleMarker(
+                [37.62567393004453, 127.07364315857275],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_57a599dcfa2a31de173a72f4429a8f1a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25a6d3f3e52c9d59fac62bdccf1821a7 = $(`<div id="html_25a6d3f3e52c9d59fac62bdccf1821a7" style="width: 100.0%; height: 100.0%;">         <b>공릉역</b><br>         자치구: 노원구<br>         상권유형: 발달상권<br>         분류: 저평가_가치주<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 5.7%<br>         객단가: 22,009원         </div>`)[0];
+                popup_57a599dcfa2a31de173a72f4429a8f1a.setContent(html_25a6d3f3e52c9d59fac62bdccf1821a7);
+            
+        
+
+        circle_marker_017780fde4c5f9ce107b0f1f055c3e3f.bindPopup(popup_57a599dcfa2a31de173a72f4429a8f1a)
+        ;
+
+        
+    
+    
+            var circle_marker_2abb683a34264c1bc530e499a459e362 = L.circleMarker(
+                [37.62081600933059, 127.07616433988332],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_9933543126360a688ef78ffa546d640d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ec502158f657807dddc48345737fa01 = $(`<div id="html_8ec502158f657807dddc48345737fa01" style="width: 100.0%; height: 100.0%;">         <b>태릉입구역 4번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 7<br>         매출증감률: 4.7%<br>         객단가: 19,919원         </div>`)[0];
+                popup_9933543126360a688ef78ffa546d640d.setContent(html_8ec502158f657807dddc48345737fa01);
+            
+        
+
+        circle_marker_2abb683a34264c1bc530e499a459e362.bindPopup(popup_9933543126360a688ef78ffa546d640d)
+        ;
+
+        
+    
+    
+            var circle_marker_7569ce97c43b54ef6b25094bbbb481cb = L.circleMarker(
+                [37.658873767809375, 127.07589721053684],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_52b43139bde925fc45e1e882e660684e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_306b9b3a5ebe830799a4dddc18400c40 = $(`<div id="html_306b9b3a5ebe830799a4dddc18400c40" style="width: 100.0%; height: 100.0%;">         <b>상계제일중학교</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 10<br>         매출증감률: 4.3%<br>         객단가: 27,598원         </div>`)[0];
+                popup_52b43139bde925fc45e1e882e660684e.setContent(html_306b9b3a5ebe830799a4dddc18400c40);
+            
+        
+
+        circle_marker_7569ce97c43b54ef6b25094bbbb481cb.bindPopup(popup_52b43139bde925fc45e1e882e660684e)
+        ;
+
+        
+    
+    
+            var circle_marker_37c6a474ae2ad87aa16d834c258899d1 = L.circleMarker(
+                [37.64794381105241, 127.06228846200544],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_02d2498b2e9b55671472e51fa5455345 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64ab7bc4b36a7d0e4c3699bd71f53b21 = $(`<div id="html_64ab7bc4b36a7d0e4c3699bd71f53b21" style="width: 100.0%; height: 100.0%;">         <b>상계백병원</b><br>         자치구: 노원구<br>         상권유형: 발달상권<br>         분류: 스타_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 3.7%<br>         객단가: 26,106원         </div>`)[0];
+                popup_02d2498b2e9b55671472e51fa5455345.setContent(html_64ab7bc4b36a7d0e4c3699bd71f53b21);
+            
+        
+
+        circle_marker_37c6a474ae2ad87aa16d834c258899d1.bindPopup(popup_02d2498b2e9b55671472e51fa5455345)
+        ;
+
+        
+    
+    
+            var circle_marker_dbd664d63daa2115d5ee0799a6ced72f = L.circleMarker(
+                [37.625932128128525, 127.07843516211],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_66dd81adeec9d37a772b7a7e6160daa4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9a3272f0bed2f33cbd2bc5063d19e64 = $(`<div id="html_c9a3272f0bed2f33cbd2bc5063d19e64" style="width: 100.0%; height: 100.0%;">         <b>경춘선숲길 우측</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 스타_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 3.0%<br>         객단가: 27,144원         </div>`)[0];
+                popup_66dd81adeec9d37a772b7a7e6160daa4.setContent(html_c9a3272f0bed2f33cbd2bc5063d19e64);
+            
+        
+
+        circle_marker_dbd664d63daa2115d5ee0799a6ced72f.bindPopup(popup_66dd81adeec9d37a772b7a7e6160daa4)
+        ;
+
+        
+    
+    
+            var circle_marker_30c0e2e48f4cd30dcd11f1e6383b1f81 = L.circleMarker(
+                [37.63992279532918, 127.06642859452448],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_2a415d95bb5dd4b2a003a00298eb5eea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a1427df356ab663dd5a5eedeb188fcc = $(`<div id="html_7a1427df356ab663dd5a5eedeb188fcc" style="width: 100.0%; height: 100.0%;">         <b>등나무근린공원</b><br>         자치구: 노원구<br>         상권유형: 발달상권<br>         분류: 스타_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 12<br>         매출증감률: 2.3%<br>         객단가: 26,621원         </div>`)[0];
+                popup_2a415d95bb5dd4b2a003a00298eb5eea.setContent(html_7a1427df356ab663dd5a5eedeb188fcc);
+            
+        
+
+        circle_marker_30c0e2e48f4cd30dcd11f1e6383b1f81.bindPopup(popup_2a415d95bb5dd4b2a003a00298eb5eea)
+        ;
+
+        
+    
+    
+            var circle_marker_7210137b2b226899f219716fdc818854 = L.circleMarker(
+                [37.62103417354386, 127.07311752729491],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_e85ac23f69c4b148fec283754dddb308 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2fee72c4f463106142a81ce99053dac9 = $(`<div id="html_2fee72c4f463106142a81ce99053dac9" style="width: 100.0%; height: 100.0%;">         <b>공릉동 국수거리</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 스타_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 2.0%<br>         객단가: 23,696원         </div>`)[0];
+                popup_e85ac23f69c4b148fec283754dddb308.setContent(html_2fee72c4f463106142a81ce99053dac9);
+            
+        
+
+        circle_marker_7210137b2b226899f219716fdc818854.bindPopup(popup_e85ac23f69c4b148fec283754dddb308)
+        ;
+
+        
+    
+    
+            var circle_marker_28ef2e36333548843d195fd4344b251a = L.circleMarker(
+                [37.66417450773257, 127.07113106886153],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_397d11b6174204dcc1ab90ed53a03337 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c2fa76a668ec20c8a213e248e57a458 = $(`<div id="html_7c2fa76a668ec20c8a213e248e57a458" style="width: 100.0%; height: 100.0%;">         <b>상계5동주민센터</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 스타_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 1.2%<br>         객단가: 23,685원         </div>`)[0];
+                popup_397d11b6174204dcc1ab90ed53a03337.setContent(html_7c2fa76a668ec20c8a213e248e57a458);
+            
+        
+
+        circle_marker_28ef2e36333548843d195fd4344b251a.bindPopup(popup_397d11b6174204dcc1ab90ed53a03337)
+        ;
+
+        
+    
+    
+            var circle_marker_ffd3f2b52ab30b5e4322f6246ba9c592 = L.circleMarker(
+                [37.615823223737245, 127.06312247081314],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_9ee15ecb2554f509df279aa9d4c9822b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa080429eb302499c1b1f94896880db6 = $(`<div id="html_fa080429eb302499c1b1f94896880db6" style="width: 100.0%; height: 100.0%;">         <b>석계역 1번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 10<br>         매출증감률: 0.6%<br>         객단가: 21,868원         </div>`)[0];
+                popup_9ee15ecb2554f509df279aa9d4c9822b.setContent(html_fa080429eb302499c1b1f94896880db6);
+            
+        
+
+        circle_marker_ffd3f2b52ab30b5e4322f6246ba9c592.bindPopup(popup_9ee15ecb2554f509df279aa9d4c9822b)
+        ;
+
+        
+    
+    
+            var circle_marker_1e412e7e5b66389ad231141473192eb2 = L.circleMarker(
+                [37.65022373485967, 127.0768289378521],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_eab4d97fcbe190288242ac47fc3be77d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_315cedba1390423ea12178a24e3a8923 = $(`<div id="html_315cedba1390423ea12178a24e3a8923" style="width: 100.0%; height: 100.0%;">         <b>은행사거리</b><br>         자치구: 노원구<br>         상권유형: 발달상권<br>         분류: 스타_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 13<br>         매출증감률: 0.4%<br>         객단가: 34,957원         </div>`)[0];
+                popup_eab4d97fcbe190288242ac47fc3be77d.setContent(html_315cedba1390423ea12178a24e3a8923);
+            
+        
+
+        circle_marker_1e412e7e5b66389ad231141473192eb2.bindPopup(popup_eab4d97fcbe190288242ac47fc3be77d)
+        ;
+
+        
+    
+    
+            var circle_marker_910528226ffac31ea6fb91d0fe643556 = L.circleMarker(
+                [37.665929860375286, 127.05746383368468],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_031c588751d50f3bec713e9cdabbff2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86da0ee8a6d0adce8f494138c784aee9 = $(`<div id="html_86da0ee8a6d0adce8f494138c784aee9" style="width: 100.0%; height: 100.0%;">         <b>마들역</b><br>         자치구: 노원구<br>         상권유형: 발달상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -0.0%<br>         객단가: 19,411원         </div>`)[0];
+                popup_031c588751d50f3bec713e9cdabbff2e.setContent(html_86da0ee8a6d0adce8f494138c784aee9);
+            
+        
+
+        circle_marker_910528226ffac31ea6fb91d0fe643556.bindPopup(popup_031c588751d50f3bec713e9cdabbff2e)
+        ;
+
+        
+    
+    
+            var circle_marker_5a85de891a99109273549386bc1d73c4 = L.circleMarker(
+                [37.62232979846501, 127.07596198989835],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_4fa7baee5d39be7d64fded3a22895a33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6af8c4f85f9e595b9fba9c64c63da85 = $(`<div id="html_f6af8c4f85f9e595b9fba9c64c63da85" style="width: 100.0%; height: 100.0%;">         <b>공릉동 도깨비시장</b><br>         자치구: 노원구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 저가성장<br>         RFM합계: 9<br>         매출증감률: -0.3%<br>         객단가: 18,855원         </div>`)[0];
+                popup_4fa7baee5d39be7d64fded3a22895a33.setContent(html_f6af8c4f85f9e595b9fba9c64c63da85);
+            
+        
+
+        circle_marker_5a85de891a99109273549386bc1d73c4.bindPopup(popup_4fa7baee5d39be7d64fded3a22895a33)
+        ;
+
+        
+    
+    
+            var circle_marker_25654d14a69e059622eec45735bba5dc = L.circleMarker(
+                [37.61913962220151, 127.077012153305],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_c1ba677541a9b0ea8046fd73e446681f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9bc189e7b74e351326c7a4e48b00abc = $(`<div id="html_b9bc189e7b74e351326c7a4e48b00abc" style="width: 100.0%; height: 100.0%;">         <b>태릉입구역</b><br>         자치구: 노원구<br>         상권유형: 발달상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -0.4%<br>         객단가: 18,572원         </div>`)[0];
+                popup_c1ba677541a9b0ea8046fd73e446681f.setContent(html_b9bc189e7b74e351326c7a4e48b00abc);
+            
+        
+
+        circle_marker_25654d14a69e059622eec45735bba5dc.bindPopup(popup_c1ba677541a9b0ea8046fd73e446681f)
+        ;
+
+        
+    
+    
+            var circle_marker_7318899382792f4acd611b7fc481b804 = L.circleMarker(
+                [37.65546707370536, 127.06218142111479],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_e000097d9c2fabffb8e539f119a111b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_501ff0956f7d5080a12d592a95b8aed1 = $(`<div id="html_501ff0956f7d5080a12d592a95b8aed1" style="width: 100.0%; height: 100.0%;">         <b>노원역</b><br>         자치구: 노원구<br>         상권유형: 발달상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 11<br>         매출증감률: -1.2%<br>         객단가: 28,509원         </div>`)[0];
+                popup_e000097d9c2fabffb8e539f119a111b6.setContent(html_501ff0956f7d5080a12d592a95b8aed1);
+            
+        
+
+        circle_marker_7318899382792f4acd611b7fc481b804.bindPopup(popup_e000097d9c2fabffb8e539f119a111b6)
+        ;
+
+        
+    
+    
+            var circle_marker_aa6d261161866d75804b5af60de9ca9f = L.circleMarker(
+                [37.65878876746218, 127.06751070252072],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_6704c967135cc5ba1f890207963b732e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_275d522adf64206d0c988c850425f0b8 = $(`<div id="html_275d522adf64206d0c988c850425f0b8" style="width: 100.0%; height: 100.0%;">         <b>상계초등학교</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -2.4%<br>         객단가: 37,828원         </div>`)[0];
+                popup_6704c967135cc5ba1f890207963b732e.setContent(html_275d522adf64206d0c988c850425f0b8);
+            
+        
+
+        circle_marker_aa6d261161866d75804b5af60de9ca9f.bindPopup(popup_6704c967135cc5ba1f890207963b732e)
+        ;
+
+        
+    
+    
+            var circle_marker_55d16a0ec435b0960627f8dbc06f66b4 = L.circleMarker(
+                [37.65738803037677, 127.07451309787947],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_5db56717e4b62448cc16dd019b11eb17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11e649554212a74afb09820f9436aa54 = $(`<div id="html_11e649554212a74afb09820f9436aa54" style="width: 100.0%; height: 100.0%;">         <b>중계초등학교</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 11<br>         매출증감률: -2.4%<br>         객단가: 35,245원         </div>`)[0];
+                popup_5db56717e4b62448cc16dd019b11eb17.setContent(html_11e649554212a74afb09820f9436aa54);
+            
+        
+
+        circle_marker_55d16a0ec435b0960627f8dbc06f66b4.bindPopup(popup_5db56717e4b62448cc16dd019b11eb17)
+        ;
+
+        
+    
+    
+            var circle_marker_ba83a678a9ba421fc8eb6ecfc0837273 = L.circleMarker(
+                [37.65957999556309, 127.07031070024249],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_5d732cbc3979ccdadd7f46b2bdf1b1e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_021335c26f5e594563839068800df30b = $(`<div id="html_021335c26f5e594563839068800df30b" style="width: 100.0%; height: 100.0%;">         <b>상계중앙시장</b><br>         자치구: 노원구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 11<br>         매출증감률: -3.4%<br>         객단가: 37,320원         </div>`)[0];
+                popup_5d732cbc3979ccdadd7f46b2bdf1b1e7.setContent(html_021335c26f5e594563839068800df30b);
+            
+        
+
+        circle_marker_ba83a678a9ba421fc8eb6ecfc0837273.bindPopup(popup_5d732cbc3979ccdadd7f46b2bdf1b1e7)
+        ;
+
+        
+    
+    
+            var circle_marker_55682752a2380250ae593a353fead3cd = L.circleMarker(
+                [37.61777199035563, 127.05799308954444],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_0849a2cdb7cd33765d8dc0f5bc68f44a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8aebff571c6a8424c49682b4b9cc4ea9 = $(`<div id="html_8aebff571c6a8424c49682b4b9cc4ea9" style="width: 100.0%; height: 100.0%;">         <b>광운대학교 남단</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -3.7%<br>         객단가: 14,327원         </div>`)[0];
+                popup_0849a2cdb7cd33765d8dc0f5bc68f44a.setContent(html_8aebff571c6a8424c49682b4b9cc4ea9);
+            
+        
+
+        circle_marker_55682752a2380250ae593a353fead3cd.bindPopup(popup_0849a2cdb7cd33765d8dc0f5bc68f44a)
+        ;
+
+        
+    
+    
+            var circle_marker_66aba22d6c0373f960303ce8dc4a2c45 = L.circleMarker(
+                [37.6361436126196, 127.07327961483666],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_3f929da9d693008da26c4c82d95510e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d2fe41e82d54cacc0edc7eab1842ca9 = $(`<div id="html_7d2fe41e82d54cacc0edc7eab1842ca9" style="width: 100.0%; height: 100.0%;">         <b>대진고등학교</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -3.8%<br>         객단가: 34,341원         </div>`)[0];
+                popup_3f929da9d693008da26c4c82d95510e5.setContent(html_7d2fe41e82d54cacc0edc7eab1842ca9);
+            
+        
+
+        circle_marker_66aba22d6c0373f960303ce8dc4a2c45.bindPopup(popup_3f929da9d693008da26c4c82d95510e5)
+        ;
+
+        
+    
+    
+            var circle_marker_fd903fb12d0d547976a1a227977b368c = L.circleMarker(
+                [37.67578860179999, 127.05315257704137],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_4a8b3a1037dab39fba40b35b5d94147a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbb3e35007e3be9bd34036c8a5070ac9 = $(`<div id="html_bbb3e35007e3be9bd34036c8a5070ac9" style="width: 100.0%; height: 100.0%;">         <b>수락산역 4번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -3.8%<br>         객단가: 19,670원         </div>`)[0];
+                popup_4a8b3a1037dab39fba40b35b5d94147a.setContent(html_bbb3e35007e3be9bd34036c8a5070ac9);
+            
+        
+
+        circle_marker_fd903fb12d0d547976a1a227977b368c.bindPopup(popup_4a8b3a1037dab39fba40b35b5d94147a)
+        ;
+
+        
+    
+    
+            var circle_marker_cd9c3c4608882c04286dc0154cfb3cd9 = L.circleMarker(
+                [37.62105976995063, 127.05964942521172],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_2bf6c5cb04c9d5644963c680e1399a34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f548264c103d1202966c090516dd4d1 = $(`<div id="html_1f548264c103d1202966c090516dd4d1" style="width: 100.0%; height: 100.0%;">         <b>광운대역 1번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 저가성장<br>         RFM합계: 7<br>         매출증감률: -4.6%<br>         객단가: 13,500원         </div>`)[0];
+                popup_2bf6c5cb04c9d5644963c680e1399a34.setContent(html_1f548264c103d1202966c090516dd4d1);
+            
+        
+
+        circle_marker_cd9c3c4608882c04286dc0154cfb3cd9.bindPopup(popup_2bf6c5cb04c9d5644963c680e1399a34)
+        ;
+
+        
+    
+    
+            var circle_marker_b7b0f131a26a40d0bf7fec4c95e25a2e = L.circleMarker(
+                [37.660775854840864, 127.07430115109656],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_65a333dead50a9ade9204560686d01af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_388e33804975d6d988380c4c3d2d302d = $(`<div id="html_388e33804975d6d988380c4c3d2d302d" style="width: 100.0%; height: 100.0%;">         <b>상계역</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 저가성장<br>         RFM합계: 9<br>         매출증감률: -4.6%<br>         객단가: 19,696원         </div>`)[0];
+                popup_65a333dead50a9ade9204560686d01af.setContent(html_388e33804975d6d988380c4c3d2d302d);
+            
+        
+
+        circle_marker_b7b0f131a26a40d0bf7fec4c95e25a2e.bindPopup(popup_65a333dead50a9ade9204560686d01af)
+        ;
+
+        
+    
+    
+            var circle_marker_f601d1f153d017b53178ff23a6cd4e02 = L.circleMarker(
+                [37.65639990821615, 127.06967307359568],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_fd82687981f3f338829a73cb0d17c96a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce687ba1a7b44faaf42e73dcab3943ca = $(`<div id="html_ce687ba1a7b44faaf42e73dcab3943ca" style="width: 100.0%; height: 100.0%;">         <b>상계2동주민센터</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -5.3%<br>         객단가: 30,791원         </div>`)[0];
+                popup_fd82687981f3f338829a73cb0d17c96a.setContent(html_ce687ba1a7b44faaf42e73dcab3943ca);
+            
+        
+
+        circle_marker_f601d1f153d017b53178ff23a6cd4e02.bindPopup(popup_fd82687981f3f338829a73cb0d17c96a)
+        ;
+
+        
+    
+    
+            var circle_marker_ee9fd878c1079843c94c1e80cca892c4 = L.circleMarker(
+                [37.676426447476146, 127.05710918618395],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_99b37f9c8fda3233e425bb7053eda914 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_981fc10115bbaa8026edcb2d73551f62 = $(`<div id="html_981fc10115bbaa8026edcb2d73551f62" style="width: 100.0%; height: 100.0%;">         <b>수락산디자인거리</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -6.4%<br>         객단가: 21,414원         </div>`)[0];
+                popup_99b37f9c8fda3233e425bb7053eda914.setContent(html_981fc10115bbaa8026edcb2d73551f62);
+            
+        
+
+        circle_marker_ee9fd878c1079843c94c1e80cca892c4.bindPopup(popup_99b37f9c8fda3233e425bb7053eda914)
+        ;
+
+        
+    
+    
+            var circle_marker_312c95ae9147592d9ec3ec83e3121095 = L.circleMarker(
+                [37.62956456313447, 127.07620725251864],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_c441ea3cbf11a2272b3fde4ca505602e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a7cc1b2e99850777ceafa363c236a71 = $(`<div id="html_2a7cc1b2e99850777ceafa363c236a71" style="width: 100.0%; height: 100.0%;">         <b>서울과학기술대</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -8.1%<br>         객단가: 15,626원         </div>`)[0];
+                popup_c441ea3cbf11a2272b3fde4ca505602e.setContent(html_2a7cc1b2e99850777ceafa363c236a71);
+            
+        
+
+        circle_marker_312c95ae9147592d9ec3ec83e3121095.bindPopup(popup_c441ea3cbf11a2272b3fde4ca505602e)
+        ;
+
+        
+    
+    
+            var circle_marker_1ad8210d876abe0af0d500bbb5c82d90 = L.circleMarker(
+                [37.67269635062584, 127.05719700834393],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_49f9a162b1048664ce485d339aaf911a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53bbc063596a7b7e7a66f4771cae9ac2 = $(`<div id="html_53bbc063596a7b7e7a66f4771cae9ac2" style="width: 100.0%; height: 100.0%;">         <b>노원초등학교</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -9.5%<br>         객단가: 42,519원         </div>`)[0];
+                popup_49f9a162b1048664ce485d339aaf911a.setContent(html_53bbc063596a7b7e7a66f4771cae9ac2);
+            
+        
+
+        circle_marker_1ad8210d876abe0af0d500bbb5c82d90.bindPopup(popup_49f9a162b1048664ce485d339aaf911a)
+        ;
+
+        
+    
+    
+            var circle_marker_756468a7096e79dfa0d138a900433b91 = L.circleMarker(
+                [37.671287453233404, 127.07868690249893],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_1fd860d4991d61edcc3b5194692707f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94af935b61a7c0da765c0e9b77e2e83c = $(`<div id="html_94af935b61a7c0da765c0e9b77e2e83c" style="width: 100.0%; height: 100.0%;">         <b>당고개역 5번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -9.5%<br>         객단가: 6,917원         </div>`)[0];
+                popup_1fd860d4991d61edcc3b5194692707f1.setContent(html_94af935b61a7c0da765c0e9b77e2e83c);
+            
+        
+
+        circle_marker_756468a7096e79dfa0d138a900433b91.bindPopup(popup_1fd860d4991d61edcc3b5194692707f1)
+        ;
+
+        
+    
+    
+            var circle_marker_a5d710cc69e868cc8deac8d4d9835e00 = L.circleMarker(
+                [37.61705668079721, 127.06477720668221],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_4634f859ffae70b6b4aba4ac7b17040a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c58f7fca3543e92cf3e507fc5370e01 = $(`<div id="html_6c58f7fca3543e92cf3e507fc5370e01" style="width: 100.0%; height: 100.0%;">         <b>석계역 2번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -9.9%<br>         객단가: 24,878원         </div>`)[0];
+                popup_4634f859ffae70b6b4aba4ac7b17040a.setContent(html_6c58f7fca3543e92cf3e507fc5370e01);
+            
+        
+
+        circle_marker_a5d710cc69e868cc8deac8d4d9835e00.bindPopup(popup_4634f859ffae70b6b4aba4ac7b17040a)
+        ;
+
+        
+    
+    
+            var circle_marker_c9fe78f0e3caeb6d5234c7186ddc83ce = L.circleMarker(
+                [37.65916053762221, 127.06323847595549],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_c871e9ce3759cad0592e510fa52cdd8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ee17e0f2cbf00570d7f7b25cab8f2bb = $(`<div id="html_6ee17e0f2cbf00570d7f7b25cab8f2bb" style="width: 100.0%; height: 100.0%;">         <b>노원역 9번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -11.2%<br>         객단가: 120,679원         </div>`)[0];
+                popup_c871e9ce3759cad0592e510fa52cdd8e.setContent(html_6ee17e0f2cbf00570d7f7b25cab8f2bb);
+            
+        
+
+        circle_marker_c9fe78f0e3caeb6d5234c7186ddc83ce.bindPopup(popup_c871e9ce3759cad0592e510fa52cdd8e)
+        ;
+
+        
+    
+    
+            var circle_marker_c5fff49f24304d6479ff8a7c80a2a155 = L.circleMarker(
+                [37.667278815856335, 127.07759457818734],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_4128bc4ed1db1b38ba88130abd649aa3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b1edc342b42378dc0a0165162d2f6a7 = $(`<div id="html_4b1edc342b42378dc0a0165162d2f6a7" style="width: 100.0%; height: 100.0%;">         <b>당고개역 2번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -12.1%<br>         객단가: 25,578원         </div>`)[0];
+                popup_4128bc4ed1db1b38ba88130abd649aa3.setContent(html_4b1edc342b42378dc0a0165162d2f6a7);
+            
+        
+
+        circle_marker_c5fff49f24304d6479ff8a7c80a2a155.bindPopup(popup_4128bc4ed1db1b38ba88130abd649aa3)
+        ;
+
+        
+    
+    
+            var circle_marker_5da4ec839fb1547fd046426d9aec6fbb = L.circleMarker(
+                [37.63272832724608, 127.05808401363569],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_aa6f98328eff9928759e9eb24b3f7262 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0df26fc96410d6e1ae45198a3c01d1da = $(`<div id="html_0df26fc96410d6e1ae45198a3c01d1da" style="width: 100.0%; height: 100.0%;">         <b>월계역 3번</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 위험_상권<br>         성장유형: 침체<br>         RFM합계: 4<br>         매출증감률: -12.2%<br>         객단가: 10,273원         </div>`)[0];
+                popup_aa6f98328eff9928759e9eb24b3f7262.setContent(html_0df26fc96410d6e1ae45198a3c01d1da);
+            
+        
+
+        circle_marker_5da4ec839fb1547fd046426d9aec6fbb.bindPopup(popup_aa6f98328eff9928759e9eb24b3f7262)
+        ;
+
+        
+    
+    
+            var circle_marker_752a111a1a4e13bcaa983111769f0b5f = L.circleMarker(
+                [37.650445067206704, 127.08261968164804],
+                {"bubblingMouseEvents": true, "color": "#2196F3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2196F3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_388533300530afd2fb3c5271eea582b1);
+        
+    
+        var popup_c268218a6e8e13c81489ac729aca0fb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15eeeeb7dcc3801d480709c9b3d4c1fd = $(`<div id="html_15eeeeb7dcc3801d480709c9b3d4c1fd" style="width: 100.0%; height: 100.0%;">         <b>영신여고</b><br>         자치구: 노원구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -18.6%<br>         객단가: 14,901원         </div>`)[0];
+                popup_c268218a6e8e13c81489ac729aca0fb4.setContent(html_15eeeeb7dcc3801d480709c9b3d4c1fd);
+            
+        
+
+        circle_marker_752a111a1a4e13bcaa983111769f0b5f.bindPopup(popup_c268218a6e8e13c81489ac729aca0fb4)
+        ;
+
+        
+    
+</script>
+</html>
