@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e17f6e8c70d798e5d1c7581e43edf620 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e17f6e8c70d798e5d1c7581e43edf620" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e17f6e8c70d798e5d1c7581e43edf620 = L.map(
+                "map_e17f6e8c70d798e5d1c7581e43edf620",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d4277a597cce72f6951f1397477bc76 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9d4277a597cce72f6951f1397477bc76.addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+            var circle_marker_13104a010debbf7c34d2f0f75dc9c67f = L.circleMarker(
+                [37.48592712264513, 126.93841164295765],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_9b9709f9d2a28ca96597221988de0a9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b534f0f58feccc9ac9e6e6917be6d3c = $(`<div id="html_5b534f0f58feccc9ac9e6e6917be6d3c" style="width: 100.0%; height: 100.0%;">         <b>봉일시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 9<br>         매출증감률: 261.5%<br>         객단가: 26,828원         </div>`)[0];
+                popup_9b9709f9d2a28ca96597221988de0a9f.setContent(html_5b534f0f58feccc9ac9e6e6917be6d3c);
+            
+        
+
+        circle_marker_13104a010debbf7c34d2f0f75dc9c67f.bindPopup(popup_9b9709f9d2a28ca96597221988de0a9f)
+        ;
+
+        
+    
+    
+            var circle_marker_b92e8c7af64da9112a4d6b13c0acb0f1 = L.circleMarker(
+                [37.488373527251575, 126.94814514042771],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_d8d0494a71a5139f9e1691baff69089e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1a6de37761563aa5af72483f9483f05 = $(`<div id="html_d1a6de37761563aa5af72483f9483f05" style="width: 100.0%; height: 100.0%;">         <b>구암초등학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 42.8%<br>         객단가: 34,232원         </div>`)[0];
+                popup_d8d0494a71a5139f9e1691baff69089e.setContent(html_d1a6de37761563aa5af72483f9483f05);
+            
+        
+
+        circle_marker_b92e8c7af64da9112a4d6b13c0acb0f1.bindPopup(popup_d8d0494a71a5139f9e1691baff69089e)
+        ;
+
+        
+    
+    
+            var circle_marker_c771879c811f93bcde4e4cb4170b558a = L.circleMarker(
+                [37.46344010028365, 126.92647104105255],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_f0270098a44d90d100e7bb5c5b8c3fd9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca9e3cf4d4a7686c67be909b6dc029e3 = $(`<div id="html_ca9e3cf4d4a7686c67be909b6dc029e3" style="width: 100.0%; height: 100.0%;">         <b>신림주공2단지(광신고등학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 30.7%<br>         객단가: 236,185원         </div>`)[0];
+                popup_f0270098a44d90d100e7bb5c5b8c3fd9.setContent(html_ca9e3cf4d4a7686c67be909b6dc029e3);
+            
+        
+
+        circle_marker_c771879c811f93bcde4e4cb4170b558a.bindPopup(popup_f0270098a44d90d100e7bb5c5b8c3fd9)
+        ;
+
+        
+    
+    
+            var circle_marker_2e33768ae35f9dc011e68b9dc8469e1f = L.circleMarker(
+                [37.47905502019646, 126.94360664715312],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_487ab15f5f17a2dcd39fac41b0a762f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1ff0a50833cf79a012baeb8b3f8b3fc = $(`<div id="html_f1ff0a50833cf79a012baeb8b3f8b3fc" style="width: 100.0%; height: 100.0%;">         <b>청룡동주민센터</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 20.9%<br>         객단가: 31,744원         </div>`)[0];
+                popup_487ab15f5f17a2dcd39fac41b0a762f8.setContent(html_f1ff0a50833cf79a012baeb8b3f8b3fc);
+            
+        
+
+        circle_marker_2e33768ae35f9dc011e68b9dc8469e1f.bindPopup(popup_487ab15f5f17a2dcd39fac41b0a762f8)
+        ;
+
+        
+    
+    
+            var circle_marker_f95e82873dc802e635b0571b6e17e5f4 = L.circleMarker(
+                [37.473023526393646, 126.93625169251668],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_9159287aeefa778e59213d52348cac5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3da45d9fe5eb1cf9e1aa66bdded0ad3e = $(`<div id="html_3da45d9fe5eb1cf9e1aa66bdded0ad3e" style="width: 100.0%; height: 100.0%;">         <b>신성초등학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 15.5%<br>         객단가: 18,649원         </div>`)[0];
+                popup_9159287aeefa778e59213d52348cac5b.setContent(html_3da45d9fe5eb1cf9e1aa66bdded0ad3e);
+            
+        
+
+        circle_marker_f95e82873dc802e635b0571b6e17e5f4.bindPopup(popup_9159287aeefa778e59213d52348cac5b)
+        ;
+
+        
+    
+    
+            var circle_marker_b1862d78725da1c5d20a9b24b0046c88 = L.circleMarker(
+                [37.46920403931831, 126.92250888426989],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_d9102be267b44dc3a386196a4196d6a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_173f153ae94239051cbf4c15b12af021 = $(`<div id="html_173f153ae94239051cbf4c15b12af021" style="width: 100.0%; height: 100.0%;">         <b>난우중학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 15.0%<br>         객단가: 34,168원         </div>`)[0];
+                popup_d9102be267b44dc3a386196a4196d6a7.setContent(html_173f153ae94239051cbf4c15b12af021);
+            
+        
+
+        circle_marker_b1862d78725da1c5d20a9b24b0046c88.bindPopup(popup_d9102be267b44dc3a386196a4196d6a7)
+        ;
+
+        
+    
+    
+            var circle_marker_ebce2b7cdfd80082c9516236eb7125df = L.circleMarker(
+                [37.48615171097216, 126.95732785728279],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_a2cb14afd42f02ff7728c2b24b715ebf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29ffd2386340cd7cc91112d00ae7cce6 = $(`<div id="html_29ffd2386340cd7cc91112d00ae7cce6" style="width: 100.0%; height: 100.0%;">         <b>관악우성아파트</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 9<br>         매출증감률: 14.4%<br>         객단가: 21,783원         </div>`)[0];
+                popup_a2cb14afd42f02ff7728c2b24b715ebf.setContent(html_29ffd2386340cd7cc91112d00ae7cce6);
+            
+        
+
+        circle_marker_ebce2b7cdfd80082c9516236eb7125df.bindPopup(popup_a2cb14afd42f02ff7728c2b24b715ebf)
+        ;
+
+        
+    
+    
+            var circle_marker_83e6050c56840a2b34175ded53c779a2 = L.circleMarker(
+                [37.48265899049768, 126.9270288352229],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_1c503e99f84c22df38379839add42e9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bceb346c343b6be63c2f9f8372f112ba = $(`<div id="html_bceb346c343b6be63c2f9f8372f112ba" style="width: 100.0%; height: 100.0%;">         <b>신원시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 14.2%<br>         객단가: 19,786원         </div>`)[0];
+                popup_1c503e99f84c22df38379839add42e9e.setContent(html_bceb346c343b6be63c2f9f8372f112ba);
+            
+        
+
+        circle_marker_83e6050c56840a2b34175ded53c779a2.bindPopup(popup_1c503e99f84c22df38379839add42e9e)
+        ;
+
+        
+    
+    
+            var circle_marker_5205afd1c28bd32eefe0e74f8d55fc53 = L.circleMarker(
+                [37.48157840479633, 126.92804744253655],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_20373bc4a83ba55b07f036be40afb989 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a6c74ab58f0265939547d9fae7fb15b = $(`<div id="html_8a6c74ab58f0265939547d9fae7fb15b" style="width: 100.0%; height: 100.0%;">         <b>관악종합시장(신원시장)</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 8<br>         매출증감률: 10.8%<br>         객단가: 17,414원         </div>`)[0];
+                popup_20373bc4a83ba55b07f036be40afb989.setContent(html_8a6c74ab58f0265939547d9fae7fb15b);
+            
+        
+
+        circle_marker_5205afd1c28bd32eefe0e74f8d55fc53.bindPopup(popup_20373bc4a83ba55b07f036be40afb989)
+        ;
+
+        
+    
+    
+            var circle_marker_72af6b4ea94fb5172ac26a46553359b1 = L.circleMarker(
+                [37.48176193235565, 126.91925103502298],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_747e426814ac7b4a0372276ca8971ff6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5f5673273295d1d43980260304421cc = $(`<div id="html_e5f5673273295d1d43980260304421cc" style="width: 100.0%; height: 100.0%;">         <b>호림박물관(성보고등학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 6.6%<br>         객단가: 50,416원         </div>`)[0];
+                popup_747e426814ac7b4a0372276ca8971ff6.setContent(html_e5f5673273295d1d43980260304421cc);
+            
+        
+
+        circle_marker_72af6b4ea94fb5172ac26a46553359b1.bindPopup(popup_747e426814ac7b4a0372276ca8971ff6)
+        ;
+
+        
+    
+    
+            var circle_marker_7295b1eb43798ca88a043def3560ef4a = L.circleMarker(
+                [37.474409737121945, 126.95254116974414],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_8a7a4dc0b33f17a74d5459aad62eeec1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a7da6042348bd5df2ada6127c0ae114 = $(`<div id="html_1a7da6042348bd5df2ada6127c0ae114" style="width: 100.0%; height: 100.0%;">         <b>관악소방서(문영여고)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 8<br>         매출증감률: 5.4%<br>         객단가: 17,301원         </div>`)[0];
+                popup_8a7a4dc0b33f17a74d5459aad62eeec1.setContent(html_1a7da6042348bd5df2ada6127c0ae114);
+            
+        
+
+        circle_marker_7295b1eb43798ca88a043def3560ef4a.bindPopup(popup_8a7a4dc0b33f17a74d5459aad62eeec1)
+        ;
+
+        
+    
+    
+            var circle_marker_083f6339c7c37285583c68ef95a3231c = L.circleMarker(
+                [37.4718591698255, 126.91827817871315],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_46da2bd87f62b1d329ff2652a4cb104b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5dba8628b3b6c9d0c96caee8df287d03 = $(`<div id="html_5dba8628b3b6c9d0c96caee8df287d03" style="width: 100.0%; height: 100.0%;">         <b>난곡초등학교(난곡동벽화마을)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 9<br>         매출증감률: 4.9%<br>         객단가: 20,992원         </div>`)[0];
+                popup_46da2bd87f62b1d329ff2652a4cb104b.setContent(html_5dba8628b3b6c9d0c96caee8df287d03);
+            
+        
+
+        circle_marker_083f6339c7c37285583c68ef95a3231c.bindPopup(popup_46da2bd87f62b1d329ff2652a4cb104b)
+        ;
+
+        
+    
+    
+            var circle_marker_421c49485ce13ea7e54512e995b1a3f3 = L.circleMarker(
+                [37.488915068375626, 126.93220148830412],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_93c8c458cfd5ed436e172d472f3fe14e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa41ce12efc9b4f2184e6c198f2b4aac = $(`<div id="html_aa41ce12efc9b4f2184e6c198f2b4aac" style="width: 100.0%; height: 100.0%;">         <b>보라매동주민센터(당곡고등학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 7<br>         매출증감률: 4.2%<br>         객단가: 14,308원         </div>`)[0];
+                popup_93c8c458cfd5ed436e172d472f3fe14e.setContent(html_aa41ce12efc9b4f2184e6c198f2b4aac);
+            
+        
+
+        circle_marker_421c49485ce13ea7e54512e995b1a3f3.bindPopup(popup_93c8c458cfd5ed436e172d472f3fe14e)
+        ;
+
+        
+    
+    
+            var circle_marker_53914a318c3f21819b6e3fe85314513d = L.circleMarker(
+                [37.48223349725715, 126.92382957139145],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_84e7b3b326c73907030f1d549c1f6377 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ca856dce68b721360b25f57e8518607 = $(`<div id="html_1ca856dce68b721360b25f57e8518607" style="width: 100.0%; height: 100.0%;">         <b>국제신학대학원대학교(남서울중학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 8<br>         매출증감률: 4.0%<br>         객단가: 12,443원         </div>`)[0];
+                popup_84e7b3b326c73907030f1d549c1f6377.setContent(html_1ca856dce68b721360b25f57e8518607);
+            
+        
+
+        circle_marker_53914a318c3f21819b6e3fe85314513d.bindPopup(popup_84e7b3b326c73907030f1d549c1f6377)
+        ;
+
+        
+    
+    
+            var circle_marker_699558cfac533b23c3c8127fc66a873d = L.circleMarker(
+                [37.48705494828831, 126.92548680651547],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_6490b1d3cdba85e2ddab797a4fbafbd9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe13817958fde676331b604ec4fc6f12 = $(`<div id="html_fe13817958fde676331b604ec4fc6f12" style="width: 100.0%; height: 100.0%;">         <b>신림역 5번(신림동주민센터, 신림동별빛거리)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 진짜성장<br>         RFM합계: 10<br>         매출증감률: 3.4%<br>         객단가: 14,793원         </div>`)[0];
+                popup_6490b1d3cdba85e2ddab797a4fbafbd9.setContent(html_fe13817958fde676331b604ec4fc6f12);
+            
+        
+
+        circle_marker_699558cfac533b23c3c8127fc66a873d.bindPopup(popup_6490b1d3cdba85e2ddab797a4fbafbd9)
+        ;
+
+        
+    
+    
+            var circle_marker_79d3dc158318420c3cec7847159b4bba = L.circleMarker(
+                [37.482630091537494, 126.91114345468043],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_6ea017000b1c4511472848cf6b14dc93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41cff455acc22153c5cdbe641b216aac = $(`<div id="html_41cff455acc22153c5cdbe641b216aac" style="width: 100.0%; height: 100.0%;">         <b>조원동 펭귄시장(신림중앙시장)</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 9<br>         매출증감률: 3.3%<br>         객단가: 22,983원         </div>`)[0];
+                popup_6ea017000b1c4511472848cf6b14dc93.setContent(html_41cff455acc22153c5cdbe641b216aac);
+            
+        
+
+        circle_marker_79d3dc158318420c3cec7847159b4bba.bindPopup(popup_6ea017000b1c4511472848cf6b14dc93)
+        ;
+
+        
+    
+    
+            var circle_marker_2b01af4a6edc6ca465a6c5390bc32723 = L.circleMarker(
+                [37.473536847262565, 126.92092171529349],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_a3c9d40b600655654a2ac86376d17b9d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9681e57cff440e4711091b3206795dee = $(`<div id="html_9681e57cff440e4711091b3206795dee" style="width: 100.0%; height: 100.0%;">         <b>남강고등학교(남강중학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 10<br>         매출증감률: 2.4%<br>         객단가: 16,742원         </div>`)[0];
+                popup_a3c9d40b600655654a2ac86376d17b9d.setContent(html_9681e57cff440e4711091b3206795dee);
+            
+        
+
+        circle_marker_2b01af4a6edc6ca465a6c5390bc32723.bindPopup(popup_a3c9d40b600655654a2ac86376d17b9d)
+        ;
+
+        
+    
+    
+            var circle_marker_f68a957f4f1f3464fc5e70cf381f551c = L.circleMarker(
+                [37.470237198649365, 126.93228618812465],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_37cd2d3a57cd194d7a5984b24a89d8ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17bcf30876ecb57a721e3a0b4f78e7ed = $(`<div id="html_17bcf30876ecb57a721e3a0b4f78e7ed" style="width: 100.0%; height: 100.0%;">         <b>삼성동 시장(삼성동시장)</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 8<br>         매출증감률: 2.1%<br>         객단가: 14,041원         </div>`)[0];
+                popup_37cd2d3a57cd194d7a5984b24a89d8ac.setContent(html_17bcf30876ecb57a721e3a0b4f78e7ed);
+            
+        
+
+        circle_marker_f68a957f4f1f3464fc5e70cf381f551c.bindPopup(popup_37cd2d3a57cd194d7a5984b24a89d8ac)
+        ;
+
+        
+    
+    
+            var circle_marker_f8e5c4029cdae6822126bc9d6c3bef2c = L.circleMarker(
+                [37.48434470072742, 126.94521951542806],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_c9d38ba50c337d59e2338e6845020bd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33952b3c7a8166421cf4262ee7b4b7a9 = $(`<div id="html_33952b3c7a8166421cf4262ee7b4b7a9" style="width: 100.0%; height: 100.0%;">         <b>봉천역 6번</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 9<br>         매출증감률: 1.3%<br>         객단가: 30,588원         </div>`)[0];
+                popup_c9d38ba50c337d59e2338e6845020bd0.setContent(html_33952b3c7a8166421cf4262ee7b4b7a9);
+            
+        
+
+        circle_marker_f8e5c4029cdae6822126bc9d6c3bef2c.bindPopup(popup_c9d38ba50c337d59e2338e6845020bd0)
+        ;
+
+        
+    
+    
+            var circle_marker_e8d6dca6bc840da1b88e28a651a20965 = L.circleMarker(
+                [37.48009212372077, 126.94561832862236],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_803ce36a8737e9bbb1c91074c9a20d6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12256130880d509f8f37de98d6b89b94 = $(`<div id="html_12256130880d509f8f37de98d6b89b94" style="width: 100.0%; height: 100.0%;">         <b>봉천역 1번(관악초등학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 7<br>         매출증감률: 1.3%<br>         객단가: 13,082원         </div>`)[0];
+                popup_803ce36a8737e9bbb1c91074c9a20d6a.setContent(html_12256130880d509f8f37de98d6b89b94);
+            
+        
+
+        circle_marker_e8d6dca6bc840da1b88e28a651a20965.bindPopup(popup_803ce36a8737e9bbb1c91074c9a20d6a)
+        ;
+
+        
+    
+    
+            var circle_marker_ec7f01dfff8b15bedaad040cedc386c5 = L.circleMarker(
+                [37.484405896181045, 126.9122380925766],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_e4ab8c0f0f4b302288e34d64553ebfc0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6485ab19c394f639635ff1d7b721d051 = $(`<div id="html_6485ab19c394f639635ff1d7b721d051" style="width: 100.0%; height: 100.0%;">         <b>신대방역 2번</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 스타_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 1.1%<br>         객단가: 22,727원         </div>`)[0];
+                popup_e4ab8c0f0f4b302288e34d64553ebfc0.setContent(html_6485ab19c394f639635ff1d7b721d051);
+            
+        
+
+        circle_marker_ec7f01dfff8b15bedaad040cedc386c5.bindPopup(popup_e4ab8c0f0f4b302288e34d64553ebfc0)
+        ;
+
+        
+    
+    
+            var circle_marker_c981af682f06549a7ad58ed7ecd8fc91 = L.circleMarker(
+                [37.484294566462, 126.95446834536885],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_5f3aa431fbd102be2545d0b704fa6f73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79edd2998bc1483ffd1aa24c4670fc13 = $(`<div id="html_79edd2998bc1483ffd1aa24c4670fc13" style="width: 100.0%; height: 100.0%;">         <b>봉천중앙시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 7<br>         매출증감률: 0.7%<br>         객단가: 16,431원         </div>`)[0];
+                popup_5f3aa431fbd102be2545d0b704fa6f73.setContent(html_79edd2998bc1483ffd1aa24c4670fc13);
+            
+        
+
+        circle_marker_c981af682f06549a7ad58ed7ecd8fc91.bindPopup(popup_5f3aa431fbd102be2545d0b704fa6f73)
+        ;
+
+        
+    
+    
+            var circle_marker_f77b6bf5992bcc01bd22d7614cc552f8 = L.circleMarker(
+                [37.48609406886688, 126.91678147647731],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_78a597c6aa55dfd27d1cc6d09b1f0f39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e022b5968039881eaef3325fa92f8d7 = $(`<div id="html_9e022b5968039881eaef3325fa92f8d7" style="width: 100.0%; height: 100.0%;">         <b>관악신사시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 진짜성장<br>         RFM합계: 9<br>         매출증감률: 0.5%<br>         객단가: 14,409원         </div>`)[0];
+                popup_78a597c6aa55dfd27d1cc6d09b1f0f39.setContent(html_9e022b5968039881eaef3325fa92f8d7);
+            
+        
+
+        circle_marker_f77b6bf5992bcc01bd22d7614cc552f8.bindPopup(popup_78a597c6aa55dfd27d1cc6d09b1f0f39)
+        ;
+
+        
+    
+    
+            var circle_marker_54900d24101bf2a500cec62923808557 = L.circleMarker(
+                [37.485206743766895, 126.93923762562211],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_7899d1c2356b060d7edec5e351fa6be5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_862a7dcfb354c59511c2154b6b6ea574 = $(`<div id="html_862a7dcfb354c59511c2154b6b6ea574" style="width: 100.0%; height: 100.0%;">         <b>봉천역 4번(봉천110안전센터)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 10<br>         매출증감률: 0.4%<br>         객단가: 33,241원         </div>`)[0];
+                popup_7899d1c2356b060d7edec5e351fa6be5.setContent(html_862a7dcfb354c59511c2154b6b6ea574);
+            
+        
+
+        circle_marker_54900d24101bf2a500cec62923808557.bindPopup(popup_7899d1c2356b060d7edec5e351fa6be5)
+        ;
+
+        
+    
+    
+            var circle_marker_4a8b6781703e69fa4d440befebb0b523 = L.circleMarker(
+                [37.48471089568093, 126.9232504169453],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_b79fca3e7a01ba6f796efcdb57e00df9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a790eb40f5da4ebbaf715cc28896f225 = $(`<div id="html_a790eb40f5da4ebbaf715cc28896f225" style="width: 100.0%; height: 100.0%;">         <b>남부초등학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 9<br>         매출증감률: 0.2%<br>         객단가: 76,154원         </div>`)[0];
+                popup_b79fca3e7a01ba6f796efcdb57e00df9.setContent(html_a790eb40f5da4ebbaf715cc28896f225);
+            
+        
+
+        circle_marker_4a8b6781703e69fa4d440befebb0b523.bindPopup(popup_b79fca3e7a01ba6f796efcdb57e00df9)
+        ;
+
+        
+    
+    
+            var circle_marker_1ca18510bcec12e717d14d4219b0ee0d = L.circleMarker(
+                [37.47437829187288, 126.96584729199395],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_4db09ab376c4a78dc46235b16c4744e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc76d4d4cf36b5fbc7bb08a66c49dcd3 = $(`<div id="html_bc76d4d4cf36b5fbc7bb08a66c49dcd3" style="width: 100.0%; height: 100.0%;">         <b>인헌시장(원당종합시장)</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 9<br>         매출증감률: 0.2%<br>         객단가: 16,595원         </div>`)[0];
+                popup_4db09ab376c4a78dc46235b16c4744e2.setContent(html_bc76d4d4cf36b5fbc7bb08a66c49dcd3);
+            
+        
+
+        circle_marker_1ca18510bcec12e717d14d4219b0ee0d.bindPopup(popup_4db09ab376c4a78dc46235b16c4744e2)
+        ;
+
+        
+    
+    
+            var circle_marker_a062e255817d427e80b92f90a7177173 = L.circleMarker(
+                [37.487223846511434, 126.93703112025764],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_afdef160d754f7467b39a5f2ade802da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6d8f3dc8d96eb4e0fea8756ac2bff13 = $(`<div id="html_b6d8f3dc8d96eb4e0fea8756ac2bff13" style="width: 100.0%; height: 100.0%;">         <b>은천초등학교(은천교앞)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 저가성장<br>         RFM합계: 8<br>         매출증감률: -0.7%<br>         객단가: 12,791원         </div>`)[0];
+                popup_afdef160d754f7467b39a5f2ade802da.setContent(html_b6d8f3dc8d96eb4e0fea8756ac2bff13);
+            
+        
+
+        circle_marker_a062e255817d427e80b92f90a7177173.bindPopup(popup_afdef160d754f7467b39a5f2ade802da)
+        ;
+
+        
+    
+    
+            var circle_marker_200b65889cd860cb04383537bc19f045 = L.circleMarker(
+                [37.48443937758363, 126.95618686302697],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_c1588a222034a35a55ef05a03f5ad987 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eea33cd0bac0b19b6a02f1ea883edef1 = $(`<div id="html_eea33cd0bac0b19b6a02f1ea883edef1" style="width: 100.0%; height: 100.0%;">         <b>관악중부시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -0.9%<br>         객단가: 18,900원         </div>`)[0];
+                popup_c1588a222034a35a55ef05a03f5ad987.setContent(html_eea33cd0bac0b19b6a02f1ea883edef1);
+            
+        
+
+        circle_marker_200b65889cd860cb04383537bc19f045.bindPopup(popup_c1588a222034a35a55ef05a03f5ad987)
+        ;
+
+        
+    
+    
+            var circle_marker_d8ef6e0d516c60a9165a36019a979630 = L.circleMarker(
+                [37.47420987457289, 126.97740115501247],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_3adab8e0a91a49fe0aefb98d1d948b1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61b416147ea3343c8d2c3905aec1a1ed = $(`<div id="html_61b416147ea3343c8d2c3905aec1a1ed" style="width: 100.0%; height: 100.0%;">         <b>사당역 4번</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -1.0%<br>         객단가: 19,484원         </div>`)[0];
+                popup_3adab8e0a91a49fe0aefb98d1d948b1b.setContent(html_61b416147ea3343c8d2c3905aec1a1ed);
+            
+        
+
+        circle_marker_d8ef6e0d516c60a9165a36019a979630.bindPopup(popup_3adab8e0a91a49fe0aefb98d1d948b1b)
+        ;
+
+        
+    
+    
+            var circle_marker_62154c439f64f419083d9b5e447b8abc = L.circleMarker(
+                [37.47534972675296, 126.93927952242284],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_4d6b3dc78f00ffe9370f32d80e11361e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0b2bf1b3fe5bec12fe2d5f8d314a3b8 = $(`<div id="html_f0b2bf1b3fe5bec12fe2d5f8d314a3b8" style="width: 100.0%; height: 100.0%;">         <b>영락고등학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 저가성장<br>         RFM합계: 7<br>         매출증감률: -1.3%<br>         객단가: 14,066원         </div>`)[0];
+                popup_4d6b3dc78f00ffe9370f32d80e11361e.setContent(html_f0b2bf1b3fe5bec12fe2d5f8d314a3b8);
+            
+        
+
+        circle_marker_62154c439f64f419083d9b5e447b8abc.bindPopup(popup_4d6b3dc78f00ffe9370f32d80e11361e)
+        ;
+
+        
+    
+    
+            var circle_marker_4f57247eae1989c6e5e6c17c1d32540d = L.circleMarker(
+                [37.48653478158153, 126.94659736185348],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_29a6f8ec156f4cd4fd89998887451607 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d99fa1af4bd86ad429d8e81e6b9f9253 = $(`<div id="html_d99fa1af4bd86ad429d8e81e6b9f9253" style="width: 100.0%; height: 100.0%;">         <b>봉천현대시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -2.7%<br>         객단가: 32,962원         </div>`)[0];
+                popup_29a6f8ec156f4cd4fd89998887451607.setContent(html_d99fa1af4bd86ad429d8e81e6b9f9253);
+            
+        
+
+        circle_marker_4f57247eae1989c6e5e6c17c1d32540d.bindPopup(popup_29a6f8ec156f4cd4fd89998887451607)
+        ;
+
+        
+    
+    
+            var circle_marker_394c6316f68c46d493c0dea8439cb63f = L.circleMarker(
+                [37.484284219236116, 126.95112160044752],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_ceb9c40795a162d7d835c34b09370933 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b5008f73dd68853ed3e49a7aed04342 = $(`<div id="html_3b5008f73dd68853ed3e49a7aed04342" style="width: 100.0%; height: 100.0%;">         <b>관악구 중앙길</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -3.5%<br>         객단가: 17,603원         </div>`)[0];
+                popup_ceb9c40795a162d7d835c34b09370933.setContent(html_3b5008f73dd68853ed3e49a7aed04342);
+            
+        
+
+        circle_marker_394c6316f68c46d493c0dea8439cb63f.bindPopup(popup_ceb9c40795a162d7d835c34b09370933)
+        ;
+
+        
+    
+    
+            var circle_marker_5bc6c263f804fd0254e4b54901032df3 = L.circleMarker(
+                [37.48095081268923, 126.95191519812431],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_44828f6b0dcecd05eb60ab455304aea4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6655ab47bc465210fac2aa524d6d6e90 = $(`<div id="html_6655ab47bc465210fac2aa524d6d6e90" style="width: 100.0%; height: 100.0%;">         <b>서울대입구역</b><br>         자치구: 관악구<br>         상권유형: 발달상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 12<br>         매출증감률: -3.9%<br>         객단가: 29,660원         </div>`)[0];
+                popup_44828f6b0dcecd05eb60ab455304aea4.setContent(html_6655ab47bc465210fac2aa524d6d6e90);
+            
+        
+
+        circle_marker_5bc6c263f804fd0254e4b54901032df3.bindPopup(popup_44828f6b0dcecd05eb60ab455304aea4)
+        ;
+
+        
+    
+    
+            var circle_marker_e0fe35500a1b33f48c63e46e02a5d519 = L.circleMarker(
+                [37.484724238201885, 126.93023791719077],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_c13df03bf4cb8abc81b27ced8809be9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd7a63789ad5a7fa06c2bbc8f21dfdd7 = $(`<div id="html_fd7a63789ad5a7fa06c2bbc8f21dfdd7" style="width: 100.0%; height: 100.0%;">         <b>신림역(신림)</b><br>         자치구: 관악구<br>         상권유형: 발달상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -4.0%<br>         객단가: 19,672원         </div>`)[0];
+                popup_c13df03bf4cb8abc81b27ced8809be9a.setContent(html_fd7a63789ad5a7fa06c2bbc8f21dfdd7);
+            
+        
+
+        circle_marker_e0fe35500a1b33f48c63e46e02a5d519.bindPopup(popup_c13df03bf4cb8abc81b27ced8809be9a)
+        ;
+
+        
+    
+    
+            var circle_marker_a58568af78778214f1465cd9eb07ce24 = L.circleMarker(
+                [37.47982945317871, 126.91315922448254],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_bbb6d61516c2e88deb774eaf0420e85e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fb6c8a2f3f326ae2f55c7958e14ae43 = $(`<div id="html_8fb6c8a2f3f326ae2f55c7958e14ae43" style="width: 100.0%; height: 100.0%;">         <b>미성초등학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -5.5%<br>         객단가: 22,497원         </div>`)[0];
+                popup_bbb6d61516c2e88deb774eaf0420e85e.setContent(html_8fb6c8a2f3f326ae2f55c7958e14ae43);
+            
+        
+
+        circle_marker_a58568af78778214f1465cd9eb07ce24.bindPopup(popup_bbb6d61516c2e88deb774eaf0420e85e)
+        ;
+
+        
+    
+    
+            var circle_marker_95e926f83221104600e099891a8867b1 = L.circleMarker(
+                [37.482930294055336, 126.92866799741944],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_d6d5c73e3b69c29c218673db8c6d24b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ce082dc6a12e46884d49c52f8770d8c = $(`<div id="html_4ce082dc6a12e46884d49c52f8770d8c" style="width: 100.0%; height: 100.0%;">         <b>서원동상점가</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -5.9%<br>         객단가: 18,683원         </div>`)[0];
+                popup_d6d5c73e3b69c29c218673db8c6d24b4.setContent(html_4ce082dc6a12e46884d49c52f8770d8c);
+            
+        
+
+        circle_marker_95e926f83221104600e099891a8867b1.bindPopup(popup_d6d5c73e3b69c29c218673db8c6d24b4)
+        ;
+
+        
+    
+    
+            var circle_marker_24af2a1b0eebb9ad8c5416049595f5b5 = L.circleMarker(
+                [37.47031189276306, 126.93701139594275],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_4c97bd70cd38848eec711b0f75a9ab17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec6b2a4547e449ec19ef6fc3b8cfa1bc = $(`<div id="html_ec6b2a4547e449ec19ef6fc3b8cfa1bc" style="width: 100.0%; height: 100.0%;">         <b>녹두거리(대학동)</b><br>         자치구: 관악구<br>         상권유형: 발달상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -6.2%<br>         객단가: 15,076원         </div>`)[0];
+                popup_4c97bd70cd38848eec711b0f75a9ab17.setContent(html_ec6b2a4547e449ec19ef6fc3b8cfa1bc);
+            
+        
+
+        circle_marker_24af2a1b0eebb9ad8c5416049595f5b5.bindPopup(popup_4c97bd70cd38848eec711b0f75a9ab17)
+        ;
+
+        
+    
+    
+            var circle_marker_a39beb658f712b208dcacdce1cb9dc04 = L.circleMarker(
+                [37.481646697842024, 126.95740956273038],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_9761fe62c505fa5d516b24f0101d077b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4d3a3d510afcf368810f35ee5fdc8cc = $(`<div id="html_d4d3a3d510afcf368810f35ee5fdc8cc" style="width: 100.0%; height: 100.0%;">         <b>서울대입구역 8번</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -6.3%<br>         객단가: 15,775원         </div>`)[0];
+                popup_9761fe62c505fa5d516b24f0101d077b.setContent(html_d4d3a3d510afcf368810f35ee5fdc8cc);
+            
+        
+
+        circle_marker_a39beb658f712b208dcacdce1cb9dc04.bindPopup(popup_9761fe62c505fa5d516b24f0101d077b)
+        ;
+
+        
+    
+    
+            var circle_marker_62af6dc81eec5756a5975fa89547b49d = L.circleMarker(
+                [37.480514744310774, 126.92727965292688],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_b88d840b16a7d1a05df73f3a1a4fafa5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_255559b6760ea06bcb191959778e2b2d = $(`<div id="html_255559b6760ea06bcb191959778e2b2d" style="width: 100.0%; height: 100.0%;">         <b>신원동주민센터</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -6.3%<br>         객단가: 16,094원         </div>`)[0];
+                popup_b88d840b16a7d1a05df73f3a1a4fafa5.setContent(html_255559b6760ea06bcb191959778e2b2d);
+            
+        
+
+        circle_marker_62af6dc81eec5756a5975fa89547b49d.bindPopup(popup_b88d840b16a7d1a05df73f3a1a4fafa5)
+        ;
+
+        
+    
+    
+            var circle_marker_b0f0a84a163df038a44314d76e35611f = L.circleMarker(
+                [37.4809201509186, 126.90223628689705],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_aab80aa0a991845beb83b9c2d074111d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb8c9765116498e2bd8edee6d33310c1 = $(`<div id="html_cb8c9765116498e2bd8edee6d33310c1" style="width: 100.0%; height: 100.0%;">         <b>KT구로지사</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -6.3%<br>         객단가: 14,392원         </div>`)[0];
+                popup_aab80aa0a991845beb83b9c2d074111d.setContent(html_cb8c9765116498e2bd8edee6d33310c1);
+            
+        
+
+        circle_marker_b0f0a84a163df038a44314d76e35611f.bindPopup(popup_aab80aa0a991845beb83b9c2d074111d)
+        ;
+
+        
+    
+    
+            var circle_marker_68ea47d50603ad7740810c9908cfa35a = L.circleMarker(
+                [37.483905325185546, 126.91779018557327],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_14e263072d96d29e6daa9f1ad3200260 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7de928931877553c5964e2238548003c = $(`<div id="html_7de928931877553c5964e2238548003c" style="width: 100.0%; height: 100.0%;">         <b>관악구신사동주민센터</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -6.6%<br>         객단가: 16,618원         </div>`)[0];
+                popup_14e263072d96d29e6daa9f1ad3200260.setContent(html_7de928931877553c5964e2238548003c);
+            
+        
+
+        circle_marker_68ea47d50603ad7740810c9908cfa35a.bindPopup(popup_14e263072d96d29e6daa9f1ad3200260)
+        ;
+
+        
+    
+    
+            var circle_marker_76ba92cad3665e743d151cc23d39e2dc = L.circleMarker(
+                [37.48718612163995, 126.91942610947666],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_5a234542f3788fa7a7fa0b34ebebb4b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24ac9e74f032f1dcdc4a9ed5256521f1 = $(`<div id="html_24ac9e74f032f1dcdc4a9ed5256521f1" style="width: 100.0%; height: 100.0%;">         <b>신림우방아파트</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -6.8%<br>         객단가: 7,652원         </div>`)[0];
+                popup_5a234542f3788fa7a7fa0b34ebebb4b4.setContent(html_24ac9e74f032f1dcdc4a9ed5256521f1);
+            
+        
+
+        circle_marker_76ba92cad3665e743d151cc23d39e2dc.bindPopup(popup_5a234542f3788fa7a7fa0b34ebebb4b4)
+        ;
+
+        
+    
+    
+            var circle_marker_518f2073a3c43f66c25afd5a11988de0 = L.circleMarker(
+                [37.470211772840585, 126.92040521255308],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_5e2a0e6d0d84f1c4d129dfca0c58d097 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c861d3f29a01183b7a4f58523114f48 = $(`<div id="html_8c861d3f29a01183b7a4f58523114f48" style="width: 100.0%; height: 100.0%;">         <b>우림시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 위험_상권<br>         성장유형: 침체<br>         RFM합계: 5<br>         매출증감률: -7.0%<br>         객단가: 19,496원         </div>`)[0];
+                popup_5e2a0e6d0d84f1c4d129dfca0c58d097.setContent(html_8c861d3f29a01183b7a4f58523114f48);
+            
+        
+
+        circle_marker_518f2073a3c43f66c25afd5a11988de0.bindPopup(popup_5e2a0e6d0d84f1c4d129dfca0c58d097)
+        ;
+
+        
+    
+    
+            var circle_marker_7d54d3f5dc0598ff8dbf450f1c07b3f2 = L.circleMarker(
+                [37.47637531474311, 126.9561011279273],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_f016315f10719a55a582c1344b14f6e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2de0b68df466cc381519fbc98cf4c521 = $(`<div id="html_2de0b68df466cc381519fbc98cf4c521" style="width: 100.0%; height: 100.0%;">         <b>샤로수길</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -7.4%<br>         객단가: 26,092원         </div>`)[0];
+                popup_f016315f10719a55a582c1344b14f6e5.setContent(html_2de0b68df466cc381519fbc98cf4c521);
+            
+        
+
+        circle_marker_7d54d3f5dc0598ff8dbf450f1c07b3f2.bindPopup(popup_f016315f10719a55a582c1344b14f6e5)
+        ;
+
+        
+    
+    
+            var circle_marker_c2d1b53a1ca0bff46a173bbf1ace27aa = L.circleMarker(
+                [37.46769853841552, 126.9362223021795],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_1c4f1fb14d7bb0e38852c5fbd298abd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7a90ade12dffd58f360dd34085bb181 = $(`<div id="html_d7a90ade12dffd58f360dd34085bb181" style="width: 100.0%; height: 100.0%;">         <b>구립대학경로당(관악산샘말공원)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -7.5%<br>         객단가: 9,491원         </div>`)[0];
+                popup_1c4f1fb14d7bb0e38852c5fbd298abd5.setContent(html_d7a90ade12dffd58f360dd34085bb181);
+            
+        
+
+        circle_marker_c2d1b53a1ca0bff46a173bbf1ace27aa.bindPopup(popup_1c4f1fb14d7bb0e38852c5fbd298abd5)
+        ;
+
+        
+    
+    
+            var circle_marker_93a4ade4466bef8d00a693d1f9f5d712 = L.circleMarker(
+                [37.49122005096885, 126.9294742646681],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_61e54f514e2846364bc000aff6497b1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b03a9e273db6dac4179adfda11518d95 = $(`<div id="html_b03a9e273db6dac4179adfda11518d95" style="width: 100.0%; height: 100.0%;">         <b>당곡중학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -7.6%<br>         객단가: 17,274원         </div>`)[0];
+                popup_61e54f514e2846364bc000aff6497b1d.setContent(html_b03a9e273db6dac4179adfda11518d95);
+            
+        
+
+        circle_marker_93a4ade4466bef8d00a693d1f9f5d712.bindPopup(popup_61e54f514e2846364bc000aff6497b1d)
+        ;
+
+        
+    
+    
+            var circle_marker_0611543bac6fa130841d8533f50f0838 = L.circleMarker(
+                [37.470369440518155, 126.96815523319425],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_f820c60d1996259ec620878fccdf8f60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7f41714e8b641f77549e7298790f745 = $(`<div id="html_e7f41714e8b641f77549e7298790f745" style="width: 100.0%; height: 100.0%;">         <b>인헌고등학교(인헌중학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -8.0%<br>         객단가: 12,276원         </div>`)[0];
+                popup_f820c60d1996259ec620878fccdf8f60.setContent(html_e7f41714e8b641f77549e7298790f745);
+            
+        
+
+        circle_marker_0611543bac6fa130841d8533f50f0838.bindPopup(popup_f820c60d1996259ec620878fccdf8f60)
+        ;
+
+        
+    
+    
+            var circle_marker_2feb54a050c8097a874b605f0a2c1c98 = L.circleMarker(
+                [37.482850494037365, 126.9049133821319],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_0b0e95e63fe298a8fde62e3e7efda564 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec771981473d30efd4435be70da98137 = $(`<div id="html_ec771981473d30efd4435be70da98137" style="width: 100.0%; height: 100.0%;">         <b>강남골목시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -9.1%<br>         객단가: 18,857원         </div>`)[0];
+                popup_0b0e95e63fe298a8fde62e3e7efda564.setContent(html_ec771981473d30efd4435be70da98137);
+            
+        
+
+        circle_marker_2feb54a050c8097a874b605f0a2c1c98.bindPopup(popup_0b0e95e63fe298a8fde62e3e7efda564)
+        ;
+
+        
+    
+    
+            var circle_marker_1b7aef6c6f888d1d9226008a6b3f8ee7 = L.circleMarker(
+                [37.46941008683408, 126.92072258435972],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_00f567ef34d50cf1abed3ea8687e8173 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d692707f8237c933cf6220c7e1bcd4de = $(`<div id="html_d692707f8237c933cf6220c7e1bcd4de" style="width: 100.0%; height: 100.0%;">         <b>난곡 골목형상점가</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -9.5%<br>         객단가: 34,428원         </div>`)[0];
+                popup_00f567ef34d50cf1abed3ea8687e8173.setContent(html_d692707f8237c933cf6220c7e1bcd4de);
+            
+        
+
+        circle_marker_1b7aef6c6f888d1d9226008a6b3f8ee7.bindPopup(popup_00f567ef34d50cf1abed3ea8687e8173)
+        ;
+
+        
+    
+    
+            var circle_marker_88c56cdf0509b578d19ffc953866eeb5 = L.circleMarker(
+                [37.48167670609929, 126.94308459174644],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_da25ac5ecf298bfe2158de395c600c5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e3b8fcae0aff555d32fd7e09525c538 = $(`<div id="html_1e3b8fcae0aff555d32fd7e09525c538" style="width: 100.0%; height: 100.0%;">         <b>영림시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -9.5%<br>         객단가: 22,601원         </div>`)[0];
+                popup_da25ac5ecf298bfe2158de395c600c5f.setContent(html_1e3b8fcae0aff555d32fd7e09525c538);
+            
+        
+
+        circle_marker_88c56cdf0509b578d19ffc953866eeb5.bindPopup(popup_da25ac5ecf298bfe2158de395c600c5f)
+        ;
+
+        
+    
+    
+            var circle_marker_9c4a0f7c1a33f3c046d67038fd5e9ff5 = L.circleMarker(
+                [37.48696656212724, 126.91470002177657],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_9d7a4d18bdf582a6f922e886d7e189fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac6beb8f39bab5ce837154ea1e7b808d = $(`<div id="html_ac6beb8f39bab5ce837154ea1e7b808d" style="width: 100.0%; height: 100.0%;">         <b>신대방역 1번</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -9.8%<br>         객단가: 46,516원         </div>`)[0];
+                popup_9d7a4d18bdf582a6f922e886d7e189fb.setContent(html_ac6beb8f39bab5ce837154ea1e7b808d);
+            
+        
+
+        circle_marker_9c4a0f7c1a33f3c046d67038fd5e9ff5.bindPopup(popup_9d7a4d18bdf582a6f922e886d7e189fb)
+        ;
+
+        
+    
+    
+            var circle_marker_de7d8664bafdbd2f7189d1079d978c46 = L.circleMarker(
+                [37.47201632617376, 126.93993789413283],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_d2823d16177ebda0e63cb20d22c44357 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6edf6f2a3ce5b3b709e01342cb03fd1f = $(`<div id="html_6edf6f2a3ce5b3b709e01342cb03fd1f" style="width: 100.0%; height: 100.0%;">         <b>관악해태어린이공원</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -9.9%<br>         객단가: 7,236원         </div>`)[0];
+                popup_d2823d16177ebda0e63cb20d22c44357.setContent(html_6edf6f2a3ce5b3b709e01342cb03fd1f);
+            
+        
+
+        circle_marker_de7d8664bafdbd2f7189d1079d978c46.bindPopup(popup_d2823d16177ebda0e63cb20d22c44357)
+        ;
+
+        
+    
+    
+            var circle_marker_25839bf688217e30458135257ebc5758 = L.circleMarker(
+                [37.47438964512814, 126.91633094652599],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_247368af25127b78d53830fa0325d6ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd7d00342364284cdec9e23bd8f23806 = $(`<div id="html_dd7d00342364284cdec9e23bd8f23806" style="width: 100.0%; height: 100.0%;">         <b>미성동 도깨비시장 골목형상점가</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -10.1%<br>         객단가: 18,098원         </div>`)[0];
+                popup_247368af25127b78d53830fa0325d6ec.setContent(html_dd7d00342364284cdec9e23bd8f23806);
+            
+        
+
+        circle_marker_25839bf688217e30458135257ebc5758.bindPopup(popup_247368af25127b78d53830fa0325d6ec)
+        ;
+
+        
+    
+    
+            var circle_marker_9d1495194217fb3f480562345c2f1f09 = L.circleMarker(
+                [37.48120882210982, 126.94443037587531],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_f5445f4e440feb3970b23fb8782e4b2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a2b12d27cb7f3ef7204970d3c5f8f2b = $(`<div id="html_2a2b12d27cb7f3ef7204970d3c5f8f2b" style="width: 100.0%; height: 100.0%;">         <b>봉천제일종합시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -11.4%<br>         객단가: 30,806원         </div>`)[0];
+                popup_f5445f4e440feb3970b23fb8782e4b2d.setContent(html_2a2b12d27cb7f3ef7204970d3c5f8f2b);
+            
+        
+
+        circle_marker_9d1495194217fb3f480562345c2f1f09.bindPopup(popup_f5445f4e440feb3970b23fb8782e4b2d)
+        ;
+
+        
+    
+    
+            var circle_marker_7a6d3e524b8212ebc969f3cfa48db13d = L.circleMarker(
+                [37.486338677230954, 126.93306314109579],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_10f64a9898b527763d6a1cb6b34b516d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eaee7777547f4fa1341f4d1dd44a4c7f = $(`<div id="html_eaee7777547f4fa1341f4d1dd44a4c7f" style="width: 100.0%; height: 100.0%;">         <b>신림역 8번</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -11.6%<br>         객단가: 22,368원         </div>`)[0];
+                popup_10f64a9898b527763d6a1cb6b34b516d.setContent(html_eaee7777547f4fa1341f4d1dd44a4c7f);
+            
+        
+
+        circle_marker_7a6d3e524b8212ebc969f3cfa48db13d.bindPopup(popup_10f64a9898b527763d6a1cb6b34b516d)
+        ;
+
+        
+    
+    
+            var circle_marker_39de99abe994fbb418ac4060d7a62023 = L.circleMarker(
+                [37.483969250297825, 126.93346098403177],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_b532419b12895d8d1ceda126eb0c7f46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0fd72a2b548dbafdcd71d4ecb307aba = $(`<div id="html_d0fd72a2b548dbafdcd71d4ecb307aba" style="width: 100.0%; height: 100.0%;">         <b>신림역 1번</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -11.9%<br>         객단가: 25,744원         </div>`)[0];
+                popup_b532419b12895d8d1ceda126eb0c7f46.setContent(html_d0fd72a2b548dbafdcd71d4ecb307aba);
+            
+        
+
+        circle_marker_39de99abe994fbb418ac4060d7a62023.bindPopup(popup_b532419b12895d8d1ceda126eb0c7f46)
+        ;
+
+        
+    
+    
+            var circle_marker_d77f5166338a73d9041532c3ff894df4 = L.circleMarker(
+                [37.48332423205892, 126.91162880976654],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_288096b7be08479b52260138c9c0df9d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6347428e79d2fd914c5db3ebafc30dd5 = $(`<div id="html_6347428e79d2fd914c5db3ebafc30dd5" style="width: 100.0%; height: 100.0%;">         <b>신림중앙시장(조원동 펭귄시장)</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 5<br>         매출증감률: -13.5%<br>         객단가: 24,659원         </div>`)[0];
+                popup_288096b7be08479b52260138c9c0df9d.setContent(html_6347428e79d2fd914c5db3ebafc30dd5);
+            
+        
+
+        circle_marker_d77f5166338a73d9041532c3ff894df4.bindPopup(popup_288096b7be08479b52260138c9c0df9d)
+        ;
+
+        
+    
+    
+            var circle_marker_c1847568b6225c626e8a1b6c8e470c8a = L.circleMarker(
+                [37.4762560085099, 126.91814903209799],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_b7d2731e8668ecd28d2c7139d2dab36e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96b410e368847ea8efaa9d68240426df = $(`<div id="html_96b410e368847ea8efaa9d68240426df" style="width: 100.0%; height: 100.0%;">         <b>난우초등학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -13.5%<br>         객단가: 37,646원         </div>`)[0];
+                popup_b7d2731e8668ecd28d2c7139d2dab36e.setContent(html_96b410e368847ea8efaa9d68240426df);
+            
+        
+
+        circle_marker_c1847568b6225c626e8a1b6c8e470c8a.bindPopup(popup_b7d2731e8668ecd28d2c7139d2dab36e)
+        ;
+
+        
+    
+    
+            var circle_marker_e4120ecca64bd66e27f7fd7243128136 = L.circleMarker(
+                [37.47465313746561, 126.93403450098945],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_e47c4f68e8000617c2725930d6e2cb61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e094e2eb555b59c68e57137132a5e70e = $(`<div id="html_e094e2eb555b59c68e57137132a5e70e" style="width: 100.0%; height: 100.0%;">         <b>신림현대종합상가</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 고평가_버블<br>         성장유형: 저가성장<br>         RFM합계: 7<br>         매출증감률: -13.8%<br>         객단가: 50,179원         </div>`)[0];
+                popup_e47c4f68e8000617c2725930d6e2cb61.setContent(html_e094e2eb555b59c68e57137132a5e70e);
+            
+        
+
+        circle_marker_e4120ecca64bd66e27f7fd7243128136.bindPopup(popup_e47c4f68e8000617c2725930d6e2cb61)
+        ;
+
+        
+    
+    
+            var circle_marker_12b96a5b67b7c7dbbfc956af27d476d0 = L.circleMarker(
+                [37.47402210757342, 126.93345849830335],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_f0afdf0aa47bf963506fbf93e6566b05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e683df2f5ecb2f04e6d623428a5df809 = $(`<div id="html_e683df2f5ecb2f04e6d623428a5df809" style="width: 100.0%; height: 100.0%;">         <b>신림현대아파트</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 위험_상권<br>         성장유형: 침체<br>         RFM합계: 4<br>         매출증감률: -14.3%<br>         객단가: 15,886원         </div>`)[0];
+                popup_f0afdf0aa47bf963506fbf93e6566b05.setContent(html_e683df2f5ecb2f04e6d623428a5df809);
+            
+        
+
+        circle_marker_12b96a5b67b7c7dbbfc956af27d476d0.bindPopup(popup_f0afdf0aa47bf963506fbf93e6566b05)
+        ;
+
+        
+    
+    
+            var circle_marker_701c6b966648f361adbfd3c2a52db605 = L.circleMarker(
+                [37.479382566439355, 126.9324927479113],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_3f4176e074cfe1e7a0056a85e857b9d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64eb24ff29c47b78c0064177cb60fd05 = $(`<div id="html_64eb24ff29c47b78c0064177cb60fd05" style="width: 100.0%; height: 100.0%;">         <b>서원동주민센터(신관중학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -14.6%<br>         객단가: 44,809원         </div>`)[0];
+                popup_3f4176e074cfe1e7a0056a85e857b9d1.setContent(html_64eb24ff29c47b78c0064177cb60fd05);
+            
+        
+
+        circle_marker_701c6b966648f361adbfd3c2a52db605.bindPopup(popup_3f4176e074cfe1e7a0056a85e857b9d1)
+        ;
+
+        
+    
+    
+            var circle_marker_82bf4d00543a2784be3b5014d131a0fb = L.circleMarker(
+                [37.46495754205565, 126.93275440086107],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_2365af423762ce420268963e6d7368ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ad5e1065c92f86dfe67ad0d72cfce0e = $(`<div id="html_2ad5e1065c92f86dfe67ad0d72cfce0e" style="width: 100.0%; height: 100.0%;">         <b>미림여고</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -14.9%<br>         객단가: 105,898원         </div>`)[0];
+                popup_2365af423762ce420268963e6d7368ef.setContent(html_2ad5e1065c92f86dfe67ad0d72cfce0e);
+            
+        
+
+        circle_marker_82bf4d00543a2784be3b5014d131a0fb.bindPopup(popup_2365af423762ce420268963e6d7368ef)
+        ;
+
+        
+    
+    
+            var circle_marker_e5fe8964d00630e9f358b70c887c7e89 = L.circleMarker(
+                [37.47921589038771, 126.96310907993906],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_7a04bfca64ef0d46799ee16fb102e2fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c67c0e7b77eb2fef8456fe3cb6fe82e5 = $(`<div id="html_c67c0e7b77eb2fef8456fe3cb6fe82e5" style="width: 100.0%; height: 100.0%;">         <b>낙성대역 5번(관악중학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 5<br>         매출증감률: -16.2%<br>         객단가: 23,145원         </div>`)[0];
+                popup_7a04bfca64ef0d46799ee16fb102e2fb.setContent(html_c67c0e7b77eb2fef8456fe3cb6fe82e5);
+            
+        
+
+        circle_marker_e5fe8964d00630e9f358b70c887c7e89.bindPopup(popup_7a04bfca64ef0d46799ee16fb102e2fb)
+        ;
+
+        
+    
+    
+            var circle_marker_4c858cfb832b6f5657d97b1baa0ac955 = L.circleMarker(
+                [37.49098150293651, 126.95842194720214],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_6bd6d6a4f18e46a7edadf7070d20487a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f41c3037151de7309315987afc249151 = $(`<div id="html_f41c3037151de7309315987afc249151" style="width: 100.0%; height: 100.0%;">         <b>청림동주민센터(상도중학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 저가성장<br>         RFM합계: 6<br>         매출증감률: -17.4%<br>         객단가: 37,112원         </div>`)[0];
+                popup_6bd6d6a4f18e46a7edadf7070d20487a.setContent(html_f41c3037151de7309315987afc249151);
+            
+        
+
+        circle_marker_4c858cfb832b6f5657d97b1baa0ac955.bindPopup(popup_6bd6d6a4f18e46a7edadf7070d20487a)
+        ;
+
+        
+    
+    
+            var circle_marker_6cff4c362e7371f7a5d7efc89fdf3185 = L.circleMarker(
+                [37.46313623867954, 126.916637376392],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_f98ec0e128611887cc31b84c2ba06f5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3a1152ff478d972d1aca80df6b9c817 = $(`<div id="html_e3a1152ff478d972d1aca80df6b9c817" style="width: 100.0%; height: 100.0%;">         <b>난향초등학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 위험_상권<br>         성장유형: 침체<br>         RFM합계: 4<br>         매출증감률: -21.4%<br>         객단가: 12,744원         </div>`)[0];
+                popup_f98ec0e128611887cc31b84c2ba06f5d.setContent(html_e3a1152ff478d972d1aca80df6b9c817);
+            
+        
+
+        circle_marker_6cff4c362e7371f7a5d7efc89fdf3185.bindPopup(popup_f98ec0e128611887cc31b84c2ba06f5d)
+        ;
+
+        
+    
+    
+            var circle_marker_06ecb997a10b42bbbf3f11b792a3dacd = L.circleMarker(
+                [37.475271208267024, 126.91434024298789],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_02c78cb3df64c5286c5b38a911087d9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b12ed2e6592e6c3038db7cfeab3dafb = $(`<div id="html_7b12ed2e6592e6c3038db7cfeab3dafb" style="width: 100.0%; height: 100.0%;">         <b>미성동주민센터</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -21.8%<br>         객단가: 27,707원         </div>`)[0];
+                popup_02c78cb3df64c5286c5b38a911087d9a.setContent(html_7b12ed2e6592e6c3038db7cfeab3dafb);
+            
+        
+
+        circle_marker_06ecb997a10b42bbbf3f11b792a3dacd.bindPopup(popup_02c78cb3df64c5286c5b38a911087d9a)
+        ;
+
+        
+    
+    
+            var circle_marker_b4e2fe0f4963b50d3c3fff9bcb4f322f = L.circleMarker(
+                [37.474332513851415, 126.96341671782614],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_2b4b7b6fa9fbcf9f09615a485b285f57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11bb81e455c2e45752ae3224598f0b38 = $(`<div id="html_11bb81e455c2e45752ae3224598f0b38" style="width: 100.0%; height: 100.0%;">         <b>낙성대역 1번(관악구민 종합체육센터)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 5<br>         매출증감률: -24.7%<br>         객단가: 13,694원         </div>`)[0];
+                popup_2b4b7b6fa9fbcf9f09615a485b285f57.setContent(html_11bb81e455c2e45752ae3224598f0b38);
+            
+        
+
+        circle_marker_b4e2fe0f4963b50d3c3fff9bcb4f322f.bindPopup(popup_2b4b7b6fa9fbcf9f09615a485b285f57)
+        ;
+
+        
+    
+    
+            var circle_marker_a536dc192f56899643ebdaf91c53820f = L.circleMarker(
+                [37.48445472701863, 126.91748430496827],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_78ce98b3e2aa870a92b7e5d700f8051a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a20bf1eb4ad6fcdb3a91378b2c357eb = $(`<div id="html_1a20bf1eb4ad6fcdb3a91378b2c357eb" style="width: 100.0%; height: 100.0%;">         <b>신림종합시장</b><br>         자치구: 관악구<br>         상권유형: 전통시장<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -25.0%<br>         객단가: 714,286원         </div>`)[0];
+                popup_78ce98b3e2aa870a92b7e5d700f8051a.setContent(html_1a20bf1eb4ad6fcdb3a91378b2c357eb);
+            
+        
+
+        circle_marker_a536dc192f56899643ebdaf91c53820f.bindPopup(popup_78ce98b3e2aa870a92b7e5d700f8051a)
+        ;
+
+        
+    
+    
+            var circle_marker_3a4f78489b15fe07a01392e0bfc174b7 = L.circleMarker(
+                [37.482411223638444, 126.90771790286111],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_55785ee1a7a23cd6b60245b90fc6af85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b8d553ae55bcfa49889b4932179b2fc = $(`<div id="html_9b8d553ae55bcfa49889b4932179b2fc" style="width: 100.0%; height: 100.0%;">         <b>조원동주민센터</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -26.9%<br>         객단가: 68,154원         </div>`)[0];
+                popup_55785ee1a7a23cd6b60245b90fc6af85.setContent(html_9b8d553ae55bcfa49889b4932179b2fc);
+            
+        
+
+        circle_marker_3a4f78489b15fe07a01392e0bfc174b7.bindPopup(popup_55785ee1a7a23cd6b60245b90fc6af85)
+        ;
+
+        
+    
+    
+            var circle_marker_2e2f417eee2a68c0ff59ff1e0ba1cadb = L.circleMarker(
+                [37.47824447329985, 126.92772277446338],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_f467fe4b47896970a5e2d8c9c11d8fd7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8342ff072398ae82631e31a8fab384d = $(`<div id="html_f8342ff072398ae82631e31a8fab384d" style="width: 100.0%; height: 100.0%;">         <b>신림초등학교</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -29.4%<br>         객단가: 30,011원         </div>`)[0];
+                popup_f467fe4b47896970a5e2d8c9c11d8fd7.setContent(html_f8342ff072398ae82631e31a8fab384d);
+            
+        
+
+        circle_marker_2e2f417eee2a68c0ff59ff1e0ba1cadb.bindPopup(popup_f467fe4b47896970a5e2d8c9c11d8fd7)
+        ;
+
+        
+    
+    
+            var circle_marker_80c0c62957bd6dc827b73b2273722047 = L.circleMarker(
+                [37.46809189016671, 126.9307281502625],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_027a6e4d2e0ce79434cf754c55a82679 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d85856ff8baff91825511ca1c595bbeb = $(`<div id="html_d85856ff8baff91825511ca1c595bbeb" style="width: 100.0%; height: 100.0%;">         <b>원신초등학교(구세군관악영문교회)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 5<br>         매출증감률: -35.0%<br>         객단가: 25,267원         </div>`)[0];
+                popup_027a6e4d2e0ce79434cf754c55a82679.setContent(html_d85856ff8baff91825511ca1c595bbeb);
+            
+        
+
+        circle_marker_80c0c62957bd6dc827b73b2273722047.bindPopup(popup_027a6e4d2e0ce79434cf754c55a82679)
+        ;
+
+        
+    
+    
+            var circle_marker_84af7eaea163a3f21b7548afe6a05603 = L.circleMarker(
+                [37.469539414833946, 126.94166944457962],
+                {"bubblingMouseEvents": true, "color": "#9C27B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9C27B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_e17f6e8c70d798e5d1c7581e43edf620);
+        
+    
+        var popup_dfd3710de677a0ffaa780e98cec66bb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3cdeca25000fa665685189369aec4a7 = $(`<div id="html_f3cdeca25000fa665685189369aec4a7" style="width: 100.0%; height: 100.0%;">         <b>서울산업정보학교(서울삼성초등학교)</b><br>         자치구: 관악구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -55.7%<br>         객단가: 31,566원         </div>`)[0];
+                popup_dfd3710de677a0ffaa780e98cec66bb7.setContent(html_f3cdeca25000fa665685189369aec4a7);
+            
+        
+
+        circle_marker_84af7eaea163a3f21b7548afe6a05603.bindPopup(popup_dfd3710de677a0ffaa780e98cec66bb7)
+        ;
+
+        
+    
+</script>
+</html>

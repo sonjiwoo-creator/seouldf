@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_99083d3d627f9ddb5fc7df764778526d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_99083d3d627f9ddb5fc7df764778526d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_99083d3d627f9ddb5fc7df764778526d = L.map(
+                "map_99083d3d627f9ddb5fc7df764778526d",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e3116fd7df6794559dd0fc71c99ed4a9 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e3116fd7df6794559dd0fc71c99ed4a9.addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+            var circle_marker_4374b3f627b7eb5641e5f7abed835b73 = L.circleMarker(
+                [37.58169056142214, 126.90525199100244],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_aa39b22a1e5e9c6b8c9db1f7940e4cbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d165cd1497122ddee763ae962c55669d = $(`<div id="html_d165cd1497122ddee763ae962c55669d" style="width: 100.0%; height: 100.0%;">         <b>증산종합시장</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 9<br>         매출증감률: 69.0%<br>         객단가: 21,607원         </div>`)[0];
+                popup_aa39b22a1e5e9c6b8c9db1f7940e4cbf.setContent(html_d165cd1497122ddee763ae962c55669d);
+            
+        
+
+        circle_marker_4374b3f627b7eb5641e5f7abed835b73.bindPopup(popup_aa39b22a1e5e9c6b8c9db1f7940e4cbf)
+        ;
+
+        
+    
+    
+            var circle_marker_d4fec12b0783f3514577955e75e371ee = L.circleMarker(
+                [37.60779823704551, 126.91298801162269],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_d1ec7715c76df2e49d605925bd844e11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4937ab6c6ea5d5c553013d4cd273ebaa = $(`<div id="html_4937ab6c6ea5d5c553013d4cd273ebaa" style="width: 100.0%; height: 100.0%;">         <b>구산보건지소</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 54.9%<br>         객단가: 26,687원         </div>`)[0];
+                popup_d1ec7715c76df2e49d605925bd844e11.setContent(html_4937ab6c6ea5d5c553013d4cd273ebaa);
+            
+        
+
+        circle_marker_d4fec12b0783f3514577955e75e371ee.bindPopup(popup_d1ec7715c76df2e49d605925bd844e11)
+        ;
+
+        
+    
+    
+            var circle_marker_97249bef767436a73f4b87fc0b1d74f6 = L.circleMarker(
+                [37.607179454050986, 126.93100707256747],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_e395bdd596ba9d27343044411df06556 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff7e7e5c6562bab7a67161daae321f92 = $(`<div id="html_ff7e7e5c6562bab7a67161daae321f92" style="width: 100.0%; height: 100.0%;">         <b>불광역 3번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 12<br>         매출증감률: 53.3%<br>         객단가: 46,945원         </div>`)[0];
+                popup_e395bdd596ba9d27343044411df06556.setContent(html_ff7e7e5c6562bab7a67161daae321f92);
+            
+        
+
+        circle_marker_97249bef767436a73f4b87fc0b1d74f6.bindPopup(popup_e395bdd596ba9d27343044411df06556)
+        ;
+
+        
+    
+    
+            var circle_marker_fd0b19dd77ff4c605cce508b08f37cdb = L.circleMarker(
+                [37.5785264427602, 126.90324089386101],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_af83279c0f2401957a59065c3da844a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b86b33ae2c22178543d3e8f9f1f42ca4 = $(`<div id="html_b86b33ae2c22178543d3e8f9f1f42ca4" style="width: 100.0%; height: 100.0%;">         <b>수색성당</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 50.6%<br>         객단가: 110,030원         </div>`)[0];
+                popup_af83279c0f2401957a59065c3da844a7.setContent(html_b86b33ae2c22178543d3e8f9f1f42ca4);
+            
+        
+
+        circle_marker_fd0b19dd77ff4c605cce508b08f37cdb.bindPopup(popup_af83279c0f2401957a59065c3da844a7)
+        ;
+
+        
+    
+    
+            var circle_marker_cffee857c18d1cfa8296202a81c21b88 = L.circleMarker(
+                [37.58315058044456, 126.89508341223478],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_5b15e37d3bc9ee5d7ce7a916ebabef6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86adafbcb9ee91d19c4a5d9a07026d9d = $(`<div id="html_86adafbcb9ee91d19c4a5d9a07026d9d" style="width: 100.0%; height: 100.0%;">         <b>수일시장</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 28.1%<br>         객단가: 60,286원         </div>`)[0];
+                popup_5b15e37d3bc9ee5d7ce7a916ebabef6e.setContent(html_86adafbcb9ee91d19c4a5d9a07026d9d);
+            
+        
+
+        circle_marker_cffee857c18d1cfa8296202a81c21b88.bindPopup(popup_5b15e37d3bc9ee5d7ce7a916ebabef6e)
+        ;
+
+        
+    
+    
+            var circle_marker_9504e391253fed4db43d02747f588311 = L.circleMarker(
+                [37.61198104277285, 126.92984739569634],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_40f391eb45ecb27ca7cbccc14078f3ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_786180331441374b82e93b907a932af3 = $(`<div id="html_786180331441374b82e93b907a932af3" style="width: 100.0%; height: 100.0%;">         <b>불광역 8번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 22.8%<br>         객단가: 28,426원         </div>`)[0];
+                popup_40f391eb45ecb27ca7cbccc14078f3ef.setContent(html_786180331441374b82e93b907a932af3);
+            
+        
+
+        circle_marker_9504e391253fed4db43d02747f588311.bindPopup(popup_40f391eb45ecb27ca7cbccc14078f3ef)
+        ;
+
+        
+    
+    
+            var circle_marker_9c927694b57873370a09f1a1a29b0ed5 = L.circleMarker(
+                [37.60544380707197, 126.90920823667845],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_8024da69ecca43dc4b4ba9b0b34f1874 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2894c9c3a4e470f88cadc6ddee9b4903 = $(`<div id="html_2894c9c3a4e470f88cadc6ddee9b4903" style="width: 100.0%; height: 100.0%;">         <b>시립서북병원</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 진짜성장<br>         RFM합계: 10<br>         매출증감률: 18.5%<br>         객단가: 14,872원         </div>`)[0];
+                popup_8024da69ecca43dc4b4ba9b0b34f1874.setContent(html_2894c9c3a4e470f88cadc6ddee9b4903);
+            
+        
+
+        circle_marker_9c927694b57873370a09f1a1a29b0ed5.bindPopup(popup_8024da69ecca43dc4b4ba9b0b34f1874)
+        ;
+
+        
+    
+    
+            var circle_marker_5b20e5303224ea37491c64f738c67c1c = L.circleMarker(
+                [37.60512562662295, 126.93174508513579],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_c97b60b670ab21697e3a534ef1da4239 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fcb076785988fed09f365e70b9e0df1 = $(`<div id="html_4fcb076785988fed09f365e70b9e0df1" style="width: 100.0%; height: 100.0%;">         <b>녹번동근린공원</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 진짜성장<br>         RFM합계: 10<br>         매출증감률: 17.4%<br>         객단가: 34,127원         </div>`)[0];
+                popup_c97b60b670ab21697e3a534ef1da4239.setContent(html_4fcb076785988fed09f365e70b9e0df1);
+            
+        
+
+        circle_marker_5b20e5303224ea37491c64f738c67c1c.bindPopup(popup_c97b60b670ab21697e3a534ef1da4239)
+        ;
+
+        
+    
+    
+            var circle_marker_b1ff0e1144c86ff41d308628e52394bc = L.circleMarker(
+                [37.61717129604579, 126.91683948862],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_a7efa8db96b5910e4520b5ce39a30409 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_550f87a40c38eadd8b4591901cfba003 = $(`<div id="html_550f87a40c38eadd8b4591901cfba003" style="width: 100.0%; height: 100.0%;">         <b>연신내역 5번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 12<br>         매출증감률: 12.6%<br>         객단가: 79,875원         </div>`)[0];
+                popup_a7efa8db96b5910e4520b5ce39a30409.setContent(html_550f87a40c38eadd8b4591901cfba003);
+            
+        
+
+        circle_marker_b1ff0e1144c86ff41d308628e52394bc.bindPopup(popup_a7efa8db96b5910e4520b5ce39a30409)
+        ;
+
+        
+    
+    
+            var circle_marker_db7b8fd3ce15c6cd55efb2c3afd4ae69 = L.circleMarker(
+                [37.60271559223417, 126.92453358673295],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_66f76ebed8ae154ebe78256d865c14c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a91e7020461caae681e52339654095eb = $(`<div id="html_a91e7020461caae681e52339654095eb" style="width: 100.0%; height: 100.0%;">         <b>은평세무서</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 12<br>         매출증감률: 12.1%<br>         객단가: 54,021원         </div>`)[0];
+                popup_66f76ebed8ae154ebe78256d865c14c5.setContent(html_a91e7020461caae681e52339654095eb);
+            
+        
+
+        circle_marker_db7b8fd3ce15c6cd55efb2c3afd4ae69.bindPopup(popup_66f76ebed8ae154ebe78256d865c14c5)
+        ;
+
+        
+    
+    
+            var circle_marker_6b13cc3ca8168582b333bec20805cfa1 = L.circleMarker(
+                [37.58696146585945, 126.91737128158225],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_fb26fdb132e3ef7173f8d36dc5d1290c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3633cf9e7ef0d4500c2d464c3e31eb7e = $(`<div id="html_3633cf9e7ef0d4500c2d464c3e31eb7e" style="width: 100.0%; height: 100.0%;">         <b>대림골목시장(대림시장, 양지시장)</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 10.4%<br>         객단가: 21,350원         </div>`)[0];
+                popup_fb26fdb132e3ef7173f8d36dc5d1290c.setContent(html_3633cf9e7ef0d4500c2d464c3e31eb7e);
+            
+        
+
+        circle_marker_6b13cc3ca8168582b333bec20805cfa1.bindPopup(popup_fb26fdb132e3ef7173f8d36dc5d1290c)
+        ;
+
+        
+    
+    
+            var circle_marker_bd4a9e7e5a38c5d3677222a3c51b3038 = L.circleMarker(
+                [37.622186278084804, 126.92503497111771],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_6ae0de7157c62dd50408bcbbc125c833 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5fe1b88ab8342e7b4d435684c9c64b91 = $(`<div id="html_5fe1b88ab8342e7b4d435684c9c64b91" style="width: 100.0%; height: 100.0%;">         <b>연신내역 2번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 10<br>         매출증감률: 9.9%<br>         객단가: 18,665원         </div>`)[0];
+                popup_6ae0de7157c62dd50408bcbbc125c833.setContent(html_5fe1b88ab8342e7b4d435684c9c64b91);
+            
+        
+
+        circle_marker_bd4a9e7e5a38c5d3677222a3c51b3038.bindPopup(popup_6ae0de7157c62dd50408bcbbc125c833)
+        ;
+
+        
+    
+    
+            var circle_marker_8a92ca94fe857ae248fc8f71ebce8f27 = L.circleMarker(
+                [37.608441562863476, 126.91804969701305],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_ad08a64f1a75ea19805cb7ab7ff1bd2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_880aa9bee517e9875d72f887d73cee12 = $(`<div id="html_880aa9bee517e9875d72f887d73cee12" style="width: 100.0%; height: 100.0%;">         <b>구산역 2번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 9<br>         매출증감률: 8.6%<br>         객단가: 17,862원         </div>`)[0];
+                popup_ad08a64f1a75ea19805cb7ab7ff1bd2e.setContent(html_880aa9bee517e9875d72f887d73cee12);
+            
+        
+
+        circle_marker_8a92ca94fe857ae248fc8f71ebce8f27.bindPopup(popup_ad08a64f1a75ea19805cb7ab7ff1bd2e)
+        ;
+
+        
+    
+    
+            var circle_marker_aa08fe8130fb3b5bffd64356a57b139c = L.circleMarker(
+                [37.6127051698786, 126.92087651968289],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_48ac6b8ce7cd613b38cc5bd8b3e9cad5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e5c199c6b0adb9f30a9f26397658bd0 = $(`<div id="html_6e5c199c6b0adb9f30a9f26397658bd0" style="width: 100.0%; height: 100.0%;">         <b>구산역 1번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 12<br>         매출증감률: 8.6%<br>         객단가: 33,584원         </div>`)[0];
+                popup_48ac6b8ce7cd613b38cc5bd8b3e9cad5.setContent(html_6e5c199c6b0adb9f30a9f26397658bd0);
+            
+        
+
+        circle_marker_aa08fe8130fb3b5bffd64356a57b139c.bindPopup(popup_48ac6b8ce7cd613b38cc5bd8b3e9cad5)
+        ;
+
+        
+    
+    
+            var circle_marker_7eb0e77228fd4b6eaa28ea23ba2d274d = L.circleMarker(
+                [37.614521102015296, 126.91503023530422],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_e57518d8bef744af917316871603162f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_521bfa73e9852fc4bc7fe70cd0d67b68 = $(`<div id="html_521bfa73e9852fc4bc7fe70cd0d67b68" style="width: 100.0%; height: 100.0%;">         <b>구산역 4번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 진짜성장<br>         RFM합계: 10<br>         매출증감률: 7.3%<br>         객단가: 20,926원         </div>`)[0];
+                popup_e57518d8bef744af917316871603162f.setContent(html_521bfa73e9852fc4bc7fe70cd0d67b68);
+            
+        
+
+        circle_marker_7eb0e77228fd4b6eaa28ea23ba2d274d.bindPopup(popup_e57518d8bef744af917316871603162f)
+        ;
+
+        
+    
+    
+            var circle_marker_83f62aacc1e6e5bb0241e05e38636f78 = L.circleMarker(
+                [37.62142443927846, 126.9175257181981],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_15b6b9de9e1919fdb2f214c90c45755a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d220483f2aa6430de9163a05b5f84b1 = $(`<div id="html_4d220483f2aa6430de9163a05b5f84b1" style="width: 100.0%; height: 100.0%;">         <b>연신내역 7번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 10<br>         매출증감률: 5.1%<br>         객단가: 22,808원         </div>`)[0];
+                popup_15b6b9de9e1919fdb2f214c90c45755a.setContent(html_4d220483f2aa6430de9163a05b5f84b1);
+            
+        
+
+        circle_marker_83f62aacc1e6e5bb0241e05e38636f78.bindPopup(popup_15b6b9de9e1919fdb2f214c90c45755a)
+        ;
+
+        
+    
+    
+            var circle_marker_bcaffd2d56fbbe275a1db497fb4749d1 = L.circleMarker(
+                [37.61352413877604, 126.90722766750562],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_122d33859bf0026be454f086378b4bb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7c916f6d30aa17dd1f840c53adedd61 = $(`<div id="html_d7c916f6d30aa17dd1f840c53adedd61" style="width: 100.0%; height: 100.0%;">         <b>구산초등학교</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 9<br>         매출증감률: 4.8%<br>         객단가: 42,562원         </div>`)[0];
+                popup_122d33859bf0026be454f086378b4bb0.setContent(html_d7c916f6d30aa17dd1f840c53adedd61);
+            
+        
+
+        circle_marker_bcaffd2d56fbbe275a1db497fb4749d1.bindPopup(popup_122d33859bf0026be454f086378b4bb0)
+        ;
+
+        
+    
+    
+            var circle_marker_ab377381cf6bc039ee4103464de1650c = L.circleMarker(
+                [37.62023233726391, 126.92695122086197],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_d4061d67456c4e44446aab9fc725d16b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d92f2740a15f092f5fab4ad55ea9a1e = $(`<div id="html_2d92f2740a15f092f5fab4ad55ea9a1e" style="width: 100.0%; height: 100.0%;">         <b>연천초등학교</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 7<br>         매출증감률: 4.1%<br>         객단가: 12,033원         </div>`)[0];
+                popup_d4061d67456c4e44446aab9fc725d16b.setContent(html_2d92f2740a15f092f5fab4ad55ea9a1e);
+            
+        
+
+        circle_marker_ab377381cf6bc039ee4103464de1650c.bindPopup(popup_d4061d67456c4e44446aab9fc725d16b)
+        ;
+
+        
+    
+    
+            var circle_marker_cd7c343e1ed2804bc2a6a2612dd4099e = L.circleMarker(
+                [37.6402679121759, 126.93863569243504],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_426bbc4b326abad08e0af89b8d8068cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a736afe0e4a111b472157ecae8737e2f = $(`<div id="html_a736afe0e4a111b472157ecae8737e2f" style="width: 100.0%; height: 100.0%;">         <b>하나고등학교</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 7<br>         매출증감률: 3.7%<br>         객단가: 19,932원         </div>`)[0];
+                popup_426bbc4b326abad08e0af89b8d8068cf.setContent(html_a736afe0e4a111b472157ecae8737e2f);
+            
+        
+
+        circle_marker_cd7c343e1ed2804bc2a6a2612dd4099e.bindPopup(popup_426bbc4b326abad08e0af89b8d8068cf)
+        ;
+
+        
+    
+    
+            var circle_marker_086aaae0db0b86a85bbe069142362437 = L.circleMarker(
+                [37.62118756887732, 126.9138672649344],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_c30d1092a8fcfd93337159e4b2e0bfdc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4018eba5de0a84bdd412d57e3e7afc8c = $(`<div id="html_4018eba5de0a84bdd412d57e3e7afc8c" style="width: 100.0%; height: 100.0%;">         <b>선일여고</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 8<br>         매출증감률: 3.6%<br>         객단가: 14,944원         </div>`)[0];
+                popup_c30d1092a8fcfd93337159e4b2e0bfdc.setContent(html_4018eba5de0a84bdd412d57e3e7afc8c);
+            
+        
+
+        circle_marker_086aaae0db0b86a85bbe069142362437.bindPopup(popup_c30d1092a8fcfd93337159e4b2e0bfdc)
+        ;
+
+        
+    
+    
+            var circle_marker_d6f9a29610d551f357533271970f0ae1 = L.circleMarker(
+                [37.5834218710177, 126.90701596105264],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_2ee561a34e8ad88c7b6f005338de7442 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e691efae78b29c2fb1310c2341973819 = $(`<div id="html_e691efae78b29c2fb1310c2341973819" style="width: 100.0%; height: 100.0%;">         <b>증산역 3번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 3.6%<br>         객단가: 39,894원         </div>`)[0];
+                popup_2ee561a34e8ad88c7b6f005338de7442.setContent(html_e691efae78b29c2fb1310c2341973819);
+            
+        
+
+        circle_marker_d6f9a29610d551f357533271970f0ae1.bindPopup(popup_2ee561a34e8ad88c7b6f005338de7442)
+        ;
+
+        
+    
+    
+            var circle_marker_c8344702f4b4b43a4d5e40701c1062b5 = L.circleMarker(
+                [37.5919792064456, 126.91625609375659],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_c94542865b53a1a9663160f9036bd884 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb3e4e1eec4eed2e825bd4c3f6af2afc = $(`<div id="html_eb3e4e1eec4eed2e825bd4c3f6af2afc" style="width: 100.0%; height: 100.0%;">         <b>응암3동주민센터</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 11<br>         매출증감률: 3.0%<br>         객단가: 29,012원         </div>`)[0];
+                popup_c94542865b53a1a9663160f9036bd884.setContent(html_eb3e4e1eec4eed2e825bd4c3f6af2afc);
+            
+        
+
+        circle_marker_c8344702f4b4b43a4d5e40701c1062b5.bindPopup(popup_c94542865b53a1a9663160f9036bd884)
+        ;
+
+        
+    
+    
+            var circle_marker_59d68e391b529e138af2470d90f41be5 = L.circleMarker(
+                [37.60345508523692, 126.91247213883027],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_d10e4054745e62cff7633e52c4487c9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_471ae7e53fbff7f257b748a7a21f233f = $(`<div id="html_471ae7e53fbff7f257b748a7a21f233f" style="width: 100.0%; height: 100.0%;">         <b>역촌노인복지관</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 10<br>         매출증감률: 3.0%<br>         객단가: 20,221원         </div>`)[0];
+                popup_d10e4054745e62cff7633e52c4487c9a.setContent(html_471ae7e53fbff7f257b748a7a21f233f);
+            
+        
+
+        circle_marker_59d68e391b529e138af2470d90f41be5.bindPopup(popup_d10e4054745e62cff7633e52c4487c9a)
+        ;
+
+        
+    
+    
+            var circle_marker_b8dafca39dc8c75659581fe688b93275 = L.circleMarker(
+                [37.61966145751094, 126.92186592951714],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_816828f6ed4fdb679cb6bef684580930 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae73569647f314fd4951ab15753c011d = $(`<div id="html_ae73569647f314fd4951ab15753c011d" style="width: 100.0%; height: 100.0%;">         <b>연서시장</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 진짜성장<br>         RFM합계: 11<br>         매출증감률: 1.9%<br>         객단가: 19,973원         </div>`)[0];
+                popup_816828f6ed4fdb679cb6bef684580930.setContent(html_ae73569647f314fd4951ab15753c011d);
+            
+        
+
+        circle_marker_b8dafca39dc8c75659581fe688b93275.bindPopup(popup_816828f6ed4fdb679cb6bef684580930)
+        ;
+
+        
+    
+    
+            var circle_marker_062c1caa7f2e497f7953a92b14847577 = L.circleMarker(
+                [37.611717602893464, 126.91307405227352],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_9011ce4cec51322cf85826f665c40a59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af0156e0771e4da7779a067e03e75b7b = $(`<div id="html_af0156e0771e4da7779a067e03e75b7b" style="width: 100.0%; height: 100.0%;">         <b>예일여고</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 진짜성장<br>         RFM합계: 8<br>         매출증감률: 1.6%<br>         객단가: 14,007원         </div>`)[0];
+                popup_9011ce4cec51322cf85826f665c40a59.setContent(html_af0156e0771e4da7779a067e03e75b7b);
+            
+        
+
+        circle_marker_062c1caa7f2e497f7953a92b14847577.bindPopup(popup_9011ce4cec51322cf85826f665c40a59)
+        ;
+
+        
+    
+    
+            var circle_marker_3d2de953e7083189ff913d25a92181ee = L.circleMarker(
+                [37.586196487934636, 126.91861754570077],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_53233ea0cd2bc3829efdc3ac45a7362d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46af35d6b72f18f520e5bd5ac762dd65 = $(`<div id="html_46af35d6b72f18f520e5bd5ac762dd65" style="width: 100.0%; height: 100.0%;">         <b>응암정보도서관</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 10<br>         매출증감률: 0.8%<br>         객단가: 19,399원         </div>`)[0];
+                popup_53233ea0cd2bc3829efdc3ac45a7362d.setContent(html_46af35d6b72f18f520e5bd5ac762dd65);
+            
+        
+
+        circle_marker_3d2de953e7083189ff913d25a92181ee.bindPopup(popup_53233ea0cd2bc3829efdc3ac45a7362d)
+        ;
+
+        
+    
+    
+            var circle_marker_ed288a0ff977b4ff6bf886d19e6b4bb9 = L.circleMarker(
+                [37.606267078274556, 126.92705548022388],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_5a4924100c979d5377179ce4cb7cf6b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2bbc6d63895ea43d590fd5451726183 = $(`<div id="html_d2bbc6d63895ea43d590fd5451726183" style="width: 100.0%; height: 100.0%;">         <b>역촌역 3번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 8<br>         매출증감률: 0.2%<br>         객단가: 11,958원         </div>`)[0];
+                popup_5a4924100c979d5377179ce4cb7cf6b4.setContent(html_d2bbc6d63895ea43d590fd5451726183);
+            
+        
+
+        circle_marker_ed288a0ff977b4ff6bf886d19e6b4bb9.bindPopup(popup_5a4924100c979d5377179ce4cb7cf6b4)
+        ;
+
+        
+    
+    
+            var circle_marker_b40c87e6c23365d270c52ed6d8bda2ce = L.circleMarker(
+                [37.60838176745521, 126.92290833727283],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_8c7574352d50fac2ad3f79cce0b8b37c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32a25b9736f08317ecf3bc9264da9a75 = $(`<div id="html_32a25b9736f08317ecf3bc9264da9a75" style="width: 100.0%; height: 100.0%;">         <b>역촌역 2번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 가짜성장(인플레이션)<br>         RFM합계: 8<br>         매출증감률: 0.0%<br>         객단가: 42,620원         </div>`)[0];
+                popup_8c7574352d50fac2ad3f79cce0b8b37c.setContent(html_32a25b9736f08317ecf3bc9264da9a75);
+            
+        
+
+        circle_marker_b40c87e6c23365d270c52ed6d8bda2ce.bindPopup(popup_8c7574352d50fac2ad3f79cce0b8b37c)
+        ;
+
+        
+    
+    
+            var circle_marker_b14772f0b3ca4b0c47def6bca9b85b52 = L.circleMarker(
+                [37.60326100173212, 126.91823657343359],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_a5c6ce27580545eb6215aa949a8ad1a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1182e5a79ee3c3c9f1632e00e565f7de = $(`<div id="html_1182e5a79ee3c3c9f1632e00e565f7de" style="width: 100.0%; height: 100.0%;">         <b>응암역 3번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -0.0%<br>         객단가: 13,190원         </div>`)[0];
+                popup_a5c6ce27580545eb6215aa949a8ad1a6.setContent(html_1182e5a79ee3c3c9f1632e00e565f7de);
+            
+        
+
+        circle_marker_b14772f0b3ca4b0c47def6bca9b85b52.bindPopup(popup_a5c6ce27580545eb6215aa949a8ad1a6)
+        ;
+
+        
+    
+    
+            var circle_marker_8c2c50298d63674676a4b0053d8259c2 = L.circleMarker(
+                [37.58860620736623, 126.91174225478473],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_2becf6f95eb1c17cbbc2d08fb13d6511 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f20ce8f5c7796c09e6c2789477fe90b = $(`<div id="html_7f20ce8f5c7796c09e6c2789477fe90b" style="width: 100.0%; height: 100.0%;">         <b>증산골목시장</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -0.3%<br>         객단가: 20,934원         </div>`)[0];
+                popup_2becf6f95eb1c17cbbc2d08fb13d6511.setContent(html_7f20ce8f5c7796c09e6c2789477fe90b);
+            
+        
+
+        circle_marker_8c2c50298d63674676a4b0053d8259c2.bindPopup(popup_2becf6f95eb1c17cbbc2d08fb13d6511)
+        ;
+
+        
+    
+    
+            var circle_marker_46f0662bae2c3168f11df518518bbb53 = L.circleMarker(
+                [37.625629470771514, 126.92730843440147],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_28da32d1952564f7fa72e4898f6a57a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_660afa3b5ce90be4bd43fab25b703eaa = $(`<div id="html_660afa3b5ce90be4bd43fab25b703eaa" style="width: 100.0%; height: 100.0%;">         <b>연신초등학교</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 저가성장<br>         RFM합계: 7<br>         매출증감률: -0.6%<br>         객단가: 18,962원         </div>`)[0];
+                popup_28da32d1952564f7fa72e4898f6a57a1.setContent(html_660afa3b5ce90be4bd43fab25b703eaa);
+            
+        
+
+        circle_marker_46f0662bae2c3168f11df518518bbb53.bindPopup(popup_28da32d1952564f7fa72e4898f6a57a1)
+        ;
+
+        
+    
+    
+            var circle_marker_10f5e44916a1f43847114d213d4525f1 = L.circleMarker(
+                [37.619066940896616, 126.92207043712689],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_017b92159b02d1b3ceb27d1b170f61aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf3569aece551cec576401f3e34e3fb5 = $(`<div id="html_cf3569aece551cec576401f3e34e3fb5" style="width: 100.0%; height: 100.0%;">         <b>연신내역</b><br>         자치구: 은평구<br>         상권유형: 발달상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 11<br>         매출증감률: -0.7%<br>         객단가: 26,265원         </div>`)[0];
+                popup_017b92159b02d1b3ceb27d1b170f61aa.setContent(html_cf3569aece551cec576401f3e34e3fb5);
+            
+        
+
+        circle_marker_10f5e44916a1f43847114d213d4525f1.bindPopup(popup_017b92159b02d1b3ceb27d1b170f61aa)
+        ;
+
+        
+    
+    
+            var circle_marker_eabb1a7217f474232438367d4044f0e4 = L.circleMarker(
+                [37.61193669331818, 126.91703785789751],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_0a6108b558fb7b8e10c4633a231dc733 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ebb59dd4566e4cbbf484bfb211c8cab = $(`<div id="html_1ebb59dd4566e4cbbf484bfb211c8cab" style="width: 100.0%; height: 100.0%;">         <b>구산역</b><br>         자치구: 은평구<br>         상권유형: 발달상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 12<br>         매출증감률: -0.8%<br>         객단가: 30,686원         </div>`)[0];
+                popup_0a6108b558fb7b8e10c4633a231dc733.setContent(html_1ebb59dd4566e4cbbf484bfb211c8cab);
+            
+        
+
+        circle_marker_eabb1a7217f474232438367d4044f0e4.bindPopup(popup_0a6108b558fb7b8e10c4633a231dc733)
+        ;
+
+        
+    
+    
+            var circle_marker_11e63616861e8bdcfcd2cfc8859c7d9b = L.circleMarker(
+                [37.60248349984441, 126.92799910442115],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_a169443eed71c6a1821c9fa7adbe247f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a19eebd31d9f890a93530b6d3b6950bd = $(`<div id="html_a19eebd31d9f890a93530b6d3b6950bd" style="width: 100.0%; height: 100.0%;">         <b>은평구청</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -1.0%<br>         객단가: 33,066원         </div>`)[0];
+                popup_a169443eed71c6a1821c9fa7adbe247f.setContent(html_a19eebd31d9f890a93530b6d3b6950bd);
+            
+        
+
+        circle_marker_11e63616861e8bdcfcd2cfc8859c7d9b.bindPopup(popup_a169443eed71c6a1821c9fa7adbe247f)
+        ;
+
+        
+    
+    
+            var circle_marker_e08459a85e30078fc4815c487aaea499 = L.circleMarker(
+                [37.60861110244884, 126.92944284713957],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_f499459c1d0381b77d03e8b764fa5180 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79a196aac48532119a2d0bfd322e3f1f = $(`<div id="html_79a196aac48532119a2d0bfd322e3f1f" style="width: 100.0%; height: 100.0%;">         <b>불광역</b><br>         자치구: 은평구<br>         상권유형: 발달상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -1.3%<br>         객단가: 19,131원         </div>`)[0];
+                popup_f499459c1d0381b77d03e8b764fa5180.setContent(html_79a196aac48532119a2d0bfd322e3f1f);
+            
+        
+
+        circle_marker_e08459a85e30078fc4815c487aaea499.bindPopup(popup_f499459c1d0381b77d03e8b764fa5180)
+        ;
+
+        
+    
+    
+            var circle_marker_7d4ccb39c82c2c390fa4db3ba8fc50f1 = L.circleMarker(
+                [37.625721048855574, 126.9159690380799],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_33b9817ee242b481202e14f611b6ef8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98aa5e09bdfdb5a7b692a861a0a4a6b7 = $(`<div id="html_98aa5e09bdfdb5a7b692a861a0a4a6b7" style="width: 100.0%; height: 100.0%;">         <b>갈현건영아파트</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 저가성장<br>         RFM합계: 7<br>         매출증감률: -1.3%<br>         객단가: 9,085원         </div>`)[0];
+                popup_33b9817ee242b481202e14f611b6ef8e.setContent(html_98aa5e09bdfdb5a7b692a861a0a4a6b7);
+            
+        
+
+        circle_marker_7d4ccb39c82c2c390fa4db3ba8fc50f1.bindPopup(popup_33b9817ee242b481202e14f611b6ef8e)
+        ;
+
+        
+    
+    
+            var circle_marker_c17d55d6b684a6deef17822860aefe64 = L.circleMarker(
+                [37.59773160300439, 126.92220593140247],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_2f7f80095ea1591f483856fc75a5a1c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24a3d893075cb0edda94c7936bfef738 = $(`<div id="html_24a3d893075cb0edda94c7936bfef738" style="width: 100.0%; height: 100.0%;">         <b>백련산해모로아파트</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -1.4%<br>         객단가: 16,316원         </div>`)[0];
+                popup_2f7f80095ea1591f483856fc75a5a1c0.setContent(html_24a3d893075cb0edda94c7936bfef738);
+            
+        
+
+        circle_marker_c17d55d6b684a6deef17822860aefe64.bindPopup(popup_2f7f80095ea1591f483856fc75a5a1c0)
+        ;
+
+        
+    
+    
+            var circle_marker_0dbe980d2430df401f08d0704737b341 = L.circleMarker(
+                [37.61042307337391, 126.9311060072656],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_86610df55c80e3c81ea595f86ffbd3f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42d8726e5473faad5868ff98a5b01c4a = $(`<div id="html_42d8726e5473faad5868ff98a5b01c4a" style="width: 100.0%; height: 100.0%;">         <b>불광먹자골목 골목형상점가</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 11<br>         매출증감률: -1.6%<br>         객단가: 34,906원         </div>`)[0];
+                popup_86610df55c80e3c81ea595f86ffbd3f0.setContent(html_42d8726e5473faad5868ff98a5b01c4a);
+            
+        
+
+        circle_marker_0dbe980d2430df401f08d0704737b341.bindPopup(popup_86610df55c80e3c81ea595f86ffbd3f0)
+        ;
+
+        
+    
+    
+            var circle_marker_21dbb1b56ca18f52b44abee5c92c818f = L.circleMarker(
+                [37.59576090018161, 126.91284350185038],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_398d603a344cf2f9158601abf8785236 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bc2372df20b75cc12025a71d746788b = $(`<div id="html_8bc2372df20b75cc12025a71d746788b" style="width: 100.0%; height: 100.0%;">         <b>신사1동주민센터</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -2.3%<br>         객단가: 18,557원         </div>`)[0];
+                popup_398d603a344cf2f9158601abf8785236.setContent(html_8bc2372df20b75cc12025a71d746788b);
+            
+        
+
+        circle_marker_21dbb1b56ca18f52b44abee5c92c818f.bindPopup(popup_398d603a344cf2f9158601abf8785236)
+        ;
+
+        
+    
+    
+            var circle_marker_a07703e600fbadde0a09c166010846a3 = L.circleMarker(
+                [37.609483334764015, 126.92661064407342],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_5444de6da708eb1f959abddc6111a4c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b475203ba3f88ed6784de7dbc420a0e3 = $(`<div id="html_b475203ba3f88ed6784de7dbc420a0e3" style="width: 100.0%; height: 100.0%;">         <b>대조시장</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -2.7%<br>         객단가: 17,485원         </div>`)[0];
+                popup_5444de6da708eb1f959abddc6111a4c7.setContent(html_b475203ba3f88ed6784de7dbc420a0e3);
+            
+        
+
+        circle_marker_a07703e600fbadde0a09c166010846a3.bindPopup(popup_5444de6da708eb1f959abddc6111a4c7)
+        ;
+
+        
+    
+    
+            var circle_marker_120ba67a907c32b29c81d38a95a5da10 = L.circleMarker(
+                [37.589005588687364, 126.9157725618011],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_fa5e5752711f71a8af5737dd210d66c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_683f5df8ecdf7e819fe4770ba527a62b = $(`<div id="html_683f5df8ecdf7e819fe4770ba527a62b" style="width: 100.0%; height: 100.0%;">         <b>응암오거리상점가</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 저가성장<br>         RFM합계: 9<br>         매출증감률: -3.3%<br>         객단가: 21,242원         </div>`)[0];
+                popup_fa5e5752711f71a8af5737dd210d66c1.setContent(html_683f5df8ecdf7e819fe4770ba527a62b);
+            
+        
+
+        circle_marker_120ba67a907c32b29c81d38a95a5da10.bindPopup(popup_fa5e5752711f71a8af5737dd210d66c1)
+        ;
+
+        
+    
+    
+            var circle_marker_4907e374c69baa7bd47e8676a2bec679 = L.circleMarker(
+                [37.600560629824955, 126.92207842001997],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_c0ca7750a718aec04daeb3c421014415 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2033565a8d8403ad248fef485d1130ae = $(`<div id="html_2033565a8d8403ad248fef485d1130ae" style="width: 100.0%; height: 100.0%;">         <b>본서부병원</b><br>         자치구: 은평구<br>         상권유형: 발달상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 11<br>         매출증감률: -3.3%<br>         객단가: 28,234원         </div>`)[0];
+                popup_c0ca7750a718aec04daeb3c421014415.setContent(html_2033565a8d8403ad248fef485d1130ae);
+            
+        
+
+        circle_marker_4907e374c69baa7bd47e8676a2bec679.bindPopup(popup_c0ca7750a718aec04daeb3c421014415)
+        ;
+
+        
+    
+    
+            var circle_marker_01e26e017f85b00ef32f7291656ab751 = L.circleMarker(
+                [37.620010847855006, 126.91890918747656],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_7dd76a803d8943096f57e09d386693c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_020f9a16921cf2cb7d0992ba48a00394 = $(`<div id="html_020f9a16921cf2cb7d0992ba48a00394" style="width: 100.0%; height: 100.0%;">         <b>연신내상점가(연빛거리)</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 10<br>         매출증감률: -4.3%<br>         객단가: 24,927원         </div>`)[0];
+                popup_7dd76a803d8943096f57e09d386693c8.setContent(html_020f9a16921cf2cb7d0992ba48a00394);
+            
+        
+
+        circle_marker_01e26e017f85b00ef32f7291656ab751.bindPopup(popup_7dd76a803d8943096f57e09d386693c8)
+        ;
+
+        
+    
+    
+            var circle_marker_22045e76b43a77238b449bade2678062 = L.circleMarker(
+                [37.59424233344807, 126.91859746125807],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_1de244db6701c8d7cab8210fcf8d164f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab37ecb4c132382ae26be65665c1e75b = $(`<div id="html_ab37ecb4c132382ae26be65665c1e75b" style="width: 100.0%; height: 100.0%;">         <b>응암시장(신응암시장)</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -4.8%<br>         객단가: 47,052원         </div>`)[0];
+                popup_1de244db6701c8d7cab8210fcf8d164f.setContent(html_ab37ecb4c132382ae26be65665c1e75b);
+            
+        
+
+        circle_marker_22045e76b43a77238b449bade2678062.bindPopup(popup_1de244db6701c8d7cab8210fcf8d164f)
+        ;
+
+        
+    
+    
+            var circle_marker_cda95735f6b6e470e8aa05b66bd2732d = L.circleMarker(
+                [37.617798543317264, 126.92515264438029],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_6611ccd76f07216a7fac57e98f54400c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a170c60d58310062b309ff9649bccaef = $(`<div id="html_a170c60d58310062b309ff9649bccaef" style="width: 100.0%; height: 100.0%;">         <b>연신내역 3번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -5.6%<br>         객단가: 32,986원         </div>`)[0];
+                popup_6611ccd76f07216a7fac57e98f54400c.setContent(html_a170c60d58310062b309ff9649bccaef);
+            
+        
+
+        circle_marker_cda95735f6b6e470e8aa05b66bd2732d.bindPopup(popup_6611ccd76f07216a7fac57e98f54400c)
+        ;
+
+        
+    
+    
+            var circle_marker_6082ca7d400e48846684ef371f48cc5e = L.circleMarker(
+                [37.62172941053949, 126.92930584981418],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_3d8a17f58d77dccceb449f628b11b702 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_229a9d34f42e2e54aec8b8ebb613332f = $(`<div id="html_229a9d34f42e2e54aec8b8ebb613332f" style="width: 100.0%; height: 100.0%;">         <b>연신내우체국</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 위험_상권<br>         성장유형: 저가성장<br>         RFM합계: 6<br>         매출증감률: -5.7%<br>         객단가: 19,519원         </div>`)[0];
+                popup_3d8a17f58d77dccceb449f628b11b702.setContent(html_229a9d34f42e2e54aec8b8ebb613332f);
+            
+        
+
+        circle_marker_6082ca7d400e48846684ef371f48cc5e.bindPopup(popup_3d8a17f58d77dccceb449f628b11b702)
+        ;
+
+        
+    
+    
+            var circle_marker_2ccab9efc7451690ce1e5bfc10328b37 = L.circleMarker(
+                [37.596441345078325, 126.90719226269528],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_7a4dd6df2e52b538c5c74dcdd1357a5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_912b8ff16db3567a941769872c7a07ca = $(`<div id="html_912b8ff16db3567a941769872c7a07ca" style="width: 100.0%; height: 100.0%;">         <b>상신초등학교입구</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 위험_상권<br>         성장유형: 침체<br>         RFM합계: 5<br>         매출증감률: -5.7%<br>         객단가: 15,707원         </div>`)[0];
+                popup_7a4dd6df2e52b538c5c74dcdd1357a5e.setContent(html_912b8ff16db3567a941769872c7a07ca);
+            
+        
+
+        circle_marker_2ccab9efc7451690ce1e5bfc10328b37.bindPopup(popup_7a4dd6df2e52b538c5c74dcdd1357a5e)
+        ;
+
+        
+    
+    
+            var circle_marker_2b3b03aefe310cb9c4d60317520c4654 = L.circleMarker(
+                [37.590590887541644, 126.91514802943944],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_dfe9e7b24e40ec63085624eab9faf7c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f2e0b4c98f5a169f45795daa881ba51 = $(`<div id="html_4f2e0b4c98f5a169f45795daa881ba51" style="width: 100.0%; height: 100.0%;">         <b>새절역 2번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -6.1%<br>         객단가: 53,179원         </div>`)[0];
+                popup_dfe9e7b24e40ec63085624eab9faf7c1.setContent(html_4f2e0b4c98f5a169f45795daa881ba51);
+            
+        
+
+        circle_marker_2b3b03aefe310cb9c4d60317520c4654.bindPopup(popup_dfe9e7b24e40ec63085624eab9faf7c1)
+        ;
+
+        
+    
+    
+            var circle_marker_1993c56b61f3118f3697e7fc5897ee7c = L.circleMarker(
+                [37.59016549565589, 126.91251034948718],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_d312d777bab295f96ced27362cc0a18a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b4c06651003a26eca8d9f49c6bd2efe = $(`<div id="html_3b4c06651003a26eca8d9f49c6bd2efe" style="width: 100.0%; height: 100.0%;">         <b>새절역 3번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 위험_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -6.2%<br>         객단가: 20,601원         </div>`)[0];
+                popup_d312d777bab295f96ced27362cc0a18a.setContent(html_3b4c06651003a26eca8d9f49c6bd2efe);
+            
+        
+
+        circle_marker_1993c56b61f3118f3697e7fc5897ee7c.bindPopup(popup_d312d777bab295f96ced27362cc0a18a)
+        ;
+
+        
+    
+    
+            var circle_marker_9e8e7bcb557e90b4fc14a0f0cb53de3d = L.circleMarker(
+                [37.61225839319223, 126.92663056899477],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_ddb6333e99e15535c9776f88c3a39f68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_033709dc5bc98b97e1e49d092b683103 = $(`<div id="html_033709dc5bc98b97e1e49d092b683103" style="width: 100.0%; height: 100.0%;">         <b>불광역 7번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -8.3%<br>         객단가: 16,954원         </div>`)[0];
+                popup_ddb6333e99e15535c9776f88c3a39f68.setContent(html_033709dc5bc98b97e1e49d092b683103);
+            
+        
+
+        circle_marker_9e8e7bcb557e90b4fc14a0f0cb53de3d.bindPopup(popup_ddb6333e99e15535c9776f88c3a39f68)
+        ;
+
+        
+    
+    
+            var circle_marker_4a7fc17c6204899f1efff2879a1e3414 = L.circleMarker(
+                [37.6242109202581, 126.93595288951646],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_c14d3c5c690eef6f088d5ffc16a76d2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7e34e6a608e475a8d4711cbe5360708 = $(`<div id="html_d7e34e6a608e475a8d4711cbe5360708" style="width: 100.0%; height: 100.0%;">         <b>불광중학교</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -8.7%<br>         객단가: 36,015원         </div>`)[0];
+                popup_c14d3c5c690eef6f088d5ffc16a76d2e.setContent(html_d7e34e6a608e475a8d4711cbe5360708);
+            
+        
+
+        circle_marker_4a7fc17c6204899f1efff2879a1e3414.bindPopup(popup_c14d3c5c690eef6f088d5ffc16a76d2e)
+        ;
+
+        
+    
+    
+            var circle_marker_6e481100d2e41d77db45c125c7769cee = L.circleMarker(
+                [37.609998536956034, 126.92929430372801],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_8217d702e9c5006779edb630742967c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ff6a4c0cd8329ef09840ee812fff692 = $(`<div id="html_4ff6a4c0cd8329ef09840ee812fff692" style="width: 100.0%; height: 100.0%;">         <b>제일시장</b><br>         자치구: 은평구<br>         상권유형: 전통시장<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -8.8%<br>         객단가: 15,197원         </div>`)[0];
+                popup_8217d702e9c5006779edb630742967c8.setContent(html_4ff6a4c0cd8329ef09840ee812fff692);
+            
+        
+
+        circle_marker_6e481100d2e41d77db45c125c7769cee.bindPopup(popup_8217d702e9c5006779edb630742967c8)
+        ;
+
+        
+    
+    
+            var circle_marker_b7ab1475cc028762de692d97976c0d3a = L.circleMarker(
+                [37.59869132855268, 126.91588620727673],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_a28db63560bd3b5fe8a0e8a138a1f256 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f00b0ad792bfc5085005ae9023002e94 = $(`<div id="html_f00b0ad792bfc5085005ae9023002e94" style="width: 100.0%; height: 100.0%;">         <b>응암역</b><br>         자치구: 은평구<br>         상권유형: 발달상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -8.9%<br>         객단가: 19,212원         </div>`)[0];
+                popup_a28db63560bd3b5fe8a0e8a138a1f256.setContent(html_f00b0ad792bfc5085005ae9023002e94);
+            
+        
+
+        circle_marker_b7ab1475cc028762de692d97976c0d3a.bindPopup(popup_a28db63560bd3b5fe8a0e8a138a1f256)
+        ;
+
+        
+    
+    
+            var circle_marker_0e40274a7a881ad9cf8f2fab0a884aa5 = L.circleMarker(
+                [37.5998058991835, 126.92532920921035],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_b3a632dd8e93644afec7425cb725be46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6eff0c5dfa337992c44354ec1d8dcb9f = $(`<div id="html_6eff0c5dfa337992c44354ec1d8dcb9f" style="width: 100.0%; height: 100.0%;">         <b>응암1동주민센터</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -9.6%<br>         객단가: 27,857원         </div>`)[0];
+                popup_b3a632dd8e93644afec7425cb725be46.setContent(html_6eff0c5dfa337992c44354ec1d8dcb9f);
+            
+        
+
+        circle_marker_0e40274a7a881ad9cf8f2fab0a884aa5.bindPopup(popup_b3a632dd8e93644afec7425cb725be46)
+        ;
+
+        
+    
+    
+            var circle_marker_392053c74608c64656a3e34b77f9cb3e = L.circleMarker(
+                [37.59134163214491, 126.91931395497885],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_627ff0eafcb633d9f40b114de68532a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3b95b69eaef48f60e30304b51e65f79 = $(`<div id="html_b3b95b69eaef48f60e30304b51e65f79" style="width: 100.0%; height: 100.0%;">         <b>응암동우체국</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 저평가_가치주<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -9.6%<br>         객단가: 20,789원         </div>`)[0];
+                popup_627ff0eafcb633d9f40b114de68532a3.setContent(html_b3b95b69eaef48f60e30304b51e65f79);
+            
+        
+
+        circle_marker_392053c74608c64656a3e34b77f9cb3e.bindPopup(popup_627ff0eafcb633d9f40b114de68532a3)
+        ;
+
+        
+    
+    
+            var circle_marker_5c21ca67a56dbdbc28bccd435b743e6a = L.circleMarker(
+                [37.59958162306841, 126.91355245804971],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_73452b21266a8fe10736ef0e64e41512 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aae65ae2e2d3822260b50eb1640262c1 = $(`<div id="html_aae65ae2e2d3822260b50eb1640262c1" style="width: 100.0%; height: 100.0%;">         <b>응암역 2번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -10.6%<br>         객단가: 28,762원         </div>`)[0];
+                popup_73452b21266a8fe10736ef0e64e41512.setContent(html_aae65ae2e2d3822260b50eb1640262c1);
+            
+        
+
+        circle_marker_5c21ca67a56dbdbc28bccd435b743e6a.bindPopup(popup_73452b21266a8fe10736ef0e64e41512)
+        ;
+
+        
+    
+    
+            var circle_marker_6198beec417900ffee5e2ef776271c90 = L.circleMarker(
+                [37.60061956912879, 126.92985806504463],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_b559f53246c212699749510b76b6bbef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb56d8dd930b9731e58cb9edd3926e79 = $(`<div id="html_eb56d8dd930b9731e58cb9edd3926e79" style="width: 100.0%; height: 100.0%;">         <b>우리은행응암동지점</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -12.8%<br>         객단가: 33,480원         </div>`)[0];
+                popup_b559f53246c212699749510b76b6bbef.setContent(html_eb56d8dd930b9731e58cb9edd3926e79);
+            
+        
+
+        circle_marker_6198beec417900ffee5e2ef776271c90.bindPopup(popup_b559f53246c212699749510b76b6bbef)
+        ;
+
+        
+    
+    
+            var circle_marker_d0cdc182ebb0e360744474aac816dc8a = L.circleMarker(
+                [37.61729449862414, 126.91277306605426],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_94d5254a2b10efb91ce25bdfe70dd3e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cebc7e2a49351d81818a0626b2b41c2e = $(`<div id="html_cebc7e2a49351d81818a0626b2b41c2e" style="width: 100.0%; height: 100.0%;">         <b>선정중학교</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 5<br>         매출증감률: -13.8%<br>         객단가: 12,024원         </div>`)[0];
+                popup_94d5254a2b10efb91ce25bdfe70dd3e2.setContent(html_cebc7e2a49351d81818a0626b2b41c2e);
+            
+        
+
+        circle_marker_d0cdc182ebb0e360744474aac816dc8a.bindPopup(popup_94d5254a2b10efb91ce25bdfe70dd3e2)
+        ;
+
+        
+    
+    
+            var circle_marker_8819e757510dde27fb27e60f46fade81 = L.circleMarker(
+                [37.62484029093253, 126.91913049837581],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_f482180a32739a4aa912305bd14ca7d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8785df37948467e95c9f68abba819ef = $(`<div id="html_e8785df37948467e95c9f68abba819ef" style="width: 100.0%; height: 100.0%;">         <b>은평요양병원</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 8<br>         매출증감률: -13.9%<br>         객단가: 24,053원         </div>`)[0];
+                popup_f482180a32739a4aa912305bd14ca7d8.setContent(html_e8785df37948467e95c9f68abba819ef);
+            
+        
+
+        circle_marker_8819e757510dde27fb27e60f46fade81.bindPopup(popup_f482180a32739a4aa912305bd14ca7d8)
+        ;
+
+        
+    
+    
+            var circle_marker_f73d7d20f08b53f9b609644536d7e9d1 = L.circleMarker(
+                [37.62574305642576, 126.92176894024712],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_63b870b8f42de42343246dd618f8653c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13a16191b8cb77ab2666ca2a422ff214 = $(`<div id="html_13a16191b8cb77ab2666ca2a422ff214" style="width: 100.0%; height: 100.0%;">         <b>세명컴퓨터고등학교</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 위험_상권<br>         성장유형: 침체<br>         RFM합계: 4<br>         매출증감률: -14.5%<br>         객단가: 13,383원         </div>`)[0];
+                popup_63b870b8f42de42343246dd618f8653c.setContent(html_13a16191b8cb77ab2666ca2a422ff214);
+            
+        
+
+        circle_marker_f73d7d20f08b53f9b609644536d7e9d1.bindPopup(popup_63b870b8f42de42343246dd618f8653c)
+        ;
+
+        
+    
+    
+            var circle_marker_dfb6b57b33a66a1ceb27574bc2c0de6d = L.circleMarker(
+                [37.61572337254678, 126.92071475120335],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_295b20ade9937c68e04a1926d83cb1b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_364d7b8f8a65252436a7c2423091cd44 = $(`<div id="html_364d7b8f8a65252436a7c2423091cd44" style="width: 100.0%; height: 100.0%;">         <b>연신내역 4번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -16.1%<br>         객단가: 24,655원         </div>`)[0];
+                popup_295b20ade9937c68e04a1926d83cb1b9.setContent(html_364d7b8f8a65252436a7c2423091cd44);
+            
+        
+
+        circle_marker_dfb6b57b33a66a1ceb27574bc2c0de6d.bindPopup(popup_295b20ade9937c68e04a1926d83cb1b9)
+        ;
+
+        
+    
+    
+            var circle_marker_0f6be6f0ce196956564ca3d5e87c7556 = L.circleMarker(
+                [37.63726438501466, 126.91840326151333],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_0a15e2c9247327cd4430fa8527d7fd30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6fa3dc5b2fc60d9592b6f7ebea3086a = $(`<div id="html_b6fa3dc5b2fc60d9592b6f7ebea3086a" style="width: 100.0%; height: 100.0%;">         <b>구파발역</b><br>         자치구: 은평구<br>         상권유형: 발달상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 9<br>         매출증감률: -19.6%<br>         객단가: 29,578원         </div>`)[0];
+                popup_0a15e2c9247327cd4430fa8527d7fd30.setContent(html_b6fa3dc5b2fc60d9592b6f7ebea3086a);
+            
+        
+
+        circle_marker_0f6be6f0ce196956564ca3d5e87c7556.bindPopup(popup_0a15e2c9247327cd4430fa8527d7fd30)
+        ;
+
+        
+    
+    
+            var circle_marker_43f97822d040b0d7a04d91ab4d0edbf0 = L.circleMarker(
+                [37.59722490823317, 126.91902451113432],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_8c73590d3f65a80a99f916cad58f9cdd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3771387f014fe4b46d49d2c823afa32 = $(`<div id="html_f3771387f014fe4b46d49d2c823afa32" style="width: 100.0%; height: 100.0%;">         <b>신진과학기술고등학교</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 고평가_버블<br>         성장유형: 침체<br>         RFM합계: 7<br>         매출증감률: -20.1%<br>         객단가: 30,024원         </div>`)[0];
+                popup_8c73590d3f65a80a99f916cad58f9cdd.setContent(html_f3771387f014fe4b46d49d2c823afa32);
+            
+        
+
+        circle_marker_43f97822d040b0d7a04d91ab4d0edbf0.bindPopup(popup_8c73590d3f65a80a99f916cad58f9cdd)
+        ;
+
+        
+    
+    
+            var circle_marker_24cb38e90a22382b87f928b6c34a7429 = L.circleMarker(
+                [37.59086414192362, 126.90710860708315],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_b86267caf69daf9f399d274d4294e13e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_252d504edd77639015180af4a99c3fa9 = $(`<div id="html_252d504edd77639015180af4a99c3fa9" style="width: 100.0%; height: 100.0%;">         <b>내를건너서숲으로도서관</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 저가성장<br>         RFM합계: 5<br>         매출증감률: -26.6%<br>         객단가: 27,074원         </div>`)[0];
+                popup_b86267caf69daf9f399d274d4294e13e.setContent(html_252d504edd77639015180af4a99c3fa9);
+            
+        
+
+        circle_marker_24cb38e90a22382b87f928b6c34a7429.bindPopup(popup_b86267caf69daf9f399d274d4294e13e)
+        ;
+
+        
+    
+    
+            var circle_marker_eca20ff1c50481f5000442447b6e7b8b = L.circleMarker(
+                [37.586867310443004, 126.91176695211742],
+                {"bubblingMouseEvents": true, "color": "#00838F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00838F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_99083d3d627f9ddb5fc7df764778526d);
+        
+    
+        var popup_0544d87e64967fccc1aaff8b94e4e6fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6f140c813f8e9819f5a97a73cd4be38 = $(`<div id="html_e6f140c813f8e9819f5a97a73cd4be38" style="width: 100.0%; height: 100.0%;">         <b>증산역 4번</b><br>         자치구: 은평구<br>         상권유형: 골목상권<br>         분류: 일반_상권<br>         성장유형: 침체<br>         RFM합계: 6<br>         매출증감률: -65.7%<br>         객단가: 18,356원         </div>`)[0];
+                popup_0544d87e64967fccc1aaff8b94e4e6fe.setContent(html_e6f140c813f8e9819f5a97a73cd4be38);
+            
+        
+
+        circle_marker_eca20ff1c50481f5000442447b6e7b8b.bindPopup(popup_0544d87e64967fccc1aaff8b94e4e6fe)
+        ;
+
+        
+    
+</script>
+</html>
