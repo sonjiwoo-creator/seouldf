@@ -1,0 +1,53 @@
+# %% 성장유형 시각화 고도화
+import matplotlib.pyplot as plt
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
+
+# 1. 2D 산점도: 매출증감률 vs 결제건수증감률
+# 'N/A' 라벨을 '일반'으로 대체 처리할 수 있도록 딕셔너리 확장
+colors = {'진짜성장': 'green', '가짜성장(인플레이션)': 'red', '저가성장': 'blue', '침체': 'gray', '일반': 'black', 'N/A': 'black'}
+
+for 유형 in rfm_clean['성장유형'].unique():
+    mask = rfm_clean['성장유형'] == 유형
+    ax1.scatter(rfm_clean[mask]['결제건수_증감률'], rfm_clean[mask]['R_매출증감률'], 
+                label=유형, alpha=0.7, color=colors.get(유형, 'black'), s=60, edgecolor='white')
+
+# 사분면 분할 기준선 (0% 성장 기준)
+ax1.axhline(0, color='black', linestyle='--', linewidth=1, alpha=0.5)
+ax1.axvline(0, color='black', linestyle='--', linewidth=1, alpha=0.5)
+
+# 🎯 직관적 라벨 텍스트 추가 (4개의 사분면에 각각 텍스트 배치)
+ax1.text(150, 200, '🚀 진짜성장\n(결제 증가, 매출 증가)', fontsize=11, ha='center', color='darkgreen', fontweight='bold', alpha=0.8)
+ax1.text(-50, 200, '🚨 가짜성장(인플레이션)\n(결제 감소, 매출 증가)', fontsize=11, ha='center', color='darkred', fontweight='bold', alpha=0.8)
+ax1.text(-50, -50, '📉 침체\n(결제 감소, 매출 감소)', fontsize=11, ha='center', color='dimgray', fontweight='bold', alpha=0.8)
+ax1.text(150, -50, '🏷️ 저가성장\n(결제 증가, 매출 감소)', fontsize=11, ha='center', color='darkblue', fontweight='bold', alpha=0.8)
+
+# 축 및 제목 설정
+ax1.set_xlabel('F: 결제건수 증감률 (%)', fontsize=11, fontweight='bold')
+ax1.set_ylabel('R: 매출 증감률 (%)', fontsize=11, fontweight='bold')
+ax1.set_title('성장유형 매트릭스: 인플레이션 착시 필터링', fontsize=14, fontweight='bold', pad=15)
+
+# 아웃라이어 절삭 (데이터가 잘 퍼져 보이도록 돋보기 효과)
+ax1.set_xlim(-100, 300) 
+ax1.set_ylim(-100, 300)
+
+ax1.legend(title='성장 유형', fontsize=10, loc='upper left')
+ax1.grid(True, alpha=0.3)
+
+# 2. 파이 차트
+# 성장분류 데이터 파이 차트 생성 (색상을 산점도와 통일)
+wedges, texts, autotexts = ax2.pie(성장분류.values, labels=성장분류.index, autopct='%1.1f%%', 
+                                   startangle=90, colors=[colors.get(x, 'black') for x in 성장분류.index])
+
+# 파이 차트 내부 퍼센트 글씨 가독성 향상
+for autotext in autotexts:
+    autotext.set_fontweight('bold')
+    autotext.set_color('white')
+
+ax2.set_title('전체 상권 중 성장유형 분포', fontsize=14, fontweight='bold', pad=15)
+
+plt.tight_layout()
+plt.savefig(OUTPUT_DIR / '인플레이션필터링_고도화.png', dpi=150, bbox_inches='tight')
+plt.show()
+
+print('\n✅ 인플레이션 필터링 분석 및 시각화 완료')
