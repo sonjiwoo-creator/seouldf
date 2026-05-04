@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa1c4603d4b80085f2878255beefc670 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+<div style="position:fixed; bottom:30px; left:30px; z-index:9999;
+     background:#fff; padding:12px 16px; border-radius:8px;
+     border:1px solid #ccc; font-size:13px; line-height:1.8;">
+  <b>D유형 상권 유형 (용산구)</b><br>
+  <span style="color:#2166ac;">&#9679;</span> ① 전세대 고트래픽-저전환형 (환승형)<br>
+  <span style="color:#d6604d;">&#9679;</span> ② 연령 편중 안정형<br>
+  <span style="color:#1a9850;">&#9679;</span> ③ 전세대 균형 소비 전환형<br>
+  <span style="color:#f4a582;">&#9679;</span> ④ 전체 하락 취약형<br>
+  <small style="color:#888;">원 크기 ∝ 월매출 규모</small>
+</div>
+    
+            <div class="folium-map" id="map_fa1c4603d4b80085f2878255beefc670" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fa1c4603d4b80085f2878255beefc670 = L.map(
+                "map_fa1c4603d4b80085f2878255beefc670",
+                {
+                    center: [37.53929376033084, 126.98098238979676],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0922b5d35f3c0cb6395de3904e34bbfa = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0922b5d35f3c0cb6395de3904e34bbfa.addTo(map_fa1c4603d4b80085f2878255beefc670);
+        
+    
+            var tile_layer_e83332c12b5437c4505fa8f89f97c558 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_1a17bf78dfcde816b4154351ebdaee07 = new L.Control.MiniMap(
+                tile_layer_e83332c12b5437c4505fa8f89f97c558,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_fa1c4603d4b80085f2878255beefc670.addControl(mini_map_1a17bf78dfcde816b4154351ebdaee07);
+        
+    
+            var feature_group_1759d24ce2046bd364493ffeee0939f0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_8e9b325c5af016cf21268e4688a0410c = L.circleMarker(
+                [37.54099808835734, 126.95936370660476],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.264743976499094, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_37a8a522ff300fdd4a7032fa5d33d7e6 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_7d000d4b34812979e776d6b8f9ce3a78 = $(`<div id="html_7d000d4b34812979e776d6b8f9ce3a78" style="width: 100.0%; height: 100.0%;"><b>효창공원앞역 6번</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 37.6억원<br>객단가: 21,680원<br>연령 다양성: 0.98<br>트래픽 전환율: 6,027원/인</div>`)[0];
+                popup_37a8a522ff300fdd4a7032fa5d33d7e6.setContent(html_7d000d4b34812979e776d6b8f9ce3a78);
+            
+        
+
+        circle_marker_8e9b325c5af016cf21268e4688a0410c.bindPopup(popup_37a8a522ff300fdd4a7032fa5d33d7e6)
+        ;
+
+        
+    
+    
+            circle_marker_8e9b325c5af016cf21268e4688a0410c.bindTooltip(
+                `<div>
+                     효창공원앞역 6번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee6b3d8be47b7aea79801a958607e8e3 = L.circleMarker(
+                [37.544863623739026, 126.96015362524922],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_df61baf02e97376ce94b04f79b13386a = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b9363d6562c2bca52898e6ab30587b37 = $(`<div id="html_b9363d6562c2bca52898e6ab30587b37" style="width: 100.0%; height: 100.0%;"><b>효창동주민센터</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 10.7억원<br>객단가: 9,890원<br>연령 다양성: 0.98<br>트래픽 전환율: 868원/인</div>`)[0];
+                popup_df61baf02e97376ce94b04f79b13386a.setContent(html_b9363d6562c2bca52898e6ab30587b37);
+            
+        
+
+        circle_marker_ee6b3d8be47b7aea79801a958607e8e3.bindPopup(popup_df61baf02e97376ce94b04f79b13386a)
+        ;
+
+        
+    
+    
+            circle_marker_ee6b3d8be47b7aea79801a958607e8e3.bindTooltip(
+                `<div>
+                     효창동주민센터
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c62ecca8a75ebc4e9edcbaf45e22a5a = L.circleMarker(
+                [37.54022462965864, 126.9634714658214],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.985242994487161, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_3d80fedd60dd0349905d5f29059d700d = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_7465bb928c6a7de27a0275be485db2e4 = $(`<div id="html_7465bb928c6a7de27a0275be485db2e4" style="width: 100.0%; height: 100.0%;"><b>효창공원앞역 5번</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 55.5억원<br>객단가: 42,893원<br>연령 다양성: 0.95<br>트래픽 전환율: 7,104원/인</div>`)[0];
+                popup_3d80fedd60dd0349905d5f29059d700d.setContent(html_7465bb928c6a7de27a0275be485db2e4);
+            
+        
+
+        circle_marker_8c62ecca8a75ebc4e9edcbaf45e22a5a.bindPopup(popup_3d80fedd60dd0349905d5f29059d700d)
+        ;
+
+        
+    
+    
+            circle_marker_8c62ecca8a75ebc4e9edcbaf45e22a5a.bindTooltip(
+                `<div>
+                     효창공원앞역 5번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd8086f1b9bc6a369db544df4cd84182 = L.circleMarker(
+                [37.55589416395971, 126.96773012727442],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.534651650598082, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_cde8490e2d38623196eb5c52c232009c = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_e40721650ec29d207372ba0b688d28a4 = $(`<div id="html_e40721650ec29d207372ba0b688d28a4" style="width: 100.0%; height: 100.0%;"><b>서울역 15번</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 43.8억원<br>객단가: 15,187원<br>연령 다양성: 0.98<br>트래픽 전환율: 2,725원/인</div>`)[0];
+                popup_cde8490e2d38623196eb5c52c232009c.setContent(html_e40721650ec29d207372ba0b688d28a4);
+            
+        
+
+        circle_marker_bd8086f1b9bc6a369db544df4cd84182.bindPopup(popup_cde8490e2d38623196eb5c52c232009c)
+        ;
+
+        
+    
+    
+            circle_marker_bd8086f1b9bc6a369db544df4cd84182.bindTooltip(
+                `<div>
+                     서울역 15번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_173f2208474054f2f759736b54f6ead7 = L.circleMarker(
+                [37.551848836514914, 126.96815067130545],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.253578712178149, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_6dbfbe5b11fa0f9ab653feff71b86c6a = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_004051005818b4baa5e6672a68801cf5 = $(`<div id="html_004051005818b4baa5e6672a68801cf5" style="width: 100.0%; height: 100.0%;"><b>배문고등학교</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 37.3억원<br>객단가: 42,323원<br>연령 다양성: 0.97<br>트래픽 전환율: 2,357원/인</div>`)[0];
+                popup_6dbfbe5b11fa0f9ab653feff71b86c6a.setContent(html_004051005818b4baa5e6672a68801cf5);
+            
+        
+
+        circle_marker_173f2208474054f2f759736b54f6ead7.bindPopup(popup_6dbfbe5b11fa0f9ab653feff71b86c6a)
+        ;
+
+        
+    
+    
+            circle_marker_173f2208474054f2f759736b54f6ead7.bindTooltip(
+                `<div>
+                     배문고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a4e4840dd8e5f5f27284e0d95849092 = L.circleMarker(
+                [37.5433704797549, 126.96805261128894],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.522275892061184, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_cb8c1a75556000ee5f4d3f6dfce0ef50 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_fa0d15f508414c15edcb360b9e9c9dfb = $(`<div id="html_fa0d15f508414c15edcb360b9e9c9dfb" style="width: 100.0%; height: 100.0%;"><b>남영역 1번</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 108.6억원<br>객단가: 22,131원<br>연령 다양성: 0.97<br>트래픽 전환율: 6,432원/인</div>`)[0];
+                popup_cb8c1a75556000ee5f4d3f6dfce0ef50.setContent(html_fa0d15f508414c15edcb360b9e9c9dfb);
+            
+        
+
+        circle_marker_4a4e4840dd8e5f5f27284e0d95849092.bindPopup(popup_cb8c1a75556000ee5f4d3f6dfce0ef50)
+        ;
+
+        
+    
+    
+            circle_marker_4a4e4840dd8e5f5f27284e0d95849092.bindTooltip(
+                `<div>
+                     남영역 1번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c0611a5a3cf0f467eec317f50abe749 = L.circleMarker(
+                [37.5479747183155, 126.96866162326322],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.818491770228179, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_9f47386c66b1ef162e9539f79d0b0757 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_e01adb53c6982ce9dedcef4200bc7bf9 = $(`<div id="html_e01adb53c6982ce9dedcef4200bc7bf9" style="width: 100.0%; height: 100.0%;"><b>숙대입구</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 170.9억원<br>객단가: 13,899원<br>연령 다양성: 0.93<br>트래픽 전환율: 7,389원/인</div>`)[0];
+                popup_9f47386c66b1ef162e9539f79d0b0757.setContent(html_e01adb53c6982ce9dedcef4200bc7bf9);
+            
+        
+
+        circle_marker_3c0611a5a3cf0f467eec317f50abe749.bindPopup(popup_9f47386c66b1ef162e9539f79d0b0757)
+        ;
+
+        
+    
+    
+            circle_marker_3c0611a5a3cf0f467eec317f50abe749.bindTooltip(
+                `<div>
+                     숙대입구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_917802ba4ec2a8c57a9be62cb68106d2 = L.circleMarker(
+                [37.52371094593414, 126.96857045402506],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_5bafeecdf60573a97b450becfade3a88 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_2e28a16ad0590faa91bcab19d1e9606c = $(`<div id="html_2e28a16ad0590faa91bcab19d1e9606c" style="width: 100.0%; height: 100.0%;"><b>한강미주맨션아파트</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 10.5억원<br>객단가: 83,186원<br>연령 다양성: 0.88<br>트래픽 전환율: 8,125원/인</div>`)[0];
+                popup_5bafeecdf60573a97b450becfade3a88.setContent(html_2e28a16ad0590faa91bcab19d1e9606c);
+            
+        
+
+        circle_marker_917802ba4ec2a8c57a9be62cb68106d2.bindPopup(popup_5bafeecdf60573a97b450becfade3a88)
+        ;
+
+        
+    
+    
+            circle_marker_917802ba4ec2a8c57a9be62cb68106d2.bindTooltip(
+                `<div>
+                     한강미주맨션아파트
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d6f25fa5ad3495612e74057df43e72c = L.circleMarker(
+                [37.55376065991809, 126.97494001179025],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.098958648033836, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_73712fb69d5ac2c0654d487ab3555b80 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b79d1289fd7354456d073a7afea56210 = $(`<div id="html_b79d1289fd7354456d073a7afea56210" style="width: 100.0%; height: 100.0%;"><b>서울역 12번</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 91.9억원<br>객단가: 34,880원<br>연령 다양성: 0.94<br>트래픽 전환율: 19,228원/인</div>`)[0];
+                popup_73712fb69d5ac2c0654d487ab3555b80.setContent(html_b79d1289fd7354456d073a7afea56210);
+            
+        
+
+        circle_marker_7d6f25fa5ad3495612e74057df43e72c.bindPopup(popup_73712fb69d5ac2c0654d487ab3555b80)
+        ;
+
+        
+    
+    
+            circle_marker_7d6f25fa5ad3495612e74057df43e72c.bindTooltip(
+                `<div>
+                     서울역 12번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d9d26a581b8434da92c2269cc2b7f6a = L.circleMarker(
+                [37.54968808695515, 126.97452275206572],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_ead59cdebab16bc502bfed43cb82a7d4 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_8cd49b3ca3ef3316a53dfa30c756c088 = $(`<div id="html_8cd49b3ca3ef3316a53dfa30c756c088" style="width: 100.0%; height: 100.0%;"><b>숙대입구역 1번</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 28.0억원<br>객단가: 14,916원<br>연령 다양성: 1.00<br>트래픽 전환율: 3,942원/인</div>`)[0];
+                popup_ead59cdebab16bc502bfed43cb82a7d4.setContent(html_8cd49b3ca3ef3316a53dfa30c756c088);
+            
+        
+
+        circle_marker_2d9d26a581b8434da92c2269cc2b7f6a.bindPopup(popup_ead59cdebab16bc502bfed43cb82a7d4)
+        ;
+
+        
+    
+    
+            circle_marker_2d9d26a581b8434da92c2269cc2b7f6a.bindTooltip(
+                `<div>
+                     숙대입구역 1번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2eb003b1af7de7533e3bd56cc477b5d = L.circleMarker(
+                [37.5377230622149, 126.97518331038893],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_9024c314dc2fce6340964ac8298da753 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_1614639d99b30beed4911532075e9cb5 = $(`<div id="html_1614639d99b30beed4911532075e9cb5" style="width: 100.0%; height: 100.0%;"><b>삼각지역 14번</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 17.8억원<br>객단가: 23,603원<br>연령 다양성: 0.97<br>트래픽 전환율: 22,488원/인</div>`)[0];
+                popup_9024c314dc2fce6340964ac8298da753.setContent(html_1614639d99b30beed4911532075e9cb5);
+            
+        
+
+        circle_marker_a2eb003b1af7de7533e3bd56cc477b5d.bindPopup(popup_9024c314dc2fce6340964ac8298da753)
+        ;
+
+        
+    
+    
+            circle_marker_a2eb003b1af7de7533e3bd56cc477b5d.bindTooltip(
+                `<div>
+                     삼각지역 14번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4903f85ea4a9c7620870e20263b43831 = L.circleMarker(
+                [37.55122036115963, 126.97723818443093],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_decca5c4029e65b700dd7996c594aedb = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_360583a522929879a06d496cefd1e27c = $(`<div id="html_360583a522929879a06d496cefd1e27c" style="width: 100.0%; height: 100.0%;"><b>삼광초등학교</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 11.9억원<br>객단가: 37,817원<br>연령 다양성: 0.97<br>트래픽 전환율: 2,050원/인</div>`)[0];
+                popup_decca5c4029e65b700dd7996c594aedb.setContent(html_360583a522929879a06d496cefd1e27c);
+            
+        
+
+        circle_marker_4903f85ea4a9c7620870e20263b43831.bindPopup(popup_decca5c4029e65b700dd7996c594aedb)
+        ;
+
+        
+    
+    
+            circle_marker_4903f85ea4a9c7620870e20263b43831.bindTooltip(
+                `<div>
+                     삼광초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90065d8cd0ff3f9c81327981ac75f4fe = L.circleMarker(
+                [37.55285168771745, 126.97998764998432],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.838098085400084, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_0fa388b99d7640ef628688ac453f272a = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_04838111000aa9e23432458a915f39c0 = $(`<div id="html_04838111000aa9e23432458a915f39c0" style="width: 100.0%; height: 100.0%;"><b>후암동주민센터</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 82.4억원<br>객단가: 20,595원<br>연령 다양성: 0.98<br>트래픽 전환율: 4,080원/인</div>`)[0];
+                popup_0fa388b99d7640ef628688ac453f272a.setContent(html_04838111000aa9e23432458a915f39c0);
+            
+        
+
+        circle_marker_90065d8cd0ff3f9c81327981ac75f4fe.bindPopup(popup_0fa388b99d7640ef628688ac453f272a)
+        ;
+
+        
+    
+    
+            circle_marker_90065d8cd0ff3f9c81327981ac75f4fe.bindTooltip(
+                `<div>
+                     후암동주민센터
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d79d227a3f3cd2dac9c54183f0d4f820 = L.circleMarker(
+                [37.55007730190406, 126.98401709756348],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_0c7d707453327b9de90abd263a85bdcb = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_07d24a4267b7e24744198b891fc5f17f = $(`<div id="html_07d24a4267b7e24744198b891fc5f17f" style="width: 100.0%; height: 100.0%;"><b>해방촌예술마을</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 19.4억원<br>객단가: 12,306원<br>연령 다양성: 0.98<br>트래픽 전환율: 1,045원/인</div>`)[0];
+                popup_0c7d707453327b9de90abd263a85bdcb.setContent(html_07d24a4267b7e24744198b891fc5f17f);
+            
+        
+
+        circle_marker_d79d227a3f3cd2dac9c54183f0d4f820.bindPopup(popup_0c7d707453327b9de90abd263a85bdcb)
+        ;
+
+        
+    
+    
+            circle_marker_d79d227a3f3cd2dac9c54183f0d4f820.bindTooltip(
+                `<div>
+                     해방촌예술마을
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b2a92cb481d9d85aaf47eaf54eefd7a = L.circleMarker(
+                [37.53521183355495, 126.99187261609417],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.052891165183628, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_7fdeb291973fa08e64a683ea2e10719a = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_a208a4a64a940702338730173c7d19ad = $(`<div id="html_a208a4a64a940702338730173c7d19ad" style="width: 100.0%; height: 100.0%;"><b>용산구청</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 57.4억원<br>객단가: 31,205원<br>연령 다양성: 0.99<br>트래픽 전환율: 16,993원/인</div>`)[0];
+                popup_7fdeb291973fa08e64a683ea2e10719a.setContent(html_a208a4a64a940702338730173c7d19ad);
+            
+        
+
+        circle_marker_5b2a92cb481d9d85aaf47eaf54eefd7a.bindPopup(popup_7fdeb291973fa08e64a683ea2e10719a)
+        ;
+
+        
+    
+    
+            circle_marker_5b2a92cb481d9d85aaf47eaf54eefd7a.bindTooltip(
+                `<div>
+                     용산구청
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae2d7d6b5f0bdd7da0aaa8dac5083f64 = L.circleMarker(
+                [37.523309752144506, 126.9925415791946],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_e0e1bf239136cfd86b7d616192b17591 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_c99c1ec4ccbfd260bec9a6764aa1f35f = $(`<div id="html_c99c1ec4ccbfd260bec9a6764aa1f35f" style="width: 100.0%; height: 100.0%;"><b>서빙고역 1번</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 2.6억원<br>객단가: 93,779원<br>연령 다양성: 0.91<br>트래픽 전환율: 3,653원/인</div>`)[0];
+                popup_e0e1bf239136cfd86b7d616192b17591.setContent(html_c99c1ec4ccbfd260bec9a6764aa1f35f);
+            
+        
+
+        circle_marker_ae2d7d6b5f0bdd7da0aaa8dac5083f64.bindPopup(popup_e0e1bf239136cfd86b7d616192b17591)
+        ;
+
+        
+    
+    
+            circle_marker_ae2d7d6b5f0bdd7da0aaa8dac5083f64.bindTooltip(
+                `<div>
+                     서빙고역 1번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_679d62b20bb9eaf82288705fad72ec9c = L.circleMarker(
+                [37.53474353937748, 126.99515376954521],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_82be42b3bfd5f259cc37e8289eb4be99 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_f2bb9cfb7675942a8921c3e06f5ede95 = $(`<div id="html_f2bb9cfb7675942a8921c3e06f5ede95" style="width: 100.0%; height: 100.0%;"><b>이태원엔틱가구거리</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 6.7억원<br>객단가: 17,050원<br>연령 다양성: 0.97<br>트래픽 전환율: 3,309원/인</div>`)[0];
+                popup_82be42b3bfd5f259cc37e8289eb4be99.setContent(html_f2bb9cfb7675942a8921c3e06f5ede95);
+            
+        
+
+        circle_marker_679d62b20bb9eaf82288705fad72ec9c.bindPopup(popup_82be42b3bfd5f259cc37e8289eb4be99)
+        ;
+
+        
+    
+    
+            circle_marker_679d62b20bb9eaf82288705fad72ec9c.bindTooltip(
+                `<div>
+                     이태원엔틱가구거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f56728186ca93b44ac62197d1d38809d = L.circleMarker(
+                [37.5279050887721, 126.9972246443787],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_55b82fc7bbf81283aa138997cd779f66 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_84e4e187dc634cc71d100c1c76330f6d = $(`<div id="html_84e4e187dc634cc71d100c1c76330f6d" style="width: 100.0%; height: 100.0%;"><b>오산고등학교</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 14.6억원<br>객단가: 14,580원<br>연령 다양성: 0.93<br>트래픽 전환율: 4,216원/인</div>`)[0];
+                popup_55b82fc7bbf81283aa138997cd779f66.setContent(html_84e4e187dc634cc71d100c1c76330f6d);
+            
+        
+
+        circle_marker_f56728186ca93b44ac62197d1d38809d.bindPopup(popup_55b82fc7bbf81283aa138997cd779f66)
+        ;
+
+        
+    
+    
+            circle_marker_f56728186ca93b44ac62197d1d38809d.bindTooltip(
+                `<div>
+                     오산고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49536841767a205721e76fd30e57f196 = L.circleMarker(
+                [37.52476061008976, 126.99703251022451],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_ce061763e03480c8622438e40e47743a = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b0513e078146accdf7b676d351eaad9e = $(`<div id="html_b0513e078146accdf7b676d351eaad9e" style="width: 100.0%; height: 100.0%;"><b>서빙고동주민센터</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 14.2억원<br>객단가: 48,548원<br>연령 다양성: 0.89<br>트래픽 전환율: 3,134원/인</div>`)[0];
+                popup_ce061763e03480c8622438e40e47743a.setContent(html_b0513e078146accdf7b676d351eaad9e);
+            
+        
+
+        circle_marker_49536841767a205721e76fd30e57f196.bindPopup(popup_ce061763e03480c8622438e40e47743a)
+        ;
+
+        
+    
+    
+            circle_marker_49536841767a205721e76fd30e57f196.bindTooltip(
+                `<div>
+                     서빙고동주민센터
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f830f0a96467a741dac4f5bf0e66f56 = L.circleMarker(
+                [37.539672119206415, 126.99915881079389],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_74796ad3f943bcff55bfe27664ffa0ce = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_0edd426b4a0ed2fa084964c538bea14b = $(`<div id="html_0edd426b4a0ed2fa084964c538bea14b" style="width: 100.0%; height: 100.0%;"><b>리움미술관</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 12.1억원<br>객단가: 39,371원<br>연령 다양성: 0.95<br>트래픽 전환율: 5,161원/인</div>`)[0];
+                popup_74796ad3f943bcff55bfe27664ffa0ce.setContent(html_0edd426b4a0ed2fa084964c538bea14b);
+            
+        
+
+        circle_marker_0f830f0a96467a741dac4f5bf0e66f56.bindPopup(popup_74796ad3f943bcff55bfe27664ffa0ce)
+        ;
+
+        
+    
+    
+            circle_marker_0f830f0a96467a741dac4f5bf0e66f56.bindTooltip(
+                `<div>
+                     리움미술관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e00f9f7891ac5f42feefabf88b79148 = L.circleMarker(
+                [37.531797458601524, 127.00067509047055],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_74631f3a6039a51489640857a3fcea14 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_eee10eede3589563d65f6d9bc659ce1f = $(`<div id="html_eee10eede3589563d65f6d9bc659ce1f" style="width: 100.0%; height: 100.0%;"><b>NH농협은행 보광동지점</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 1.5억원<br>객단가: 31,362원<br>연령 다양성: 0.87<br>트래픽 전환율: 741원/인</div>`)[0];
+                popup_74631f3a6039a51489640857a3fcea14.setContent(html_eee10eede3589563d65f6d9bc659ce1f);
+            
+        
+
+        circle_marker_3e00f9f7891ac5f42feefabf88b79148.bindPopup(popup_74631f3a6039a51489640857a3fcea14)
+        ;
+
+        
+    
+    
+            circle_marker_3e00f9f7891ac5f42feefabf88b79148.bindTooltip(
+                `<div>
+                     NH농협은행 보광동지점
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06b6eb829f16eb2d8c83bcfd1cbf0200 = L.circleMarker(
+                [37.53507707749865, 127.00105973518934],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.603183486261352, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_fc4ad908d4ca4f957e646b1429a8d337 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_dea3577dfc106849b6b36ff8da35a272 = $(`<div id="html_dea3577dfc106849b6b36ff8da35a272" style="width: 100.0%; height: 100.0%;"><b>우사단길</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 74.3억원<br>객단가: 47,559원<br>연령 다양성: 0.99<br>트래픽 전환율: 6,412원/인</div>`)[0];
+                popup_fc4ad908d4ca4f957e646b1429a8d337.setContent(html_dea3577dfc106849b6b36ff8da35a272);
+            
+        
+
+        circle_marker_06b6eb829f16eb2d8c83bcfd1cbf0200.bindPopup(popup_fc4ad908d4ca4f957e646b1429a8d337)
+        ;
+
+        
+    
+    
+            circle_marker_06b6eb829f16eb2d8c83bcfd1cbf0200.bindTooltip(
+                `<div>
+                     우사단길
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_300d82713e0c880c7956f00e5f56b7c6 = L.circleMarker(
+                [37.53174649129119, 126.96412065116706],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.727451135568002, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_557cf1c739360ba0ae3b8ceda920b72e = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_786de4738f1fa3ed08d4f333db8f16ac = $(`<div id="html_786de4738f1fa3ed08d4f333db8f16ac" style="width: 100.0%; height: 100.0%;"><b>신용산역(용산역)</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 471.0억원<br>객단가: 32,663원<br>연령 다양성: 0.96<br>트래픽 전환율: 22,697원/인</div>`)[0];
+                popup_557cf1c739360ba0ae3b8ceda920b72e.setContent(html_786de4738f1fa3ed08d4f333db8f16ac);
+            
+        
+
+        circle_marker_300d82713e0c880c7956f00e5f56b7c6.bindPopup(popup_557cf1c739360ba0ae3b8ceda920b72e)
+        ;
+
+        
+    
+    
+            circle_marker_300d82713e0c880c7956f00e5f56b7c6.bindTooltip(
+                `<div>
+                     신용산역(용산역)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_863a3f4e9bd5e0d4099c4a504fa128a8 = L.circleMarker(
+                [37.54500246533206, 126.97255551608471],
+                {"bubblingMouseEvents": true, "color": "#2166ac", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2166ac", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.169092357103717, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_1759d24ce2046bd364493ffeee0939f0);
+        
+    
+        var popup_0f4534682d7f776801ab3d156470152d = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_25ff11aaca089d4cc4424b8160681e50 = $(`<div id="html_25ff11aaca089d4cc4424b8160681e50" style="width: 100.0%; height: 100.0%;"><b>숙대입구역(남영역, 남영동)</b><br>유형: ① 전세대 고트래픽-저전환형 (환승형)<br>월매출: 137.6억원<br>객단가: 24,276원<br>연령 다양성: 0.99<br>트래픽 전환율: 30,655원/인</div>`)[0];
+                popup_0f4534682d7f776801ab3d156470152d.setContent(html_25ff11aaca089d4cc4424b8160681e50);
+            
+        
+
+        circle_marker_863a3f4e9bd5e0d4099c4a504fa128a8.bindPopup(popup_0f4534682d7f776801ab3d156470152d)
+        ;
+
+        
+    
+    
+            circle_marker_863a3f4e9bd5e0d4099c4a504fa128a8.bindTooltip(
+                `<div>
+                     숙대입구역(남영역, 남영동)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_1759d24ce2046bd364493ffeee0939f0.addTo(map_fa1c4603d4b80085f2878255beefc670);
+        
+    
+            var feature_group_97945376e86527728a48a8a356f216bd = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_16bf02c6f1b5c113dcfe7a147854ee11 = L.circleMarker(
+                [37.528500248499824, 126.95648588167346],
+                {"bubblingMouseEvents": true, "color": "#d6604d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6604d", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_97945376e86527728a48a8a356f216bd);
+        
+    
+        var popup_08b28d1296f706668213c7959c613a7b = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_84df468eeaee6ce6ea06df1867fa57f4 = $(`<div id="html_84df468eeaee6ce6ea06df1867fa57f4" style="width: 100.0%; height: 100.0%;"><b>새남터성지</b><br>유형: ② 연령 편중 안정형<br>월매출: 7.5억원<br>객단가: 34,034원<br>연령 다양성: 0.80<br>트래픽 전환율: 1,366원/인</div>`)[0];
+                popup_08b28d1296f706668213c7959c613a7b.setContent(html_84df468eeaee6ce6ea06df1867fa57f4);
+            
+        
+
+        circle_marker_16bf02c6f1b5c113dcfe7a147854ee11.bindPopup(popup_08b28d1296f706668213c7959c613a7b)
+        ;
+
+        
+    
+    
+            circle_marker_16bf02c6f1b5c113dcfe7a147854ee11.bindTooltip(
+                `<div>
+                     새남터성지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03f834ef7b2d90fc26a628fbf7618187 = L.circleMarker(
+                [37.54508138509793, 126.964758984911],
+                {"bubblingMouseEvents": true, "color": "#d6604d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6604d", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.8839841344768, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_97945376e86527728a48a8a356f216bd);
+        
+    
+        var popup_c6103f73ff864cce1362bd2f1932841d = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_4265d3f765fbc6486055d982be1727ec = $(`<div id="html_4265d3f765fbc6486055d982be1727ec" style="width: 100.0%; height: 100.0%;"><b>효창공원앞역 2번</b><br>유형: ② 연령 편중 안정형<br>월매출: 124.3억원<br>객단가: 42,763원<br>연령 다양성: 0.87<br>트래픽 전환율: 8,679원/인</div>`)[0];
+                popup_c6103f73ff864cce1362bd2f1932841d.setContent(html_4265d3f765fbc6486055d982be1727ec);
+            
+        
+
+        circle_marker_03f834ef7b2d90fc26a628fbf7618187.bindPopup(popup_c6103f73ff864cce1362bd2f1932841d)
+        ;
+
+        
+    
+    
+            circle_marker_03f834ef7b2d90fc26a628fbf7618187.bindTooltip(
+                `<div>
+                     효창공원앞역 2번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c3dde5d8cc2b280d5150c475e13b741 = L.circleMarker(
+                [37.52101940602285, 126.97893346739467],
+                {"bubblingMouseEvents": true, "color": "#d6604d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6604d", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.104261784165024, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_97945376e86527728a48a8a356f216bd);
+        
+    
+        var popup_8e9ebcd13f48d72b002b5901f74c512e = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_13630d0d7460dd0f64692a5b64629943 = $(`<div id="html_13630d0d7460dd0f64692a5b64629943" style="width: 100.0%; height: 100.0%;"><b>이촌동점보아파트</b><br>유형: ② 연령 편중 안정형<br>월매출: 34.1억원<br>객단가: 58,304원<br>연령 다양성: 0.81<br>트래픽 전환율: 30,580원/인</div>`)[0];
+                popup_8e9ebcd13f48d72b002b5901f74c512e.setContent(html_13630d0d7460dd0f64692a5b64629943);
+            
+        
+
+        circle_marker_2c3dde5d8cc2b280d5150c475e13b741.bindPopup(popup_8e9ebcd13f48d72b002b5901f74c512e)
+        ;
+
+        
+    
+    
+            circle_marker_2c3dde5d8cc2b280d5150c475e13b741.bindTooltip(
+                `<div>
+                     이촌동점보아파트
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1730192e4a7a3e355f5bb73424faaf5c = L.circleMarker(
+                [37.54607817637151, 127.0037302031034],
+                {"bubblingMouseEvents": true, "color": "#d6604d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6604d", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_97945376e86527728a48a8a356f216bd);
+        
+    
+        var popup_9c33f7a2060268b54f2901a3b026d529 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_def4c26b326f513236c382fcb3ded9b0 = $(`<div id="html_def4c26b326f513236c382fcb3ded9b0" style="width: 100.0%; height: 100.0%;"><b>한남힐사이드아파트</b><br>유형: ② 연령 편중 안정형<br>월매출: 4.1억원<br>객단가: 21,705원<br>연령 다양성: 0.89<br>트래픽 전환율: 3,694원/인</div>`)[0];
+                popup_9c33f7a2060268b54f2901a3b026d529.setContent(html_def4c26b326f513236c382fcb3ded9b0);
+            
+        
+
+        circle_marker_1730192e4a7a3e355f5bb73424faaf5c.bindPopup(popup_9c33f7a2060268b54f2901a3b026d529)
+        ;
+
+        
+    
+    
+            circle_marker_1730192e4a7a3e355f5bb73424faaf5c.bindTooltip(
+                `<div>
+                     한남힐사이드아파트
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c4b472fd0091c26b936d74a83e33caa = L.circleMarker(
+                [37.53918766406995, 126.96099405476801],
+                {"bubblingMouseEvents": true, "color": "#d6604d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6604d", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.033338313545364, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_97945376e86527728a48a8a356f216bd);
+        
+    
+        var popup_fb601993f709e5faf442aaf01532134f = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_d8807413c2a078f5e88a00ba3f1866c2 = $(`<div id="html_d8807413c2a078f5e88a00ba3f1866c2" style="width: 100.0%; height: 100.0%;"><b>용산용문시장</b><br>유형: ② 연령 편중 안정형<br>월매출: 245.3억원<br>객단가: 25,715원<br>연령 다양성: 0.83<br>트래픽 전환율: 48,204원/인</div>`)[0];
+                popup_fb601993f709e5faf442aaf01532134f.setContent(html_d8807413c2a078f5e88a00ba3f1866c2);
+            
+        
+
+        circle_marker_5c4b472fd0091c26b936d74a83e33caa.bindPopup(popup_fb601993f709e5faf442aaf01532134f)
+        ;
+
+        
+    
+    
+            circle_marker_5c4b472fd0091c26b936d74a83e33caa.bindTooltip(
+                `<div>
+                     용산용문시장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df9d2d39d931fc100741a679e5e0dcac = L.circleMarker(
+                [37.55405516293565, 126.96446033515008],
+                {"bubblingMouseEvents": true, "color": "#d6604d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6604d", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.338557200027888, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_97945376e86527728a48a8a356f216bd);
+        
+    
+        var popup_d32d1c7a20db64d992966ec31fdcea00 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_019e3e775503db0f40b71dff89190793 = $(`<div id="html_019e3e775503db0f40b71dff89190793" style="width: 100.0%; height: 100.0%;"><b>만리시장</b><br>유형: ② 연령 편중 안정형<br>월매출: 39.2억원<br>객단가: 21,013원<br>연령 다양성: 0.74<br>트래픽 전환율: 142,680원/인</div>`)[0];
+                popup_d32d1c7a20db64d992966ec31fdcea00.setContent(html_019e3e775503db0f40b71dff89190793);
+            
+        
+
+        circle_marker_df9d2d39d931fc100741a679e5e0dcac.bindPopup(popup_d32d1c7a20db64d992966ec31fdcea00)
+        ;
+
+        
+    
+    
+            circle_marker_df9d2d39d931fc100741a679e5e0dcac.bindTooltip(
+                `<div>
+                     만리시장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23f41f266bba2d7621ac816ec4b426e6 = L.circleMarker(
+                [37.55286012681386, 126.97705658288452],
+                {"bubblingMouseEvents": true, "color": "#d6604d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6604d", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.276955255480503, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_97945376e86527728a48a8a356f216bd);
+        
+    
+        var popup_3433e2bfae6845a056b4e8f318aa9a7e = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_5aa1176d4ee6c648c0060994622c3939 = $(`<div id="html_5aa1176d4ee6c648c0060994622c3939" style="width: 100.0%; height: 100.0%;"><b>후암시장</b><br>유형: ② 연령 편중 안정형<br>월매출: 64.0억원<br>객단가: 18,483원<br>연령 다양성: 0.89<br>트래픽 전환율: 40,639원/인</div>`)[0];
+                popup_3433e2bfae6845a056b4e8f318aa9a7e.setContent(html_5aa1176d4ee6c648c0060994622c3939);
+            
+        
+
+        circle_marker_23f41f266bba2d7621ac816ec4b426e6.bindPopup(popup_3433e2bfae6845a056b4e8f318aa9a7e)
+        ;
+
+        
+    
+    
+            circle_marker_23f41f266bba2d7621ac816ec4b426e6.bindTooltip(
+                `<div>
+                     후암시장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_97945376e86527728a48a8a356f216bd.addTo(map_fa1c4603d4b80085f2878255beefc670);
+        
+    
+            var feature_group_66699e428763d2beb0ea04ac6ee552e6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_ad63efa2302232a070a496f46d4466d6 = L.circleMarker(
+                [37.53546433634389, 126.95495427476396],
+                {"bubblingMouseEvents": true, "color": "#1a9850", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a9850", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.996880020591313, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_66699e428763d2beb0ea04ac6ee552e6);
+        
+    
+        var popup_78ebd9f6ac4aa193477f845fb0aa25f4 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_8141d6d96421343b156a5117da0ddfde = $(`<div id="html_8141d6d96421343b156a5117da0ddfde" style="width: 100.0%; height: 100.0%;"><b>성심여자고등학교</b><br>유형: ③ 전세대 균형 소비 전환형<br>월매출: 129.5억원<br>객단가: 110,484원<br>연령 다양성: 0.85<br>트래픽 전환율: 9,367원/인</div>`)[0];
+                popup_78ebd9f6ac4aa193477f845fb0aa25f4.setContent(html_8141d6d96421343b156a5117da0ddfde);
+            
+        
+
+        circle_marker_ad63efa2302232a070a496f46d4466d6.bindPopup(popup_78ebd9f6ac4aa193477f845fb0aa25f4)
+        ;
+
+        
+    
+    
+            circle_marker_ad63efa2302232a070a496f46d4466d6.bindTooltip(
+                `<div>
+                     성심여자고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d90682eef6787956bf5198758fab6b93 = L.circleMarker(
+                [37.539198004943835, 126.96507868711403],
+                {"bubblingMouseEvents": true, "color": "#1a9850", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a9850", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.737425986280742, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_66699e428763d2beb0ea04ac6ee552e6);
+        
+    
+        var popup_34489260742ecc4ca42c03ca582ea87e = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_19f36a79c0bb38f9f151c044f0ffa69b = $(`<div id="html_19f36a79c0bb38f9f151c044f0ffa69b" style="width: 100.0%; height: 100.0%;"><b>남정초등학교</b><br>유형: ③ 전세대 균형 소비 전환형<br>월매출: 377.8억원<br>객단가: 307,024원<br>연령 다양성: 0.95<br>트래픽 전환율: 453,295원/인</div>`)[0];
+                popup_34489260742ecc4ca42c03ca582ea87e.setContent(html_19f36a79c0bb38f9f151c044f0ffa69b);
+            
+        
+
+        circle_marker_d90682eef6787956bf5198758fab6b93.bindPopup(popup_34489260742ecc4ca42c03ca582ea87e)
+        ;
+
+        
+    
+    
+            circle_marker_d90682eef6787956bf5198758fab6b93.bindTooltip(
+                `<div>
+                     남정초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58fd853362c6637be57418cc9ebedf2c = L.circleMarker(
+                [37.536025633830036, 126.96234216830902],
+                {"bubblingMouseEvents": true, "color": "#1a9850", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a9850", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_66699e428763d2beb0ea04ac6ee552e6);
+        
+    
+        var popup_3040cdd4fa813c038167940bd8acb5d0 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_5781dd1c3fc0e042ec23ad62e8a2625b = $(`<div id="html_5781dd1c3fc0e042ec23ad62e8a2625b" style="width: 100.0%; height: 100.0%;"><b>용산전자상가(용산역)</b><br>유형: ③ 전세대 균형 소비 전환형<br>월매출: 6689.9억원<br>객단가: 202,799원<br>연령 다양성: 0.93<br>트래픽 전환율: 689,476원/인</div>`)[0];
+                popup_3040cdd4fa813c038167940bd8acb5d0.setContent(html_5781dd1c3fc0e042ec23ad62e8a2625b);
+            
+        
+
+        circle_marker_58fd853362c6637be57418cc9ebedf2c.bindPopup(popup_3040cdd4fa813c038167940bd8acb5d0)
+        ;
+
+        
+    
+    
+            circle_marker_58fd853362c6637be57418cc9ebedf2c.bindTooltip(
+                `<div>
+                     용산전자상가(용산역)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_66699e428763d2beb0ea04ac6ee552e6.addTo(map_fa1c4603d4b80085f2878255beefc670);
+        
+    
+            var feature_group_65a5836bca86a07a43ef7e252e40dbe5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_a1536bce522d2f2c0e6f57a4f6899776 = L.circleMarker(
+                [37.53705007961318, 126.99510831570441],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.640738265525474, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_e4f04136ba85ec7d215fe5c2afd99de0 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_08b693fcfc71f5c891c406d7a68e915f = $(`<div id="html_08b693fcfc71f5c891c406d7a68e915f" style="width: 100.0%; height: 100.0%;"><b>이태원 관광특구</b><br>유형: ④ 전체 하락 취약형<br>월매출: 967.5억원<br>객단가: 30,834원<br>연령 다양성: 0.92<br>트래픽 전환율: 44,951원/인</div>`)[0];
+                popup_e4f04136ba85ec7d215fe5c2afd99de0.setContent(html_08b693fcfc71f5c891c406d7a68e915f);
+            
+        
+
+        circle_marker_a1536bce522d2f2c0e6f57a4f6899776.bindPopup(popup_e4f04136ba85ec7d215fe5c2afd99de0)
+        ;
+
+        
+    
+    
+            circle_marker_a1536bce522d2f2c0e6f57a4f6899776.bindTooltip(
+                `<div>
+                     이태원 관광특구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4be7356c5e5dacdfa99fcb52d8fa4f9 = L.circleMarker(
+                [37.52773664526882, 126.96281033849225],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.315898173121462, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_4414e474b1fc2aa31f093f3cd393cf52 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_e53c40560ba9c180dd88b84a2d0a6aa6 = $(`<div id="html_e53c40560ba9c180dd88b84a2d0a6aa6" style="width: 100.0%; height: 100.0%;"><b>한강로동땡땡거리(은행나무길)</b><br>유형: ④ 전체 하락 취약형<br>월매출: 144.8억원<br>객단가: 43,986원<br>연령 다양성: 0.93<br>트래픽 전환율: 16,325원/인</div>`)[0];
+                popup_4414e474b1fc2aa31f093f3cd393cf52.setContent(html_e53c40560ba9c180dd88b84a2d0a6aa6);
+            
+        
+
+        circle_marker_e4be7356c5e5dacdfa99fcb52d8fa4f9.bindPopup(popup_4414e474b1fc2aa31f093f3cd393cf52)
+        ;
+
+        
+    
+    
+            circle_marker_e4be7356c5e5dacdfa99fcb52d8fa4f9.bindTooltip(
+                `<div>
+                     한강로동땡땡거리(은행나무길)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e2a95a48fd06618d6cecbf111cc2836 = L.circleMarker(
+                [37.5417761620868, 126.96963744853659],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_b698ab96f69773d71cc8cf7eaf068f95 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_044b1688a75e31ca0a7ee9b7238ce8f6 = $(`<div id="html_044b1688a75e31ca0a7ee9b7238ce8f6" style="width: 100.0%; height: 100.0%;"><b>열정도</b><br>유형: ④ 전체 하락 취약형<br>월매출: 24.4억원<br>객단가: 51,254원<br>연령 다양성: 0.96<br>트래픽 전환율: 12,818원/인</div>`)[0];
+                popup_b698ab96f69773d71cc8cf7eaf068f95.setContent(html_044b1688a75e31ca0a7ee9b7238ce8f6);
+            
+        
+
+        circle_marker_2e2a95a48fd06618d6cecbf111cc2836.bindPopup(popup_b698ab96f69773d71cc8cf7eaf068f95)
+        ;
+
+        
+    
+    
+            circle_marker_2e2a95a48fd06618d6cecbf111cc2836.bindTooltip(
+                `<div>
+                     열정도
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5843ae69948a32609eecfc8ad8622c08 = L.circleMarker(
+                [37.53400154572495, 126.97338569262574],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_aa1514024d33a9a4aa7d8ce479dc1701 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b4d88b8778e4be9bc151ea3ed9815d5a = $(`<div id="html_b4d88b8778e4be9bc151ea3ed9815d5a" style="width: 100.0%; height: 100.0%;"><b>삼각지역 3번</b><br>유형: ④ 전체 하락 취약형<br>월매출: 1.7억원<br>객단가: 91,696원<br>연령 다양성: 0.89<br>트래픽 전환율: 706원/인</div>`)[0];
+                popup_aa1514024d33a9a4aa7d8ce479dc1701.setContent(html_b4d88b8778e4be9bc151ea3ed9815d5a);
+            
+        
+
+        circle_marker_5843ae69948a32609eecfc8ad8622c08.bindPopup(popup_aa1514024d33a9a4aa7d8ce479dc1701)
+        ;
+
+        
+    
+    
+            circle_marker_5843ae69948a32609eecfc8ad8622c08.bindTooltip(
+                `<div>
+                     삼각지역 3번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_953d3f2a774ab8416bb4add63de2a2aa = L.circleMarker(
+                [37.54686996024118, 126.98533049716951],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.714587504051634, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_5db5590f5e918cfb49e65a8ac921b904 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_8eb9af05076e3683f6461831d2cee1f3 = $(`<div id="html_8eb9af05076e3683f6461831d2cee1f3" style="width: 100.0%; height: 100.0%;"><b>해방촌 남동측</b><br>유형: ④ 전체 하락 취약형<br>월매출: 78.1억원<br>객단가: 23,213원<br>연령 다양성: 0.96<br>트래픽 전환율: 4,716원/인</div>`)[0];
+                popup_5db5590f5e918cfb49e65a8ac921b904.setContent(html_8eb9af05076e3683f6461831d2cee1f3);
+            
+        
+
+        circle_marker_953d3f2a774ab8416bb4add63de2a2aa.bindPopup(popup_5db5590f5e918cfb49e65a8ac921b904)
+        ;
+
+        
+    
+    
+            circle_marker_953d3f2a774ab8416bb4add63de2a2aa.bindTooltip(
+                `<div>
+                     해방촌 남동측
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f32c9f80260a3cbfdd45e620cfa9a9ba = L.circleMarker(
+                [37.54448306948713, 126.99214299593676],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9680411026306945, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_685eefacb2e04a5787f7bbe7aa569f05 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b38e350886966307136ea0aa02ca7c56 = $(`<div id="html_b38e350886966307136ea0aa02ca7c56" style="width: 100.0%; height: 100.0%;"><b>경리단길북측</b><br>유형: ④ 전체 하락 취약형<br>월매출: 87.0억원<br>객단가: 30,124원<br>연령 다양성: 0.94<br>트래픽 전환율: 8,143원/인</div>`)[0];
+                popup_685eefacb2e04a5787f7bbe7aa569f05.setContent(html_b38e350886966307136ea0aa02ca7c56);
+            
+        
+
+        circle_marker_f32c9f80260a3cbfdd45e620cfa9a9ba.bindPopup(popup_685eefacb2e04a5787f7bbe7aa569f05)
+        ;
+
+        
+    
+    
+            circle_marker_f32c9f80260a3cbfdd45e620cfa9a9ba.bindTooltip(
+                `<div>
+                     경리단길북측
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66059bf1d304da02a2feea6c60d8e77a = L.circleMarker(
+                [37.54150981668069, 126.99241493147693],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.679353516704207, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_c60c3162501027af50089623cd384f2c = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_263bb2808c7ce012e761e77576155e38 = $(`<div id="html_263bb2808c7ce012e761e77576155e38" style="width: 100.0%; height: 100.0%;"><b>경리단길남측</b><br>유형: ④ 전체 하락 취약형<br>월매출: 76.9억원<br>객단가: 30,258원<br>연령 다양성: 0.95<br>트래픽 전환율: 6,071원/인</div>`)[0];
+                popup_c60c3162501027af50089623cd384f2c.setContent(html_263bb2808c7ce012e761e77576155e38);
+            
+        
+
+        circle_marker_66059bf1d304da02a2feea6c60d8e77a.bindPopup(popup_c60c3162501027af50089623cd384f2c)
+        ;
+
+        
+    
+    
+            circle_marker_66059bf1d304da02a2feea6c60d8e77a.bindTooltip(
+                `<div>
+                     경리단길남측
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cba3a96543e18c7439d1272c82aacc80 = L.circleMarker(
+                [37.53038284188382, 126.99777886172356],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_a15b679b3df6acd2c9f4063b301f6f25 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_05b5a5a3d80fd67df09aa1ae8bbe511f = $(`<div id="html_05b5a5a3d80fd67df09aa1ae8bbe511f" style="width: 100.0%; height: 100.0%;"><b>한국폴리텍대학서울정수캠퍼스</b><br>유형: ④ 전체 하락 취약형<br>월매출: 18.3억원<br>객단가: 34,581원<br>연령 다양성: 0.98<br>트래픽 전환율: 2,431원/인</div>`)[0];
+                popup_a15b679b3df6acd2c9f4063b301f6f25.setContent(html_05b5a5a3d80fd67df09aa1ae8bbe511f);
+            
+        
+
+        circle_marker_cba3a96543e18c7439d1272c82aacc80.bindPopup(popup_a15b679b3df6acd2c9f4063b301f6f25)
+        ;
+
+        
+    
+    
+            circle_marker_cba3a96543e18c7439d1272c82aacc80.bindTooltip(
+                `<div>
+                     한국폴리텍대학서울정수캠퍼스
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1f239d7207cb24aff561072d2dd0a9e = L.circleMarker(
+                [37.52794120579579, 127.00194219956131],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_00392bc909190b23659cd93525f1331c = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_e797631c449127d121bd7aafb1da8de1 = $(`<div id="html_e797631c449127d121bd7aafb1da8de1" style="width: 100.0%; height: 100.0%;"><b>오산중학교</b><br>유형: ④ 전체 하락 취약형<br>월매출: 10.1억원<br>객단가: 66,617원<br>연령 다양성: 0.98<br>트래픽 전환율: 11,925원/인</div>`)[0];
+                popup_00392bc909190b23659cd93525f1331c.setContent(html_e797631c449127d121bd7aafb1da8de1);
+            
+        
+
+        circle_marker_f1f239d7207cb24aff561072d2dd0a9e.bindPopup(popup_00392bc909190b23659cd93525f1331c)
+        ;
+
+        
+    
+    
+            circle_marker_f1f239d7207cb24aff561072d2dd0a9e.bindTooltip(
+                `<div>
+                     오산중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71d6a2cc4973f5ddae521eb2a438ffa7 = L.circleMarker(
+                [37.54017668897192, 127.00302850274102],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.784567948546321, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_aeaf8fe36d342564a5eaa5b1496ba023 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_2f9e118d13f1802e6c1b342562b03a48 = $(`<div id="html_2f9e118d13f1802e6c1b342562b03a48" style="width: 100.0%; height: 100.0%;"><b>한강진역 3번</b><br>유형: ④ 전체 하락 취약형<br>월매출: 80.5억원<br>객단가: 56,383원<br>연령 다양성: 0.91<br>트래픽 전환율: 15,427원/인</div>`)[0];
+                popup_aeaf8fe36d342564a5eaa5b1496ba023.setContent(html_2f9e118d13f1802e6c1b342562b03a48);
+            
+        
+
+        circle_marker_71d6a2cc4973f5ddae521eb2a438ffa7.bindPopup(popup_aeaf8fe36d342564a5eaa5b1496ba023)
+        ;
+
+        
+    
+    
+            circle_marker_71d6a2cc4973f5ddae521eb2a438ffa7.bindTooltip(
+                `<div>
+                     한강진역 3번
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a44416693ab869b211730542ed8b869f = L.circleMarker(
+                [37.53884280251261, 127.01155978500913],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.320180341051928, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_29a0dc937923a61c556d332acf036b05 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_ce325e50596250d7a2cc2e51681e1925 = $(`<div id="html_ce325e50596250d7a2cc2e51681e1925" style="width: 100.0%; height: 100.0%;"><b>서울독일학교</b><br>유형: ④ 전체 하락 취약형<br>월매출: 38.8억원<br>객단가: 169,254원<br>연령 다양성: 0.91<br>트래픽 전환율: 37,937원/인</div>`)[0];
+                popup_29a0dc937923a61c556d332acf036b05.setContent(html_ce325e50596250d7a2cc2e51681e1925);
+            
+        
+
+        circle_marker_a44416693ab869b211730542ed8b869f.bindPopup(popup_29a0dc937923a61c556d332acf036b05)
+        ;
+
+        
+    
+    
+            circle_marker_a44416693ab869b211730542ed8b869f.bindTooltip(
+                `<div>
+                     서울독일학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae11a20cb91e44d4233dd61836c73b17 = L.circleMarker(
+                [37.537166828076536, 127.01296255584106],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_12ec9e433c3f92c51e945ab568e15d47 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_74732c5e5eff9f54be9d1fcfc84a914e = $(`<div id="html_74732c5e5eff9f54be9d1fcfc84a914e" style="width: 100.0%; height: 100.0%;"><b>유엔빌리지길</b><br>유형: ④ 전체 하락 취약형<br>월매출: 3.6억원<br>객단가: 182,173원<br>연령 다양성: 0.89<br>트래픽 전환율: 1,472원/인</div>`)[0];
+                popup_12ec9e433c3f92c51e945ab568e15d47.setContent(html_74732c5e5eff9f54be9d1fcfc84a914e);
+            
+        
+
+        circle_marker_ae11a20cb91e44d4233dd61836c73b17.bindPopup(popup_12ec9e433c3f92c51e945ab568e15d47)
+        ;
+
+        
+    
+    
+            circle_marker_ae11a20cb91e44d4233dd61836c73b17.bindTooltip(
+                `<div>
+                     유엔빌리지길
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6a6a9b60cdf46af1f502d62f0165d0e = L.circleMarker(
+                [37.53666864539783, 126.97406355508785],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.721119522604758, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_4bb0e62e7b7fac3713cae7c73608a06b = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_4187ca5ff1fb827b8cf9d781382cf78a = $(`<div id="html_4187ca5ff1fb827b8cf9d781382cf78a" style="width: 100.0%; height: 100.0%;"><b>삼각지역</b><br>유형: ④ 전체 하락 취약형<br>월매출: 117.1억원<br>객단가: 49,328원<br>연령 다양성: 0.92<br>트래픽 전환율: 14,330원/인</div>`)[0];
+                popup_4bb0e62e7b7fac3713cae7c73608a06b.setContent(html_4187ca5ff1fb827b8cf9d781382cf78a);
+            
+        
+
+        circle_marker_a6a6a9b60cdf46af1f502d62f0165d0e.bindPopup(popup_4bb0e62e7b7fac3713cae7c73608a06b)
+        ;
+
+        
+    
+    
+            circle_marker_a6a6a9b60cdf46af1f502d62f0165d0e.bindTooltip(
+                `<div>
+                     삼각지역
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ba6717d496d2f1cf34b694442851222 = L.circleMarker(
+                [37.54561550707854, 126.97409422184305],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.78712312882736, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_145ee00a54d8f5280420946c611180db = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b584d3e843e887f22eb75fa7bc3e5c8c = $(`<div id="html_b584d3e843e887f22eb75fa7bc3e5c8c" style="width: 100.0%; height: 100.0%;"><b>남영동 먹자골목</b><br>유형: ④ 전체 하락 취약형<br>월매출: 299.7억원<br>객단가: 43,752원<br>연령 다양성: 0.96<br>트래픽 전환율: 167,001원/인</div>`)[0];
+                popup_145ee00a54d8f5280420946c611180db.setContent(html_b584d3e843e887f22eb75fa7bc3e5c8c);
+            
+        
+
+        circle_marker_2ba6717d496d2f1cf34b694442851222.bindPopup(popup_145ee00a54d8f5280420946c611180db)
+        ;
+
+        
+    
+    
+            circle_marker_2ba6717d496d2f1cf34b694442851222.bindTooltip(
+                `<div>
+                     남영동 먹자골목
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cfd13fa4aa473fec819d8691c57f6a4 = L.circleMarker(
+                [37.537680798985164, 126.99557215860625],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.248119237027815, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_3d70432cf7214f8e432613eff0a712c0 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_986fc0ff84203e14d36cad89e5cdb04b = $(`<div id="html_986fc0ff84203e14d36cad89e5cdb04b" style="width: 100.0%; height: 100.0%;"><b>이태원(이태원역)</b><br>유형: ④ 전체 하락 취약형<br>월매출: 907.9억원<br>객단가: 29,908원<br>연령 다양성: 0.91<br>트래픽 전환율: 59,817원/인</div>`)[0];
+                popup_3d70432cf7214f8e432613eff0a712c0.setContent(html_986fc0ff84203e14d36cad89e5cdb04b);
+            
+        
+
+        circle_marker_6cfd13fa4aa473fec819d8691c57f6a4.bindPopup(popup_3d70432cf7214f8e432613eff0a712c0)
+        ;
+
+        
+    
+    
+            circle_marker_6cfd13fa4aa473fec819d8691c57f6a4.bindTooltip(
+                `<div>
+                     이태원(이태원역)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57f099d88f158db853d51aed55f3a007 = L.circleMarker(
+                [37.53576163524377, 127.00835743396605],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.95071779951702, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_5c7a4c029fa2ee47202b5e999ec8eb91 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_ec59daf82a6e44c1a662d73f88d16c59 = $(`<div id="html_ec59daf82a6e44c1a662d73f88d16c59" style="width: 100.0%; height: 100.0%;"><b>한남오거리</b><br>유형: ④ 전체 하락 취약형<br>월매출: 396.8억원<br>객단가: 47,957원<br>연령 다양성: 0.98<br>트래픽 전환율: 69,562원/인</div>`)[0];
+                popup_5c7a4c029fa2ee47202b5e999ec8eb91.setContent(html_ec59daf82a6e44c1a662d73f88d16c59);
+            
+        
+
+        circle_marker_57f099d88f158db853d51aed55f3a007.bindPopup(popup_5c7a4c029fa2ee47202b5e999ec8eb91)
+        ;
+
+        
+    
+    
+            circle_marker_57f099d88f158db853d51aed55f3a007.bindTooltip(
+                `<div>
+                     한남오거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c35cd72497b57256ce8812c9d2b44e4c = L.circleMarker(
+                [37.523361298566506, 126.97555035543297],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.637405647851517, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_1bcd7a40bdb139d95c93a5a0f3b1d72e = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_48dc516cd758a7918892846639ff3bd2 = $(`<div id="html_48dc516cd758a7918892846639ff3bd2" style="width: 100.0%; height: 100.0%;"><b>이촌종합시장</b><br>유형: ④ 전체 하락 취약형<br>월매출: 46.3억원<br>객단가: 38,687원<br>연령 다양성: 0.92<br>트래픽 전환율: 43,824원/인</div>`)[0];
+                popup_1bcd7a40bdb139d95c93a5a0f3b1d72e.setContent(html_48dc516cd758a7918892846639ff3bd2);
+            
+        
+
+        circle_marker_c35cd72497b57256ce8812c9d2b44e4c.bindPopup(popup_1bcd7a40bdb139d95c93a5a0f3b1d72e)
+        ;
+
+        
+    
+    
+            circle_marker_c35cd72497b57256ce8812c9d2b44e4c.bindTooltip(
+                `<div>
+                     이촌종합시장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78c2ed753da0b135cfd73c0b0737cfa7 = L.circleMarker(
+                [37.54801429256389, 126.98587342346926],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_60a601f8f30b58cdaad0a0c3a947f40e = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_48a6c5a2590eac0cec2c0df84df44a32 = $(`<div id="html_48a6c5a2590eac0cec2c0df84df44a32" style="width: 100.0%; height: 100.0%;"><b>신흥시장</b><br>유형: ④ 전체 하락 취약형<br>월매출: 13.6억원<br>객단가: 24,160원<br>연령 다양성: 0.86<br>트래픽 전환율: 3,397원/인</div>`)[0];
+                popup_60a601f8f30b58cdaad0a0c3a947f40e.setContent(html_48a6c5a2590eac0cec2c0df84df44a32);
+            
+        
+
+        circle_marker_78c2ed753da0b135cfd73c0b0737cfa7.bindPopup(popup_60a601f8f30b58cdaad0a0c3a947f40e)
+        ;
+
+        
+    
+    
+            circle_marker_78c2ed753da0b135cfd73c0b0737cfa7.bindTooltip(
+                `<div>
+                     신흥시장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53fff5156921a7bc51ef7ef29797351b = L.circleMarker(
+                [37.536626246454354, 126.99022053173428],
+                {"bubblingMouseEvents": true, "color": "#f4a582", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4a582", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.456763972558204, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_65a5836bca86a07a43ef7e252e40dbe5);
+        
+    
+        var popup_5da1c36dcd6c5294f0bead0431add5c1 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_ccca96a54721a70004cc17b481cfd53c = $(`<div id="html_ccca96a54721a70004cc17b481cfd53c" style="width: 100.0%; height: 100.0%;"><b>이태원시장</b><br>유형: ④ 전체 하락 취약형<br>월매출: 41.9억원<br>객단가: 104,027원<br>연령 다양성: 0.96<br>트래픽 전환율: 52,194원/인</div>`)[0];
+                popup_5da1c36dcd6c5294f0bead0431add5c1.setContent(html_ccca96a54721a70004cc17b481cfd53c);
+            
+        
+
+        circle_marker_53fff5156921a7bc51ef7ef29797351b.bindPopup(popup_5da1c36dcd6c5294f0bead0431add5c1)
+        ;
+
+        
+    
+    
+            circle_marker_53fff5156921a7bc51ef7ef29797351b.bindTooltip(
+                `<div>
+                     이태원시장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_65a5836bca86a07a43ef7e252e40dbe5.addTo(map_fa1c4603d4b80085f2878255beefc670);
+        
+    
+            var layer_control_64a819777e758d98a9ebbec90f4d53a1_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_0922b5d35f3c0cb6395de3904e34bbfa,
+                },
+                overlays :  {
+                    "\u2460 \uc804\uc138\ub300 \uace0\ud2b8\ub798\ud53d-\uc800\uc804\ud658\ud615 (\ud658\uc2b9\ud615) (24\uac1c)" : feature_group_1759d24ce2046bd364493ffeee0939f0,
+                    "\u2461 \uc5f0\ub839 \ud3b8\uc911 \uc548\uc815\ud615 (7\uac1c)" : feature_group_97945376e86527728a48a8a356f216bd,
+                    "\u2462 \uc804\uc138\ub300 \uade0\ud615 \uc18c\ube44 \uc804\ud658\ud615 (3\uac1c)" : feature_group_66699e428763d2beb0ea04ac6ee552e6,
+                    "\u2463 \uc804\uccb4 \ud558\ub77d \ucde8\uc57d\ud615 (19\uac1c)" : feature_group_65a5836bca86a07a43ef7e252e40dbe5,
+                },
+            };
+            let layer_control_64a819777e758d98a9ebbec90f4d53a1 = L.control.layers(
+                layer_control_64a819777e758d98a9ebbec90f4d53a1_layers.base_layers,
+                layer_control_64a819777e758d98a9ebbec90f4d53a1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_fa1c4603d4b80085f2878255beefc670);
+
+        
+</script>
+</html>
